@@ -30,4 +30,4 @@ jobs:
       - name: Remove useless files
         run: rm -rf .github .git README.md
       - name: Deploy static site to S3 bucket
-        run: aws s3 sync out s3://${{ secrets. S3_BUCKET_NAME }} --delete
+        run: aws s3 cp _site s3://${{ secrets. S3_BUCKET_NAME }} --recursive
