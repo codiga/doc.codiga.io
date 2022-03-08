@@ -1,0 +1,42 @@
+/**
+ * Copyright (c) 2017-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/* your custom css */
+.fixedHeaderContainer {
+  background-image: linear-gradient(
+    -135deg,
+    rgba(247, 28, 157) 5%,
+    rgba(56, 56, 56) 00%
+  );
+}
+
+.projectTitle small {
+  color: rgba(56, 56, 56, 0.8);
+  font-weight: bold;
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+  .fixedHeaderContainer {
+    background-image: linear-gradient(
+      -135deg,
+      rgba(247, 28, 157) 10%,
+      rgba(56, 56, 56) 20%
+    );
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (max-width: 1023px) {
+}
+
+@media only screen and (min-width: 1400px) {
+}
+
+@media only screen and (min-width: 1500px) {
+}
