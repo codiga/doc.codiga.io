@@ -1,0 +1,11 @@
+_site
+.sass-cache
+.jekyll-metadata
+*~
+*.swp
+Gemfile.lock
+.idea
+**/node_modules
+**/.DS_Store
+website/.docusaurus
+website/build
