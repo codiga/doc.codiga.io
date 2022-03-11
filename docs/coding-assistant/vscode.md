@@ -28,12 +28,59 @@ The extension is available on the [VS Code marketplace](https://marketplace.visu
 You can use a recipe by opening the command `Codiga: Use Recipe` (ctrl + shift + p and search for "Codiga") or by
 directly using the shortcut ctrl + shit + C.
 
+We have multiple shortcuts that can help you while using Codiga:
+
+ **For Mac**
+
+- CMD + SHIFT + C  opens Codiga Coding Assistant to find snippets based on a search like a google search.
+
+- CMD + SHIFT + S opens the list of all shortcuts
+
+**For Windows**
+
+- CTRL + ALT + C  opens Codiga Coding Assistant to find snippets based on a search like a google search.
+
+- CTRL + ALT + S  opens the list of all shortcuts
+
 In vscode, you can also type your keywords on a single line and suggestions from Codiga will automatically appear.
 
 If you did not link your Codiga account, the extension will use only the default recipes. To use the recipes you
 subscribed to and your own private recipes, you need to link your codiga account (see below).
 
 ![Using recipe in VS Code](/img/coding-assistant/vscode-use-recipe.gif)
+
+## Shortcuts in VS Code
+In order to use shortcuts in python file. Please follow the below steps:
+
+
+
+**Step 1**: Open the file you want to code.
+
+**Step 2**: Make sure you have opened up a python form.
+
+**Step 3**: Type the library you want to use, e.g. "aws" followed by a ‘.’ to get a recommendation.
+
+**Step 4**: Select from the suitable recommendation 
+
+![PYTHON SHORTCUT DEMO](/img/shortcuts-vs-code/pydemo.gif)
+
+Done! That's it. Your recipe is directly imported & populated to your IDE.
+
+Similarly, follow the below steps if you want to use this in your javascript file.
+
+
+
+**Step 1**: Open the file you want to code.
+
+**Step 2**: Make sure you have opened up a python form .
+
+**Step 3**: Type the library you want to use, e.g. "react" followed by a ‘.’ to get a recommendation.
+
+**Step 4**: Select from the suitable recommendation.
+![JS SHORTCUT DEMO](/img/shortcuts-vs-code/jsdemo.gif)
+
+You can also make your recipes and shortcuts from our dashboard. You can find detailed information on our [documentation](https://doc.codiga.io).
+Currently, we are working on more code recommendations, i.e. adding more quality recipes. 
 
 ## Creating a recipe
 

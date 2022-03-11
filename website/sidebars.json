@@ -3,7 +3,8 @@
     "Coding Assistant": [
       "coding-assistant/coding-assistant-getting-started",
       "coding-assistant/coding-assistant-recipes-cookbooks",
-      "coding-assistant/coding-assistant-recipe-variables"
+      "coding-assistant/coding-assistant-recipe-variables",
+      "coding-assistant/coding-assistant-recipes-share"
     ],
     "IDE Integrations": [
       "coding-assistant/coding-assistant-vscode",
