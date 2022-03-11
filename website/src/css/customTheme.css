@@ -7,3 +7,7 @@
   --ifm-color-primary-darker: #E40788;
   --ifm-color-primary-darkest: #BB0670;
 }
+
+.clean-btn{
+  color: var(--ifm-navbar-link-color) !important;
+}
