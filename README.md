@@ -28,7 +28,7 @@
 Welcome to the **[Doc.codiga.io](https://doc.codiga.io/)** 
 
 ### What is it?
-This repository is for our official Documentation of Codiga. The website contains all the information related to our diffrent products.
+This repository is for our official Documentation of Codiga. The website contains all the information related to our diffrent products.All the docs are written in markdown and are fetched by the website.
 
 
 --- 
@@ -55,7 +55,7 @@ This repository is for our official Documentation of Codiga. The website contain
 ### What is used in our documentation website?
 
 - [Docusaurus](https://docusaurus.io/) + Chakra UI Customizzation.
-- [Algolia](https://www.algolia.com/) for searcg 
+- [Algolia](https://www.algolia.com/) for search
 ---
 
 ### Contributions
