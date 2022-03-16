@@ -18,6 +18,8 @@
 <a href="https://www.linkedin.com/company/codigahq/"><img src="https://img.shields.io/badge/LinkedIn-Codiga-blue?logo=linkedin&logoColor=blue&color=darkcyan" /></a>
 <a href="https://join.slack.com/t/codigahq/shared_invite/zt-9hvmfwie-9BUVFwZDwvpIGlkHv2mzYQ" alt="Slack">
 <img src="https://img.shields.io/badge/Slack-@codigahq.svg?logo=slack" /></a>
+
+  [![Join our Discord server!](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](http://discord.codiga.io)
 </div>
 
 <br>
