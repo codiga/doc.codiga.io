@@ -56,7 +56,7 @@ This repository is for our official Documentation of Codiga. The website contain
 
 ### What is used in our documentation website?
 
-- [Docusaurus](https://docusaurus.io/) + Chakra UI Customizzation.
+- [Docusaurus](https://docusaurus.io/) + Chakra UI Customization.
 - [Algolia](https://www.algolia.com/) for search
 ---
 
