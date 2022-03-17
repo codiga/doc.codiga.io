@@ -119,8 +119,8 @@ module.exports = {
           title: "Community",
           items: [
             {
-              label: "Slack",
-              to: "https://join.slack.com/t/codigahq/shared_invite/zt-9hvmfwie-9BUVFwZDwvpIGlkHv2mzYQ",
+              label: "Discord",
+              to: "http://discord.codiga.io",
             },
             {
               label: "Twitter",
