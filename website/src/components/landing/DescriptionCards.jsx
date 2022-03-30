@@ -37,7 +37,6 @@ const DescriptionCards = () => {
           minH="40vh"
           direction="row"
           justifyContent="center"
-          alignItems="center"
         >
           <VStack
             m={3}
