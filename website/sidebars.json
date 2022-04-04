@@ -37,9 +37,6 @@
       "integration-aws-codebuild",
       "integration-circle-ci",
       "integration-github-action",
-      "integration-jetbrains-idea-intellij",
-      "integration-vscode",
-      "integration-chrome",
       "git-hooks"
     ],
     "Rules": [

@@ -25,11 +25,13 @@ keywords:
 
 ## Compatibility
 
-The VS Code plugin is compatible with all Jetbrains products: IntelliJ, PHPStorm, CLion, PyCharm, etc.
+The JetBrains plugin is compatible with all JetBrains products: IntelliJ, PHPStorm, CLion, PyCharm, etc.
 
 You can see all compatible product directly on the [Jetbrains marketplace](https://plugins.jetbrains.com/plugin/17969-codiga).
 
-## How to get the VS Code extension
+<iframe frameborder="none" width="245px" height="48px" src="https://plugins.jetbrains.com/embeddable/install/17969"></iframe>
+
+## How to get the JetBrains extension
 
 You can get it directly from the Jetbrains marketplace within any Jetbrains product. Search for Codiga and it will appear.
 
