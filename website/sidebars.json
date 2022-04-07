@@ -10,6 +10,9 @@
       "coding-assistant/coding-assistant-vscode",
       "coding-assistant/coding-assistant-jetbrains",
       "coding-assistant/coding-assistant-chrome"
+    ],
+    "Plugin Specification": [
+      "coding-assistant/coding-assistant-vscode-spec"
     ]
   },
   "getting_started": {
