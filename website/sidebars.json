@@ -9,7 +9,8 @@
     "IDE Integrations": [
       "coding-assistant/coding-assistant-vscode",
       "coding-assistant/coding-assistant-jetbrains",
-      "coding-assistant/coding-assistant-chrome"
+      "coding-assistant/coding-assistant-chrome",
+      "coding-assistant/coding-assistant-your-own-plugin"
     ],
     "Plugin Specification": [
       "coding-assistant/coding-assistant-vscode-spec"
