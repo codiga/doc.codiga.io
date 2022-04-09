@@ -12,7 +12,8 @@
       "coding-assistant/coding-assistant-chrome"
     ],
     "Plugin Specification": [
-      "coding-assistant/coding-assistant-vscode-spec"
+      "coding-assistant/coding-assistant-vscode-spec",
+      "coding-assistant/coding-assistant-your-own-plugin"
     ]
   },
   "getting_started": {
