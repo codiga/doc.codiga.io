@@ -18,15 +18,18 @@ keywords:
 
 The VS Code plugin is compatible with VS Code desktop and GitHub codespaces.
 
-## How to get the VS Code extension
+## How to get the VS Code extension?
 
 You can get it directly from the VS Code marketplace within your VS Code installation.
 The extension is available on the [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=codiga.vscode-plugin)
 
 ## Using a recipe
 
-You can use a recipe by opening the command `Codiga: Use Recipe` (ctrl + shift + p and search for "Codiga") or by
-directly using the shortcut ctrl + shit + C.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wrMy6hQWCrs?start=193" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+You can use a recipe by opening the command `Codiga: Use Recipe` (CTRL + SHIFT + P and search for "Codiga") or by
+directly using the shortcut CTRL + SHIFT + C.
 
 We have multiple shortcuts that can help you while using Codiga:
 
@@ -52,6 +55,7 @@ subscribed to and your own private recipes, you need to link your codiga account
 ## Shortcuts in VS Code
 In order to use shortcuts in python file. Please follow the below steps:
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wrMy6hQWCrs?start=245" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 **Step 1**: Open the file you want to code.
@@ -84,6 +88,8 @@ Currently, we are working on more code recommendations, i.e. adding more quality
 
 ## Creating a recipe
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wrMy6hQWCrs?start=307" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 To create a recipe in VS Code, select the code you want to share, click right and select `"Create Codiga Recipe"`.
 
 Your browser opens with the code and its language directly initialized.
@@ -91,6 +97,8 @@ Your browser opens with the code and its language directly initialized.
 ![Create Recipe](/img/coding-assistant/vscode-create-recipe.gif)
 
 ## Linking your Codiga account
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wrMy6hQWCrs?start=110" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 If you want to use the recipes, you need to link your Codiga account using an API token.
 
