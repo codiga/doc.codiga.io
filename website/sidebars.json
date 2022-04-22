@@ -16,6 +16,9 @@
       "coding-assistant/coding-assistant-vscode-spec"
     ]
   },
+  "api": {
+    "Codiga API": ["api", "api/api-coding-assistant", "api/api-code-analysis"]
+  },
   "getting_started": {
     "Getting Started": [
       "getting-started",
