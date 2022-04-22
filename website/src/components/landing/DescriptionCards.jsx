@@ -44,7 +44,7 @@ const DescriptionCards = () => {
       >
         <Grid templateRows="repeat(1, 1fr)">
           <GridItem rowSpan={1} colSpan={1} bg="tomato">
-            <Image src={CodingAssistantImageUrl} />
+            <Image src={CodingAssistantImageUrl} width="100%" />
           </GridItem>
           <GridItem p={5} rowSpan={1}>
             <VStack align="stretch" spacing={5}>
@@ -70,7 +70,7 @@ const DescriptionCards = () => {
       >
         <Grid templateRows="repeat(1, 1fr)">
           <GridItem rowSpan={1}>
-            <Image src={CodeAnalysisImageUrl} />
+            <Image src={CodeAnalysisImageUrl} width="100%" />
           </GridItem>
           <GridItem p={5} rowSpan={1}>
             <VStack align="stretch" spacing={5}>
@@ -96,7 +96,7 @@ const DescriptionCards = () => {
       >
         <Grid templateRows="repeat(1, 1fr)">
           <GridItem rowSpan={1}>
-            <Image src={Integrations} />
+            <Image src={Integrations} width="100%" />
           </GridItem>
           <GridItem p={5} rowSpan={1}>
             <VStack align="stretch" spacing={5}>
