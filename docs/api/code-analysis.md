@@ -24,6 +24,11 @@ keywords:
   - CVE
 ---
 
+:::info
+If you have any question about the API, please join [our discord channel](https://discord.com/invite/5b9bGDtvnc),
+we provide direct support on our channel.
+:::
+
 :::tip
 This section of the documentation is focused on the API for the code analysis. You can learn about how to access
 the API and how to authenticate on [this page](/docs/api).

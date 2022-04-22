@@ -25,6 +25,11 @@ keywords:
 ---
 
 :::info
+If you have any question about the API, please join [our discord channel](https://discord.com/invite/5b9bGDtvnc),
+we provide direct support on our channel.
+:::
+
+:::info
 
 Codiga API is completely implemented in [GraphQL](https://graphql.org/).
 
