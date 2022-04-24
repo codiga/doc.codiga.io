@@ -64,6 +64,10 @@ The `AssistantRecipe` type has the following attributes:
 - `commentsCount`: number of comments on the recipe.
 - `comments`: list of comments on the recipe (each has the type `AssistantRecipeComment`).
 - `cookbook`: a cookbook (type `AssistantCookbook`) if the snippet is associated with a cookbook. `null` otherwise.
+- `upvotes`: number of upvotes received (note: only public recipes receive upvotes).
+- `downvotes`: number of downvotes received (note: only public recipes receive downvotes).
+- `isUpVoted`: returns true if the current logged in user upvoted the recipe. Returns false if the user is not authenticated or did not upvote.
+- `isDownVoted`: returns true if the current logged in user downvoted the recipe. Returns false if the user is not authenticated or did not downvote.
 
 ### AssistantRecipeWithStats
 
@@ -87,6 +91,10 @@ The `AssistantCookbook` type has the following attributes:
 - `languages`: list of languages supported by the cookbook. It's the list of all languages from all recipes in the cookbook.
 - `dependendencies`: list of dependencies of the cookbook. It's the list of all dependencies from all recipes in the cookbook.
 - `groups`: list of groups the cookbook is shared with.
+- `upvotes`: number of upvotes received (note: only public cookbooks receive upvotes).
+- `downvotes`: number of downvotes received (note: only public cookbooks receive downvotes).
+- `isUpVoted`: returns true if the current logged in user upvoted the cookbook. Returns false if the user is not authenticated or did not upvote.
+- `isDownVoted`: returns true if the current logged in user downvoted the cookbook. Returns false if the user is not authenticated or did not downvote.
 
 ### AssistantRecipeComment
 
@@ -96,6 +104,10 @@ The `AssistantRecipeComment` type has the following attributes:
 - `creationTimestampMs`: when the comment was created.
 - `author`: the author of the comment (a `User` type). The value is `null` if the user does not share their profile
 - `comment`: the comment value stored in the `Markdown` format.
+- `upvotes`: number of upvotes received (note: only public cookbooks receive upvotes).
+- `downvotes`: number of downvotes received (note: only public cookbooks receive downvotes).
+- `isUpVoted`: returns true if the current logged in user upvoted the comment. Returns false if the user is not authenticated or did not upvote.
+- `isDownVoted`: returns true if the current logged in user downvoted the comment. Returns false if the user is not authenticated or did not downvote.
 
 ## Enumeration
 
@@ -782,3 +794,79 @@ Required parameters (other are optional and can be ommitted):
   }
 }
 ```
+
+### Add upvote/downvote on recipe, cookbook and comment
+
+To add an upvote or downvote, the user must use the `addVote` mutation.
+
+The `addVote` query takes the following parameters:
+
+- `entityId`: identifier of the entity to upvote/downvote
+- `entityType`: type of the entity to upvote/downvote. It's an enumeration with the following values: `Recipe`, `Cookbook` or `Comment`.
+- `isUpvote`: boolean to indicate if the user wants to upvote or downvote (`true` for upfvote, `false` for downvote).
+
+**Notes**
+
+- if the user already upvoted the recipe and issue a new upvote or downvote, the previous vote will be removed.
+- if the user is not logged, the mutation returns an error with the code `user-not-logged`.
+
+Example of query.
+
+```graphql
+mutation {
+  addVote(entityId: 1, entityType: Cookbook, isUpvote: true)
+}
+```
+
+### Delete upvote/downvote on recipe, cookbook and comment
+
+To remove an upvote or downvote, use the `deleteVote` mutation.
+
+The `deleteVote` query takes the following parameters:
+
+- `entityId`: identifier of the entity to upvote/downvote
+- `entityType`: type of the entity to upvote/downvote. It's an enumeration with the following values: `Recipe`, `Cookbook` or `Comment`.
+
+```graphql
+mutation {
+  deleteVote(entityId: 1, entityType: Cookbook)
+}
+```
+
+**Notes**
+
+- if the user is not logged, the mutation returns an error with the code `user-not-logged`.
+
+### Get the number of upvotes/downvotes on an element
+
+To get the number of upvotes or downvotes on an element, query the `upvotes` and `downvotes` attribute of this element (recipe, cookbook or comment).
+
+Example of query for a recipe
+
+```graphql
+{
+  assistantRecipe(id: 1) {
+    upvotes
+    downvotes
+  }
+}
+```
+
+### Know if a user put a upvote/downvote on an element
+
+If you want to know if the current logged-in user upvoted an element, query the `isUpVoted` or `isDownVoted` attribute of the element.
+
+Example of query for a recipe
+
+```graphql
+{
+  assistantRecipe(id: 1) {
+    isUpVoted
+    isDownVotes
+  }
+}
+```
+
+**Notes**
+
+- if the user is not logged, these attributes will always be `false`.
