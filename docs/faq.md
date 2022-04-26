@@ -116,7 +116,7 @@ taking only one analysys from your quota.
 
 Apex, C, C++, Dart, Docker, Go, Java, Javascript, Kotlin, PHP, Python, Ruby, Scala, shellscript, Terraform, Typescript, YAML.
 
-Do you want your favorite language to be supported? [Drop us](https://www.codiga.io/contact) a line!
+Do you want your favorite language to be supported? [Drop us](https://www.codiga.io/contact-us/) a line!
 
 ### I got a lot of false positive for javascript related to the ES version
 
