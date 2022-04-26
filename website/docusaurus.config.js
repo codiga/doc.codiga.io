@@ -120,7 +120,7 @@ module.exports = {
           items: [
             {
               label: "Discord",
-              to: "http://discord.codiga.io",
+              to: "https://discord.com/invite/5b9bGDtvnc",
             },
             {
               label: "Twitter",
