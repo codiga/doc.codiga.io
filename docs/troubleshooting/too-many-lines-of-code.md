@@ -1,6 +1,6 @@
 ---
 id: too-many-lines-of-code
-title: Too many lines of code
+title: Codiga Troubleshooting - Too many lines of code
 description: Troubleshoot analysis issues on Codiga for GitHub, GitLab and Bitbucket and spot any security or vulnerability issue. Support for 12+ languages, start for free today.
 keywords:
   - cyclomatic complexity

@@ -1,6 +1,6 @@
 ---
 id: coding-assistant-vscode
-title: VS Code Integration
+title: Codiga VS Code Integration for Smart Code Snippets
 description: Coding Assistant to write faster code in VS Code and find safe and secure code within seconds. Work for 15+ languages.
 keywords:
   [
@@ -27,23 +27,22 @@ The extension is available on the [VS Code marketplace](https://marketplace.visu
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wrMy6hQWCrs?start=193" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
 You can use a recipe by opening the command `Codiga: Use Recipe` (CTRL + SHIFT + P and search for "Codiga") or by
 directly using the shortcut CTRL + SHIFT + C.
 
 We have multiple shortcuts that can help you while using Codiga:
 
- **For Mac**
+**For Mac**
 
-- CMD + SHIFT + C  opens Codiga Coding Assistant to find snippets based on a search like a google search.
+- CMD + SHIFT + C opens Codiga Coding Assistant to find snippets based on a search like a google search.
 
 - CMD + SHIFT + S opens the list of all shortcuts
 
 **For Windows**
 
-- CTRL + ALT + C  opens Codiga Coding Assistant to find snippets based on a search like a google search.
+- CTRL + ALT + C opens Codiga Coding Assistant to find snippets based on a search like a google search.
 
-- CTRL + ALT + S  opens the list of all shortcuts
+- CTRL + ALT + S opens the list of all shortcuts
 
 In vscode, you can also type your keywords on a single line and suggestions from Codiga will automatically appear.
 
@@ -53,10 +52,10 @@ subscribed to and your own private recipes, you need to link your codiga account
 ![Using recipe in VS Code](/img/coding-assistant/vscode-use-recipe.gif)
 
 ## Shortcuts in VS Code
+
 In order to use shortcuts in python file. Please follow the below steps:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wrMy6hQWCrs?start=245" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 **Step 1**: Open the file you want to code.
 
@@ -64,15 +63,13 @@ In order to use shortcuts in python file. Please follow the below steps:
 
 **Step 3**: Type the library you want to use, e.g. "aws" followed by a ‘.’ to get a recommendation.
 
-**Step 4**: Select from the suitable recommendation 
+**Step 4**: Select from the suitable recommendation
 
 ![PYTHON SHORTCUT DEMO](/img/shortcuts-vs-code/pydemo.gif)
 
 Done! That's it. Your recipe is directly imported & populated to your IDE.
 
 Similarly, follow the below steps if you want to use this in your javascript file.
-
-
 
 **Step 1**: Open the file you want to code.
 
@@ -84,7 +81,7 @@ Similarly, follow the below steps if you want to use this in your javascript fil
 ![JS SHORTCUT DEMO](/img/shortcuts-vs-code/jsdemo.gif)
 
 You can also make your recipes and shortcuts from our dashboard. You can find detailed information on our [documentation](https://doc.codiga.io).
-Currently, we are working on more code recommendations, i.e. adding more quality recipes. 
+Currently, we are working on more code recommendations, i.e. adding more quality recipes.
 
 ## Creating a recipe
 

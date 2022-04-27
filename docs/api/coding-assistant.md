@@ -1,6 +1,6 @@
 ---
 id: api-coding-assistant
-title: GraphQL API for Coding Assistant
+title: Codiga GraphQL API for Coding Assistant
 sidebar_label: Coding Assistant API
 description: Codiga API to access Code Snippets, Cookbooks and other resources from Codiga.
 keywords:

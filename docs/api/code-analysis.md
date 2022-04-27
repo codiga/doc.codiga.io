@@ -1,8 +1,8 @@
 ---
 id: api-code-analysis
-title: GraphQL API for Code Analysis
+title: Codiga GraphQL API for Code Analysis
 sidebar_label: Code Analysis API
-description: Codiga API to access all code analysis metrics using GraphQL. Open API with examples on how to access and use it.
+description: How to configure GraphQL on Codiga’s Code Analysis tool for open-source data queries and manipulation language for APIs.
 keywords:
   - cyclomatic complexity
   - function complexity

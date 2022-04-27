@@ -1,6 +1,6 @@
 ---
 id: integration-gitlab
-title: Gitlab Integration
+title: Codiga GitLab Integration for Automated Code Reviews and Code Analysis
 description: Check your code quality with Codiga for all GitLab repositories. Work for for 12+ languages. Free 14 days trial.
 keywords:
   [

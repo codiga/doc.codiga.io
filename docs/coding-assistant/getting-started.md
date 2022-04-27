@@ -1,6 +1,6 @@
 ---
 id: coding-assistant-getting-started
-title: Getting Started
+title: Coding Assistant Find Smart Code Snippets in your IDE
 description: Coding Assistant to write faster code in your IDE and find safe and secure code within seconds. Work for 15+ languages.
 keywords:
   [

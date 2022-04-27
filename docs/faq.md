@@ -1,6 +1,6 @@
 ---
 id: faq
-title: Frequently Asked Questions
+title: Codiga Frequently Asked Questions
 description: Frequently Asked Questions about Codiga, Project Analysis and the static code analysis used to Automate Code Reviews.
 keywords:
   - code analysis

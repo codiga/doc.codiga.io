@@ -1,6 +1,6 @@
 ---
 id: project-preferences
-title: Project preferences
+title: Codiga Project Preferences for Automated Code Analysis
 description: Configure your project and Code Reviews on Codiga and adapt the code analysis behavior to your needs.
 keywords:
   - code analysis

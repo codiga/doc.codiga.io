@@ -1,6 +1,6 @@
 ---
 id: coding-assistant-your-own-plugin
-title: Implement a Plugin
+title: Codiga - Implement your own Plugin to use Code Snippets
 description: Plugin specification for the Codiga coding assistant. Implement your own Codiga Integration.
 keywords:
   [

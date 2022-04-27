@@ -1,6 +1,6 @@
 ---
 id: coding-assistant-chrome
-title: Chrome Integration
+title: Codiga Chrome Integration for Smart Code Snippets
 description: Add snippets from Google Chrome to the Codiga Coding Assistant. Create your own snippets and use them in your IDE.
 keywords:
   [

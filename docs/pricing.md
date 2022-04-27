@@ -1,6 +1,6 @@
 ---
 id: pricing
-title: Pricing
+title: Codiga Pricing for Automated Code Reviews and Code Analysis
 description: Automate your Code Reviews and manage your Technical Debt for all public repositories for free. Free 14 days trial.
 keywords:
   [

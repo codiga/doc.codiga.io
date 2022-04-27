@@ -1,6 +1,6 @@
 ---
 id: integration-intro
-title: Introduction to Integrations
+title: Codiga GitHub Integration for Automated Code Reviews and Code Analysis
 description: Integration of the Codiga Code Analysis platforms with GitHub, GitLab, Bitbucket, Slack and more developer tools.
 keywords:
   [

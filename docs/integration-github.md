@@ -1,6 +1,6 @@
 ---
 id: integration-github
-title: GitHub Integration
+title: Codiga GitHub Integration for Automated Code Reviews and Code Analysis
 description: Check your code quality with Codiga for all GitHub repositories. Work for for 12+ languages. Free 14 days trial.
 keywords:
   [

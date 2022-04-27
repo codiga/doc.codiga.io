@@ -1,6 +1,6 @@
 ---
 id: public-profiles
-title: Public Profiles
+title: Codiga Public Profiles to show your Code Quality
 description: Show your code quality metrics for all your public GitHub repositories. Get a badge to show on your GitHub profile.
 keywords:
   - code analysis

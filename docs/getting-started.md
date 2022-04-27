@@ -1,6 +1,6 @@
 ---
 id: getting-started
-title: Getting Started
+title: Coding Analysis Smart Code Review Tool
 description: Code Analysis and Automated Code Reviews for GitHub, GitLab and Bitbucket. Support for 12+ languages, start for free today.
 keywords:
   - aws

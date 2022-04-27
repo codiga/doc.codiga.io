@@ -1,6 +1,6 @@
 ---
 id: integration-circle-ci
-title: CircleCI Integration
+title: Codiga - CircleCI Integration for continuous monitoring of Code Quality
 description: Check your code quality with Codiga and CircleCI for 12+ languages and all code hosting platforms. Free 14 days trial.
 keywords:
   [

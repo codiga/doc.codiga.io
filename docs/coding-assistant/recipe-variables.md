@@ -1,6 +1,6 @@
 ---
 id: coding-assistant-recipe-variables
-title: Recipe Variables
+title: Codiga Code Snippets User Variables
 description: Create reusable code snippets for your IDE using variables. Inter-operable variable system across all IDEs.
 keywords:
   [

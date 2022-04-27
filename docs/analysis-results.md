@@ -1,6 +1,6 @@
 ---
 id: analysis-results
-title: Analysis Results
+title: Codiga - Code Analysis and Automated Code Reviews Results
 description: Analyze your code quality on GitHub, GitLab and Bitbucket and spot any security or vulnerability issue. Support for 12+ languages, start for free today.
 keywords:
   - cyclomatic complexity

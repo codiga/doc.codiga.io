@@ -1,6 +1,6 @@
 ---
 id: create-user
-title: Create Account
+title: Codiga User Account Documentation
 description: Create an account on Codiga to analyze your code and automated your Code Reviews on GitHub, GitLab and Bitbucket. Support for 12+ languages, start for free today.
 keywords:
   - cyclomatic complexity

@@ -1,8 +1,8 @@
 ---
 id: api
-title: GraphQL API Introduction
+title: Codiga GraphQL API - Introduction
 sidebar_label: Introduction
-description: Codiga API to access all code analysis metrics using GraphQL. Open API with examples on how to access and use it.
+description: Everything you need to know about how to find and authenticate GraphQL on Codiga.
 keywords:
   - cyclomatic complexity
   - function complexity

@@ -1,6 +1,6 @@
 ---
 id: metrics
-title: List of Metrics
+title: Codiga List of Code Quality Metrics
 description: Code Quality Metrics from Codiga to evaluate your Technical Debt on all code hosting platform. Available for GitHub, GitLab and Bitbucket.
 keywords:
   [

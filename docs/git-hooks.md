@@ -1,6 +1,6 @@
 ---
 id: git-hooks
-title: Git Hooks
+title: Codiga - Using Git Hooks to Check your Code before pushing
 description: Automatically trigger a code analysis using Git Hooks and ensure that your code meets your code quality criteria.
 keywords:
   - code analysis
