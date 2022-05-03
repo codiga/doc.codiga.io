@@ -502,6 +502,32 @@ mutation {
 }
 ```
 
+### Add a recipe to a cookbook
+
+The mutation `addRecipeToCookbook` adds a recipe to a cookbook. It checks that the user owns
+the recipe and has access to the cookbook. It returns `ok` if the recipe is added to the cookbook.
+Otherwise, it returns an error.
+
+```
+graphql
+mutation{
+  addRecipeToCookbook(recipeId: XXX, cookbookId: YYYY)
+}
+```
+
+### Remove a recipe from a cookbook
+
+The mutation `removeRecipeFromCookbook` removes a recipe from a cookbook. It checks that the recipe is
+in the cookbook and that the user has access to the cookbook. It returns `ok` if the recipe is added to the cookbook.
+Otherwise, it returns an error.
+
+```
+graphql
+mutation{
+  removeRecipeFromCookbook(recipeId: XXX, cookbookId: YYYY)
+}
+```
+
 ## Common Queries and Mutations
 
 ### Create a new assistant cookcook
