@@ -30,7 +30,7 @@
 Welcome to the **[Doc.codiga.io](https://doc.codiga.io/)** 
 
 ### What is it?
-This repository is for our official Documentation of Codiga. The website contains all the information related to our diffrent products.All the docs are written in markdown and are fetched by the website.
+This repository is for our official Documentation of Codiga. The website contains all the information related to our different products. All the docs are written in markdown and are fetched by the website.
 
 
 --- 
@@ -61,4 +61,4 @@ This repository is for our official Documentation of Codiga. The website contain
 ---
 
 ### Contributions
-- Found any bug, please create a new [issue](https://github.com/codiga/doc.codiga.io/issues) before working on the solution.
+- Found any bug? please create a new [issue](https://github.com/codiga/doc.codiga.io/issues) before working on the solution.
