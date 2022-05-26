@@ -23,9 +23,9 @@ The Chrome plugin works with all chrome-based browsers (Google Chrome, Brave, et
 
 The extension is available on the [Chrome Web Store](https://chrome.google.com/webstore/detail/codiga/dbkhkhonmelajjempmoadocgneoadjge)
 
-## Creating a recipe
+## Creating a code snippet
 
-To create a recipe, select the code you want to share anywhere in Chrome, click right and select `"Create Codiga Recipe"`.
+To create a code snippet, select the code you want to share anywhere in Chrome, click right and select `"Create Codiga Recipe"`.
 
 Your browser opens with the code. You just need to fill the name, description, language and keywords to create a recipe.
 
