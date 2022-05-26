@@ -23,11 +23,11 @@ The VS Code plugin is compatible with VS Code desktop and GitHub codespaces.
 You can get it directly from the VS Code marketplace within your VS Code installation.
 The extension is available on the [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=codiga.vscode-plugin)
 
-## Using a recipe
+## Using a code snippet
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wrMy6hQWCrs?start=193" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-You can use a recipe by opening the command `Codiga: Use Recipe` (CTRL + SHIFT + P and search for "Codiga") or by
+You can use a code snippet by opening the command `Codiga: Use Recipe` (CTRL + SHIFT + P and search for "Codiga") or by
 directly using the shortcut CTRL + SHIFT + C.
 
 We have multiple shortcuts that can help you while using Codiga:
@@ -46,10 +46,10 @@ We have multiple shortcuts that can help you while using Codiga:
 
 In vscode, you can also type your keywords on a single line and suggestions from Codiga will automatically appear.
 
-If you did not link your Codiga account, the extension will use only the default recipes. To use the recipes you
-subscribed to and your own private recipes, you need to link your codiga account (see below).
+If you did not link your Codiga account, the extension will use only the default code snippets. To use the code snippets you
+subscribed to and your own private code snippets, you need to link your codiga account (see below).
 
-![Using recipe in VS Code](/img/coding-assistant/vscode-use-recipe.gif)
+![Using code snippet in VS Code](/img/coding-assistant/vscode-use-recipe.gif)
 
 ## Shortcuts in VS Code
 
@@ -67,7 +67,7 @@ In order to use shortcuts in python file. Please follow the below steps:
 
 ![PYTHON SHORTCUT DEMO](/img/shortcuts-vs-code/pydemo.gif)
 
-Done! That's it. Your recipe is directly imported & populated to your IDE.
+Done! That's it. Your code snippet is directly imported & populated to your IDE.
 
 Similarly, follow the below steps if you want to use this in your javascript file.
 
@@ -80,24 +80,24 @@ Similarly, follow the below steps if you want to use this in your javascript fil
 **Step 4**: Select from the suitable recommendation.
 ![JS SHORTCUT DEMO](/img/shortcuts-vs-code/jsdemo.gif)
 
-You can also make your recipes and shortcuts from our dashboard. You can find detailed information on our [documentation](https://doc.codiga.io).
-Currently, we are working on more code recommendations, i.e. adding more quality recipes.
+You can also make your code snippets and shortcuts from our dashboard. You can find detailed information on our [documentation](https://doc.codiga.io).
+Currently, we are working on more code recommendations, i.e. adding more quality code snippets.
 
-## Creating a recipe
+## Creating a code snippet
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wrMy6hQWCrs?start=307" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-To create a recipe in VS Code, select the code you want to share, click right and select `"Create Codiga Recipe"`.
+To create a code snippet in VS Code, select the code you want to share, click right and select `"Create Codiga snippet"`.
 
 Your browser opens with the code and its language directly initialized.
 
-![Create Recipe](/img/coding-assistant/vscode-create-recipe.gif)
+![Create code snippet](/img/coding-assistant/vscode-create-recipe.gif)
 
 ## Linking your Codiga account
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wrMy6hQWCrs?start=110" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-If you want to use the recipes, you need to link your Codiga account using an API token.
+If you want to use the code snippets, you need to link your Codiga account using an API token.
 
 First, create your token on the platform as shown below.
 
