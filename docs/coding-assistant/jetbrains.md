@@ -41,17 +41,17 @@ You can get it directly from the Jetbrains marketplace within any Jetbrains prod
 
 The extension is available on the [Jetbrains Marketplace](https://plugins.jetbrains.com/plugin/17969-codiga)
 
-## Using a recipe
+## Using a code snippet
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ckOonbTykAc?start=195" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-You can search and use recipe by triggering the menu (`Tools > Codiga Assistant`) as show below.
+You can search and use code snippet by triggering the menu (`Tools > Codiga Assistant`) as show below.
 
 ![Codiga menu](/img/coding-assistant/jetbrains-menu.png).
 
-A window appear and you can enter keywords to search for a recipe. Suggestions appear and you can go back and forth between code suggestions.
+A window appear and you can enter keywords to search for a code snippet. Suggestions appear and you can go back and forth between code suggestions.
 
-![Using recipes](/img/coding-assistant/jetbrains-use-recipe.gif)
+![Using code snippets](/img/coding-assistant/jetbrains-use-recipe.gif)
 
 ## Shortcuts in Jetbrains
 
@@ -61,21 +61,21 @@ You can use Code snippets via shortcuts. Since you all must not be familiar with
 
 It will open up a cheat sheet with a list of shortcuts. Once you are familiar with the shortcuts, you can directly use them on your IDE.
 
-## Creating a recipe
+## Creating a code snippet
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ckOonbTykAc?start=312" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-To create a recipe, select the code you want to share, click right and select `"Create Codiga Recipe"`.
+To create a code snippet, select the code you want to share, click right and select `"Create Codiga code snippet"`.
 
 Your browser opens with the code and its language directly initialized.
 
-![Creating recipes](/img/coding-assistant/jetbrains-create-recipe.gif)
+![Creating code snippets](/img/coding-assistant/jetbrains-create-recipe.gif)
 
 ## Linking your Codiga account
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ckOonbTykAc?start=110" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-If you want to use the recipes, you need to link your Codiga account using an API token.
+If you want to use the code snippets, you need to link your Codiga account using an API token.
 
 First, create your token on the platform as shown below.
 
