@@ -20,10 +20,4 @@ keywords:
   - Scala
 ---
 
-| Rule                                                     | Category       | Severity | Description                                  |
-| -------------------------------------------------------- | -------------- | -------- | -------------------------------------------- |
-| org.scalastyle.scalariform.ClassNamesChecker             | Design         | 3        | Incorrect class name                         |
-| org.scalastyle.scalariform.CyclomaticComplexityChecker   | Design         | 1        | Cyclomatic complexity too high               |
-| org.scalastyle.scalariform.IllegalImportsChecker         | Best Practices | 4        | Import from illegal package                  |
-| org.scalastyle.scalariform.MultipleStringLiteralsChecker | Best Practices | 3        | Literal string appears too much in the file  |
-| org.scalastyle.scalariform.UppercaseLChecker             | Code Style     | 4        | Use an uppercase character for long literals |
+All Scala rules are available on [this page](https://www.codiga.io/code-analysis/rules/scala/all/all/).
