@@ -19,6 +19,9 @@
   "api": {
     "Codiga API": ["api", "api/api-coding-assistant", "api/api-code-analysis"]
   },
+  "custom_rules": {
+    "Custom Rules": ["rosie/rosie-introduction", "rosie/ide-specification"]
+  },
   "getting_started": {
     "Getting Started": [
       "getting-started",
@@ -46,22 +49,7 @@
       "integration-github-action",
       "git-hooks"
     ],
-    "Rules": [
-      "rules/rules",
-      "rules/apex/rules-apex",
-      "rules/c/rules-c",
-      "rules/dart/rules-dart",
-      "rules/docker/rules-docker",
-      "rules/java/rules-java",
-      "rules/javascript/rules-javascript",
-      "rules/php/rules-php",
-      "rules/python/rules-python",
-      "rules/ruby/rules-ruby",
-      "rules/scala/rules-scala",
-      "rules/shell/rules-shell",
-      "rules/terraform/rules-terraform",
-      "rules/typescript/rules-typescript"
-    ],
+    "Rules": ["rules/rules"],
     "Public Profile": ["public-profiles"],
     "Configuration": ["project-preferences", "ignore-files", "branches"],
     "Pricing and Billing": ["pricing", "billing"],

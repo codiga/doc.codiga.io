@@ -63,6 +63,11 @@ module.exports = {
           position: "left",
         },
         {
+          to: "docs/rosie/rosie-introduction",
+          label: "Custom Rules",
+          position: "left",
+        },
+        {
           to: "docs/api",
           label: "API",
           position: "left",
