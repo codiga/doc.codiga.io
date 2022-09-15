@@ -637,3 +637,15 @@ In other words:
 
 - if the IDE uses tabulations to indent the code, each `&[CODIGA_INDENT]` occurrence is replaced by a tabulation
 - if the IDE uses two spaces for indentation, each `&[CODIGA_INDENT]` occurrence is replaced by two spaces
+
+### Avoid latency
+
+When fetching the list of snippets for the IDE, this operation must always occur asynchronously. Fetching the snippets should never
+occur any latency in the IDE itself.
+
+### Preferences
+
+The IDE should have the following preferences:
+
+- **API Token**: the API token must be stored and secured. Some IDE provide a way to securely store a password/api token. If available, such services must be used.
+- **Enabled/disabled**: we should provide a way to enable/disable the analysis
