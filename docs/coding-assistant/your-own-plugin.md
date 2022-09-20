@@ -374,7 +374,7 @@ You need to find the following parameters from the IDE itself:
 
 You ask the user the following parameters:
 
-- **query string**: what tthe user
+- **query string**: what the user is searching for
 - **visibility of the snippets**
   - public
   - private
@@ -456,7 +456,7 @@ There are therefore two components for the shortcut features:
 
 #### Shortcuts polling
 
-Shortcuts polling should occur regularly when the IDE is active. Shortcut polling occurs only if the IDE was used in the last 10 minutes. After 10 minutes of inactivity, polling stops and resume when the user used the IDE. To check the IDE activity, we can check if a character was types.
+Shortcuts polling should occur regularly when the IDE is active. Shortcut polling occurs only if the IDE was used in the last 10 minutes. After 10 minutes of inactivity, polling stops and resume when the user used the IDE. To check the IDE activity, we can check if a character was typed.
 
 We need to poll the list of shortcuts available for each file opened in the IDE. Snippets depends on the file and therefore, we need to maintain a list of potential snippets for each file.
 
@@ -617,7 +617,7 @@ See the code we use for the [VS Code plugin](https://github.com/codiga/vscode-pl
 
 Anytime a snippet is insert by any of the mechanism (inline completion, shortcut or snippet search), we need to send a callback to Codiga to indicate that a user inserted a snippet.
 
-Do do so, we call the `recordAccess` mutation. We pass the snippet identifier that was inserted as a parameter. The `userFingerprint` is a string that is
+To do so, we call the `recordAccess` mutation. We pass the snippet identifier that was inserted as a parameter. The `userFingerprint` is a string that is
 at least 40 characters long and is unique to the IDE. This string is generated only once through the life of the plugin and is never generated again.
 
 ```
