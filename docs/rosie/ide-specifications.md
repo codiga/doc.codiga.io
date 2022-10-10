@@ -112,7 +112,12 @@ The server response has the following schema:
     - `message`: a message to show in the editor about the issue
     - `start`: the position to start to highlight in the IDE (line and col)
     - `end`: the position to end to highlight in the IDE (line and col)
-    - `severity`: the severity of the violation, select it to show how to display the violation. Values are `CRITICAL`, `ERROR`, `INFORMATIONAL`, `UNKNOWN`
+    - `severity`: the severity of the violation, select it to show how to display the violation. Values are `CRITICAL`, `ERROR`, `WARNING`, `INFORMATIONAL`, `UNKNOWN`
+      - `CRITICAL` is the highest level (also mapped as level 1 in the Codiga UI)
+      - `ERROR` is the second highest level (mapped as level 2 in the Codiga UI)
+      - `WARNING` is the third highest level (mapped as level 3 in the UI)
+      - `INFORMATIONAL` is the fourth highest level (mapped as level 4 in the UI)
+      - `UNKNOWN` is when the user puts an invalid value for severity
     - `category`: the category of the violation. Possible values are: `ERROR_PRONE`, `CODE_STYLE`, `BEST_PRACTICE`, `SAFETY`, `SECURITY`, `DESIGN`, `DEPLOYMENT`, `UNKNOWN`
     - `fixes`: a list of fix, each containing
       - `description`: the description of the fix to show in the IDE
