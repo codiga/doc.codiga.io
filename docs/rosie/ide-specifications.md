@@ -138,56 +138,83 @@ should detect that the user stopped writing code for at least 500ms and then tri
 - sending the code with all rules
 - getting the results and annotating the code
 
-## Getting rules
+## Getting rules in the IDE
 
-For each opened file in the editor, we should cache the list of rules that applies. A background job takes care of updating the rules
-for a specific file. The rules are retrieved from the [Codiga API](/docs/api).
+For each opened file in the editor, we should cache the list of rules that applies. A background job takes care of updating the rules for a specific file. The rules are retrieved from the [Codiga API](/docs/api).
 
-There are two cases to fetch the rules:
+The list of rulesets being used are stored in the `.codiga` file. If the file is absent, no analysis is being done.
 
-1. There is a `.codiga` file present in the repository
-2. No `.codiga` file is present in the repository
-
-### `.codiga` file is present
-
-To find the `.codiga` file, we walk the project directory backwards.
-
-Imagine we have the following file hierarchy
-
-- `module1`
-  - `.codiga`
-  - `subdir1`
-    - `myfile.py`
-- `module2`
-  - `subdir2`
-    - `myfile2.py`
-- `.codiga`
-
-If we edit the file `module1/subdir1/myfile.py`, the file `module1/.codiga` will be used to get the rules.
-
-If we edit the file `module2/subdir2/myfile2.py`, the file `.codiga` will be used to get the rules.
-
-#### `.codiga` file structure
+### `.codiga` file structure
 
 The `.codiga` file is a YAML file defined as is:
 
 ```yaml
- - rulesets
-   - my-python-ruleset
-   - my-other-ruleset
-     - rule1
-       - enabled: false
-
+- rulesets:
+    - my-python-ruleset
+    - my-other-ruleset
 ```
 
 The `rulesets` elements list all the rulesets being used for the IDE.
 
-Rules in the ruleset can be disabled by specifying `enabled: false` to the rule.
+### Caching strategy
 
-### `.codiga` file is absent
+For each project opened in the IDE, the rules from the rulesets being used are cached.
 
-If the `.codiga` file is absent, the IDE fetches default rules for the language from the Codiga API.
-The background job continues to poll for the presence of the file.
+The caching logic is done like this:
+
+- For each opened project
+  - Check if a `.codiga` file exists. If yes, read the YAML file and extract the names of the rulesets
+  - Get the latest timestamp update for these rulesets using the `ruleSetsLastUpdatedTimestamp` query
+  - Compare the latest timestamp with the latest timestamp cached
+    - if the timestamp are the same, do nothing
+    - if the timestamp is different, reload all the rules and cache them for this project
+
+When a project is closed, remove the rules from the cache.
+
+### Calling Rosie with cached rules
+
+When calling Rosie:
+
+- Get the rules from the cache for this project
+- Get the language of the file being edited
+- Filter the rules for this language
+- Make a request to Rosie
+
+### GraphQL requests to get rulesets and their rules
+
+#### Get rules content
+
+We just pass the names of the rulesets to get as parameters. The `fingerprint` argument
+is a unique string generated when the plugin is installed.
+
+```graphql
+ruleSetsForClient(names: ["ruleset1", "ruleset2"], fingerprint: <my-fingerprint>) {
+  id
+  name
+  rules(howmany: 10000, skip: 0) {
+    id
+    name
+    content
+    ruleType
+    language
+    pattern
+    elementChecked
+  }
+}
+```
+
+#### Get last update timestamp
+
+This query is used to get the latest update timestamp for all the rulesets. This timestamp indicates
+the time of the latest change for a ruleset. It is used to detect if any ruleset has been changed and
+if we need to reload the rulesets.
+
+We pass the list of rulesets as parameters. The `fingerprint` argument
+is a unique string generated when the plugin is installed.
+
+```graphql
+ruleSetsLastUpdatedTimestamp(names: ["ruleset1", "ruleset2"], fingerprint: <my-fingerprint>)
+```
 
 ### Debugging
 
@@ -234,3 +261,7 @@ In the IDE, we should keep the following preferences
 
 - **API Token**: the API token must be stored and secured. Some IDE provide a way to securely store a password/api token. If available, such services must be used.
 - **Enabled/disabled**: we should provide a way to enable/disable the analysis
+
+## IDE Implementation
+
+- [VS Code](https://github.com/codiga/vscode-plugin)
