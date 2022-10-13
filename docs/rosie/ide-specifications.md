@@ -162,7 +162,7 @@ For each project opened in the IDE, the rules from the rulesets being used are c
 
 The caching logic is done like this:
 
-- For each opened project
+- For each opened project, every 10 seconds
   - Check if a `.codiga` file exists. If yes, read the YAML file and extract the names of the rulesets
   - Get the latest timestamp update for these rulesets using the `ruleSetsLastUpdatedTimestamp` query
   - Compare the latest timestamp with the latest timestamp cached
