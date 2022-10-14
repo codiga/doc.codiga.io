@@ -149,9 +149,9 @@ The list of rulesets being used are stored in the `.codiga` file. If the file is
 The `.codiga` file is a YAML file defined as is:
 
 ```yaml
-- rulesets:
-    - my-python-ruleset
-    - my-other-ruleset
+rulesets:
+  - my-python-ruleset
+  - my-other-ruleset
 ```
 
 The `rulesets` elements list all the rulesets being used for the IDE.
