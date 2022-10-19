@@ -166,8 +166,8 @@ The caching logic is done like this:
   - Check if a `codiga.yml` file exists. If yes, read the YAML file and extract the names of the rulesets
   - Get the latest timestamp update for these rulesets using the `ruleSetsLastUpdatedTimestamp` query
   - Compare the latest timestamp with the latest timestamp cached
-    - if the timestamp are the same, do nothing
-    - if the timestamp is different, reload all the rules and cache them for this project
+    - if the timestamp are the same **AND** the `codiga.yml` file content did not change, do nothing
+    - if the timestamp is different, reload all the rules and cache them for this project. Save the timestamp and the file content to compare for the next iteration.
 
 When a project is closed, remove the rules from the cache.
 
