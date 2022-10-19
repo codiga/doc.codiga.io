@@ -20,7 +20,13 @@
     "Codiga API": ["api", "api/api-coding-assistant", "api/api-code-analysis"]
   },
   "custom_rules": {
-    "Custom Rules": ["rosie/rosie-introduction", "rosie/ide-specification"]
+    "Rosie": ["rosie/rosie-introduction"],
+    "IDE Specifications": ["rosie/ide-specification"],
+    "Write a Rule": [
+      "rosie/rosie-write-rule",
+      "rosie/rosie-pattern",
+      "rosie/python/rosie-python-ast"
+    ]
   },
   "getting_started": {
     "Getting Started": [

@@ -1,7 +1,7 @@
 ---
 id: rosie-introduction
-title: Custom Rules
-sidebar_label: Custom Rule
+title: Codiga Static Code Analyzer - Rosie
+sidebar_label: Introduction to Rosie
 description: How to add custom rules with Codiga and Rosie
 keywords:
   - sast
