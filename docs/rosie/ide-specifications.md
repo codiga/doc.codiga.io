@@ -142,11 +142,11 @@ should detect that the user stopped writing code for at least 500ms and then tri
 
 For each opened file in the editor, we should cache the list of rules that applies. A background job takes care of updating the rules for a specific file. The rules are retrieved from the [Codiga API](/docs/api).
 
-The list of rulesets being used are stored in the `.codiga` file. If the file is absent, no analysis is being done.
+The list of rulesets being used are stored in the `codiga.yml` file. If the file is absent, no analysis is being done.
 
-### `.codiga` file structure
+### `codiga.yml` file structure
 
-The `.codiga` file is a YAML file defined as is:
+The `codiga.yml` file is a YAML file defined as is:
 
 ```yaml
 rulesets:
@@ -163,7 +163,7 @@ For each project opened in the IDE, the rules from the rulesets being used are c
 The caching logic is done like this:
 
 - For each opened project, every 10 seconds
-  - Check if a `.codiga` file exists. If yes, read the YAML file and extract the names of the rulesets
+  - Check if a `codiga.yml` file exists. If yes, read the YAML file and extract the names of the rulesets
   - Get the latest timestamp update for these rulesets using the `ruleSetsLastUpdatedTimestamp` query
   - Compare the latest timestamp with the latest timestamp cached
     - if the timestamp are the same, do nothing
