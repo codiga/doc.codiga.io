@@ -13,7 +13,20 @@ keywords:
 
 ## Write Customer Analysis Rules
 
-You can write custom code analysis rules easily for Python. You can
+All rules have the following characteristics:
+
+- The rule code must be written in JavaScript
+- A rule must be in a ruleset
+
+There are two kinds of rules:
+
+- **AST**: analyze the program AST to report errors
+- **Pattern**: use regular expressions to detect potential issues
+
+## Debugging your rules
+
+You can write `console.log()` statement to debug and troubleshoot your rules.
+The output is shown in the rule writer.
 
 ## Playground
 
@@ -27,3 +40,39 @@ code analysis rules!
 The [Codiga Hub](https://app.codiga.io/hub/rulesets) hosts hundreds of custom
 analysis rules you can reuse. Browse rules on the hub, import them in the
 playground and create new analysis rules for your team!
+
+## Using the rules
+
+### IDE
+
+**Step 1**: Create a `codiga.yml` file at the root of your project with the following content:
+
+```yaml
+rulesets:
+  - <ruleset-identifier>
+  - <ruleset-identifier>
+```
+
+**Step 2**: Download the IDE extensions/plugin:
+
+- [VS Code](https://marketplace.visualstudio.com/items?itemName=codiga.vscode-plugin)
+- [JetBrains](https://plugins.jetbrains.com/plugin/17969)
+- VisualStudio - Coming soon!
+
+Codiga will analyze your code in real-time, report errors and suggest fixes.
+
+### Source code scanning
+
+**Step 1**: Create a `codiga.yml` file at the root of your project with the following content:
+
+```yaml
+rulesets:
+  - <ruleset-identifier>
+  - <ruleset-identifier>
+```
+
+Create a project on Codiga with your code repository. Codiga is available for:
+
+- [GitHub](https://github.com/apps/codiga)
+- [GitLab](https://app.codiga.io)
+- [Bitbucket](https://marketplace.atlassian.com/apps/1222117/codiga?hosting=cloud&tab=overview)

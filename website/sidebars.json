@@ -24,6 +24,7 @@
     "IDE Specifications": ["rosie/ide-specification"],
     "Write a Rule": [
       "rosie/rosie-write-rule",
+      "rosie/rosie-write-rule-programming-interface",
       "rosie/rosie-pattern",
       "rosie/python/rosie-python-ast"
     ]

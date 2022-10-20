@@ -1,0 +1,128 @@
+---
+id: rosie-write-rule-programming-interface
+title: Custom Rules Programming Interface
+sidebar_label: Programming Interface
+description: Write your custom code analysis rules with Codiga
+keywords:
+  - custom rules
+---
+
+## Debugging your rules
+
+You can write `console.log()` statement to debug and troubleshoot your rules.
+The output is shown in the rule writer.
+
+## Reporting an error
+
+### Build an error
+
+:::tip
+
+When building an error, use the `start` and `end` attribute of the AST of Pattern.
+
+:::
+
+To report an error, use the `reportError` function
+
+```javascript
+reportError(startLine, startCol, endLine, endCol, message, severity, category);
+```
+
+With the following arguments:
+
+- `startLine`: the line where the error starts
+- `startCol`: the column where the error starts
+- `endLine`: the line where the error ends
+- `endCol`: the column where the error ends
+- `message`: the error message to show
+- `severity`: one string with one of the following values: `CRITICAL`, `ERROR`, `WARNING`, `INFORMATIONAL`
+- `category`: one string with one of the following values: `ERROR_PRONE`, `CODE_STYLE`, `BEST_PRACTICE`, `SAFETY`, `SECURITY`, `DESIGN`, `DEPLOYMENT`.
+
+### Report the error
+
+To report the error, use the function `addError` as follow:
+
+```javascript
+addError(error);
+```
+
+The following code builds an error and reports it.
+
+```javascript
+// Build the error
+const error = buildError(
+  exception.start.line,
+  exception.start.col,
+  exception.end.line,
+  exception.end.col,
+  "generic exception",
+  "WARNING",
+  "BEST_PRACTICES"
+);
+
+// Add the error
+addError(error);
+```
+
+## Generating a fix
+
+A fix is made of several edits. Edits are **executed sequentially** in the IDE plugins.
+
+:::caution
+
+All edits in a fix are executed sequentially by the IDE plugins. If you edit the same location in the code, make sure that
+all fixes can be applied sequentially.
+
+:::
+
+### Generate an edit
+
+Use the function `buildEdit`. This function has the following signature:
+
+```javascript
+buildEdit(startLine, startCol, endLine, endCol, editType, content);
+```
+
+This function takes the following parameter:
+
+- `startLine`: starting line of the edit
+- `startCol`: starting column of the edit
+- `endLine`: ending line of the edit (`null` if this )
+- `endCol`: ending column of the edit
+- `editType`: can have the value `add`, `remove`, `update`: the type of the action
+- `content`: the new text added or updated. The value is `null` if `editType` is `remove`.
+
+There is an example that builds an edit to update from 1:10 to 1:20 with the content "foobar".
+
+```
+const edit = buildEdit(1, 10, 1, 20, "update", "foobar");
+```
+
+### Helper Functions
+
+- `buildEditUpdate(startLine, startCol, endLine, endCol, content)`: create an edit that updates the code from starLine:startCol to endLine:endCol
+- `buildEditRemove(startLine, startCol, endLine, endCol)`: remove content from startLine:startCol to endLine:endCol
+- `buildEditUpdate(startLine, startCol, endLine, endCol, content)`: update content from startLine:startCol to endLine:endCol with `content`
+
+### Build the fix
+
+The function `buildFix` builds a fix. It takes the description of the fix and a list of edits
+that are applied for this fix.
+
+```javascript
+const fix = buildFix("remove the write flag", [edit]);
+```
+
+### Attach the fix to an error
+
+Use the function `.addFix` to the error.
+
+```javascript
+const errorWithFix = error.addFix(fix);
+```
+
+You can report an error with a fix using the following function:
+
+```javascript
+addError(error.addFix(fix));
+```
