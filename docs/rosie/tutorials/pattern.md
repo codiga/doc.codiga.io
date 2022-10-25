@@ -24,6 +24,15 @@ We are going to write an analysis rule that will catch all occurrences of `asser
 
 This checks works on all Python file except test files (e.g. the ones starting with `test_` or ending with `_test.py`).
 
+To make a rule, we need to go through the following steps:
+
+- Create a rulseset
+- Create a rule
+- Write the rule
+- Add some tests
+
+Each section gives a walkthrough step by step.
+
 ## Step 1: Create a ruleset
 
 :::warning
@@ -327,6 +336,10 @@ You will then see the warning.
 The same error will be triggered in the Codiga Code Analysis and your pull requests as long as the `codiga.yml` file is present.
 
 :::
+
+## Needs some inspiration? Browse the hub!
+
+If you need some inspiration to create rules, explore the [Codiga Hub](https://app.codiga.io/hub/rulesets), explore rulesets and find a code analysis rule you can reuse.
 
 ## Join the Codiga Community!
 
