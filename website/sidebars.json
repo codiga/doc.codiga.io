@@ -21,13 +21,17 @@
   },
   "custom_rules": {
     "Rosie": ["rosie/rosie-introduction"],
-    "IDE Specifications": ["rosie/ide-specification"],
+    "Tutorials": [
+      "rosie/tutorials/analysis-rule-tutorial-pattern",
+      "rosie/tutorials/analysis-rule-tutorial-python-ast"
+    ],
     "Write a Rule": [
       "rosie/rosie-write-rule",
       "rosie/rosie-write-rule-programming-interface",
       "rosie/rosie-pattern",
       "rosie/python/rosie-python-ast"
-    ]
+    ],
+    "Developers": ["rosie/ide-specification"]
   },
   "getting_started": {
     "Getting Started": [

@@ -1,7 +1,7 @@
 ---
 id: rosie-python-ast
 title: AST Rules for Python and Rosie
-sidebar_label: Writing Python AST
+sidebar_label: Writing Python AST Rule
 description: Write rules that manipulate the Python AST
 keywords:
   - sast
