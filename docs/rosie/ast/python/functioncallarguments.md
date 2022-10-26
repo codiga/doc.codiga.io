@@ -11,7 +11,7 @@ keywords:
 
 The `FunctionCallArguments` object matches the arguments in a function call
 
-The `astType` value for this node is `argument`.
+The `astType` value for this node is `arguments`.
 
 ## Code Pattern
 

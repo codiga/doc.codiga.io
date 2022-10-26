@@ -26,8 +26,8 @@ and can check different types of code.
 
 Rosie supports two types of rules:
 
-- **Abstract Syntax Tree (AST)**: parse the AST of the file under analysis and runs rules that report violations and generate fixed based on a code pattern
-- **Pattern**: matche a sequence of code and report violations based on the pattern content
+- **Abstract Syntax Tree (AST)**: parse the AST of the file under analysis and runs rules that report violations and generate fixed based on a code pattern. Learn more about AST rules for [Python](/docs/rosie/python/rosie-python-ast).
+- **Pattern**: matche a sequence of code and report violations based on the pattern content. Learn more about [pattern rules](/docs/rosie/rosie-pattern).
 
 If you want to write a quick rule, use the **pattern** rule type: it works like a regular expression and can already
 provide good support for error detection.
@@ -37,5 +37,5 @@ the **pattern** rule type but catch precisely code elements.
 
 ## Learn More
 
-- Tutorial to create a Pattern Rule
-- Tutorial to create an AST rule.
+- [Tutorial to create a Pattern Rule](/docs/rosie/tutorials/analysis-rule-tutorial-pattern)
+- [Tutorial to create an AST rule](/docs/rosie/tutorials/analysis-rule-tutorial-python-ast)

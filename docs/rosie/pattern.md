@@ -1,6 +1,6 @@
 ---
 id: rosie-pattern
-title: Pattern Rules for Python and Rosie
+title: Pattern Rules
 sidebar_label: Writing Pattern Rules
 description: Write a pattern rule that catch potential bugs in your code
 keywords:

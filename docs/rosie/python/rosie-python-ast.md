@@ -1,6 +1,6 @@
 ---
 id: rosie-python-ast
-title: AST Rules for Python and Rosie
+title: AST Rules for Python
 sidebar_label: Writing Python AST Rule
 description: Write rules that manipulate the Python AST
 keywords:
@@ -29,16 +29,18 @@ Every single node in the AST inherits the [`ASTElement type`](/docs/rosie/ast/co
 The rule code has a `visit` function that is the entrypoint of your rule.
 
 ```javascript
-function visit(nodeOrPattern, filename, code) {
+function visit(node, filename, code) {
   // code
 }
 ```
 
 It has the following parameter:
 
-- the `nodeOrPattern` you rule matches on. The exact type of this argument depends on the element type being checked. All types inherit the `ASTElement` type. As the element checked is set to `FunctionCall`, the `node` for our rule will be a type `FunctionCall`.
-- the `filename` where the code is located (a string)
+- the `node` you rule matches on. The exact type of this argument depends on the element type being checked. All types inherit the `ASTElement` type. As the element checked is set to `FunctionCall`, the `node` for our rule will be a type `FunctionCall`.
+- the `filename` where the code is located (a string). If a user edits the file `foo/bar.py` in VS Code, this is the value that will be passed to the function.
 - the `code` being checked (a string)
+
+### Value of the `node` parameter
 
 The value of the `node` parameter depends on the element type checked:
 
@@ -52,11 +54,14 @@ The value of the `node` parameter depends on the element type checked:
 
 ## Examples of Python AST Rules
 
-The following rules are available publicly and can be used as a starter.
+Browse the [Codiga Hub](https://app.codiga.io/analysis/rulesets) to find interesting rulesets to reuse.
+The following rules are available publicly and can be used as a starter. We list the rules by the element checked type.
 
 ### Function Call
 
 - [Changing Python format string by f-string](https://app.codiga.io/hub/ruleset/python-best-practices/replace-format-string)
+- [Check that requests have a timeout parameter](https://app.codiga.io/hub/ruleset/python-security/requests-timeout)
+- [Avoid `shell=True` when using the `subprocess` module](https://app.codiga.io/hub/ruleset/python-security/subprocess-shell-true)
 
 ### For loop
 
@@ -69,3 +74,7 @@ The following rules are available publicly and can be used as a starter.
 ### Try Block
 
 - [No silent exception](https://app.codiga.io/hub/ruleset/python-best-practices/no-silent-exception)
+
+### Function Definition
+
+- [No empty array as default parameter](https://app.codiga.io/hub/ruleset/python-security/no-empty-array-as-parameter)
