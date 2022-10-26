@@ -31,6 +31,15 @@
       "rosie/rosie-pattern",
       "rosie/python/rosie-python-ast"
     ],
+    "AST Common Objects": [
+      "rosie/ast/common/rosie-ast-common-aststring",
+      "rosie/ast/common/rosie-ast-common-astelement",
+      "rosie/ast/common/rosie-ast-common-position"
+    ],
+    "AST Python Objects": [
+      "rosie/ast/python/rosie-ast-python-functioncall",
+      "rosie/ast/python/rosie-ast-python-functiondefinition"
+    ],
     "Developers": ["rosie/ide-specification"]
   },
   "getting_started": {
