@@ -11,6 +11,8 @@ keywords:
 
 The `FunctionCall` object matches a Python function, module or object call.
 
+The `astType` value for this node is `forstatement`.
+
 ## Code Pattern
 
 This object captures the following code pattern.
@@ -23,7 +25,7 @@ my_function(arg1, arg2)
 
 - `moduleOrObject` (type [`AstString`](/docs/rosie/ast/common/rosie-ast-common-aststring)): the prefix of the function call. If we do a call `foo.bar`, the `moduleOrObject` value is `foo`
 - `functionName` (type [`AstString`](/docs/rosie/ast/common/rosie-ast-common-aststring)): the name of the function
-- `arguments` (type `FunctionCallArguments`): the list of arguments
+- `arguments` (type [`FunctionCallArguments`](/docs/rosie/ast/python/rosie-ast-python-functioncallarguments)): the list of arguments
 
 ## Examples of rules
 

@@ -11,6 +11,8 @@ keywords:
 
 The `Assignment` object matches a Python assignment.
 
+The `astType` value for this node is `assignment`.
+
 ## Code Pattern
 
 This AST element captures the following code.
@@ -22,8 +24,8 @@ my_variable = my_value
 ## Attributes
 
 - `astType`: constant string value (`"assignment"`)
-- `left` (any type)
-- `right` (any type)
+- `left` (any type that inherits [`AstElement`](/docs/rosie/ast/common/rosie-ast-common-astelement))
+- `right` (any type that inherits [`AstElement`](/docs/rosie/ast/common/rosie-ast-common-astelement))
 
 :::info
 
@@ -32,7 +34,7 @@ To know what is the type of `left` or `right`, use the `astType` to distinguish.
 For example, to check if the left node is a string, just use the following code:
 
 ```javascript
-if (node.astType === "string") {
+if (node.left.astType === "string") {
   ....
 }
 ```

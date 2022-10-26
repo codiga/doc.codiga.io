@@ -8,6 +8,10 @@ keywords:
   - static code analysis
 ---
 
+:::info
+If you are starting with Rosie and want to start writing rules, follow the [Pattern Rule Tutorial](/docs/rosie/tutorials/analysis-rule-tutorial-pattern) first.
+:::
+
 ## Write a Pattern Rule
 
 ### The Pattern

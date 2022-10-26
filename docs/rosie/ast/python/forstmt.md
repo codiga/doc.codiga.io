@@ -11,6 +11,8 @@ keywords:
 
 The `ForStatement` object matches a Python function, module or object call.
 
+The `astType` value for this node is `forstatement`.
+
 ## Code Pattern
 
 This AST element captures the following code.
@@ -23,7 +25,7 @@ for v, w in ...:
 
 ## Attributes
 
-- `variables` (array or `PythonExpression`): list of variables in the `for` expression
-- `list` (type `AstString`): the list
-- `statements` (type `AstString`): the code for the statements
-- `else` (type `AstString`): the code of the else statements
+- `variables` (array of [`PythonExpression`](/docs/rosie/ast/python/rosie-ast-python-pythonexpression)): list of variables in the `for` expression
+- `list` (type [`AstString`](/docs/rosie/ast/common/rosie-ast-common-aststring)): the list
+- `statements` (type [`AstString`](/docs/rosie/ast/common/rosie-ast-common-aststring)): the code for the statements
+- `elseStatement` (type `PythonElseStatement`): the code of the else statements

@@ -11,6 +11,8 @@ keywords:
 
 The `Import` object matches a Python import.
 
+The `astType` value for this node is `importstatement`.
+
 ## Code Pattern
 
 This object catches the following code pattern
@@ -19,6 +21,22 @@ This object catches the following code pattern
 import module
 ```
 
+## Usage
+
+```javascript
+const node = ... <import data> ...
+
+
+// detect if the package `foobar` is used
+if(node.packages) {
+    node.packages.forEach(p => {
+      if(p.name && p.name.value && p.name.value === "foobar") {
+          // do something
+      }
+    });
+  }
+```
+
 ## Attributes
 
-- `packages` (array or `ImportStatementPackage`): list of imported packages
+- `packages` (array of `ImportStatementPackage`): list of imported packages

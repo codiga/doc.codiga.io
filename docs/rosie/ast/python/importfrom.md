@@ -11,15 +11,17 @@ keywords:
 
 The `ImportFrom` object matches a Python import.
 
+The `astType` value for this node is `fromstatement`.
+
 ## Code Pattern
 
 This object catches the following code pattern
 
 ```python
-from module import name
+from module import name as foo
 ```
 
 ## Attributes
 
-- `pkg` (type `AstString`): package being imported
-- `elements` (array of `FromElement`): list of elements being imported
+- `pkg` (type [`AstString`](/docs/rosie/ast/common/rosie-ast-common-aststring)): package being imported
+- `elements` (array of [`ImportFromElement`](/docs/rosie/ast/python/rosie-ast-python-importfromelement)): list of elements being imported

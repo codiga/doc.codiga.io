@@ -11,6 +11,8 @@ keywords:
 
 The `IfCondition` object matches a Python function, module or object call.
 
+The `astType` value for this node is `ifstatement`.
+
 ## Code Pattern
 
 This AST element captures the following code.
@@ -27,6 +29,6 @@ else:
 ## Attributes
 
 - `condition` (type `PythonComparison`): comparison in the `if`
-- `statements` (type `AstString`): the statement for the `if` part
+- `statements` (type [`AstString`](/docs/rosie/ast/common/rosie-ast-common-aststring)): the statement for the `if` part
 - `elifStatements` (array of `PythonElifStatement`): all elif statements
-- `elseStatement` (type `AstString`): the code of the else statements
+- `elseStatement` (type [`AstString`](/docs/rosie/ast/common/rosie-ast-common-aststring)): the code of the else statements

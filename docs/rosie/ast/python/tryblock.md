@@ -11,6 +11,8 @@ keywords:
 
 The `TryBlock` object matches a Python function, module or object call.
 
+The `astType` value for this node is `trystatement`.
+
 ## Code Pattern
 
 This AST element captures the following code.

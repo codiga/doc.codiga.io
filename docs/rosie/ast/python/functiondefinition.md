@@ -11,6 +11,8 @@ keywords:
 
 The `FunctionDefinition` object matches a Python function declaration.
 
+The `astType` value for this node is `functiondefinition`.
+
 ## Code Pattern
 
 This object captures the following code block.
@@ -26,7 +28,7 @@ def my_function(arg1 = default_value, arg2 = other_value):
 - `decorators` (list of `PythonDecorator`): list of decorators
 - `name` (type [`AstString`](/docs/rosie/ast/common/rosie-ast-common-aststring)): name of the function
 - `returnType` (type [`AstString`](/docs/rosie/ast/common/rosie-ast-common-aststring)): return type of the function
-- `parameters` (type `FunctionDefinitionParameters): list of parameters for the function
+- `parameters` (type `FunctionDefinitionParameters`): list of parameters for the function
 
 ## Examples of rules
 
