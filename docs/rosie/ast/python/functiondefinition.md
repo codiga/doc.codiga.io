@@ -11,6 +11,15 @@ keywords:
 
 The `FunctionDefinition` object matches a Python function declaration.
 
+## Code Pattern
+
+This object captures the following code block.
+
+```python
+def my_function(arg1 = default_value, arg2 = other_value):
+  ...
+```
+
 ## Attributes
 
 - `isAsync` (type `bool`): is the function async

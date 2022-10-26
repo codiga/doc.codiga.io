@@ -11,6 +11,14 @@ keywords:
 
 The `FunctionCall` object matches a Python function, module or object call.
 
+## Code Pattern
+
+This object captures the following code pattern.
+
+```python
+my_function(arg1, arg2)
+```
+
 ## Attributes
 
 - `moduleOrObject` (type [`AstString`](/docs/rosie/ast/common/rosie-ast-common-aststring)): the prefix of the function call. If we do a call `foo.bar`, the `moduleOrObject` value is `foo`
