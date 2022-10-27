@@ -156,22 +156,22 @@ to any third party vendor.
 
 These are the tools we are using on our platform.
 
-- [Depends](https://github.com/multilang-depends): dependency analysis (C++, Java, Kotlin)
 - [Bandit](https://github.com/PyCQA/bandit): Security Analysis of Python code
 - [Checkov](https://www.checkov.io/): Terraform and Docker
 - [Cppcheck](http://cppcheck.sourceforge.net/): C/C++ analysis
-- [dartanalyzer](https://dart.dev/tools/dartanalyzer): DART analysis
+- [Dartanalyzer](https://dart.dev/tools/dartanalyzer): DART analysis
+- [Detect-Secrets](https://github.com/Yelp/detect-secrets): Secrets detection
 - [Detekt](https://github.com/detekt/detekt): Kotlin analysis
-- [Flawfinder](https://dwheeler.com/flawfinder/): CWE analysis (C/C++)
-- [Flow](https://flow.org/): Javascript dataflow analysis
-- Golint: Go analysis
+- [ESLint](https://eslint.org/): JavaScript and TypeScript
+- [Gosec](https://github.com/securego/gosec): Go analysis focused on security
 - [JSCPD](https://github.com/kucherenko/jscpd): duplicates analysis
 - [Lizard](https://github.com/terryyin/lizard): complexity and length metrics
-- [PHP Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer): PHP Analysis
 - [PHP Mess Detector](https://phpmd.org/): PHP Analysis
+- [PMD](https://pmd.github.io/): Java and APEX
 - [Pylint](https://www.pylint.org/): Python Analysis
 - [Reek](https://github.com/troessner/reek): Ruby Analysis
+- [Revive](https://revive.run/): Go analysis
 - [Scalastyle](http://www.scalastyle.org/): Scala Analysis
+- [Staticcheck](https://staticcheck.io/): Go analysis
 - [Shellcheck](https://www.shellcheck.net/): bash/sh Analysis
-- [Tslint](https://palantir.github.io/tslint/): Typescript
 - [Yamllint](https://github.com/adrienverge/yamllint): YAML analysis
