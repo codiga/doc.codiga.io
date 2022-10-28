@@ -10,30 +10,28 @@ keywords:
   - sast
 ---
 
-Rosie is the Codiga Static Code Analyzer. Rosie works as an API to provide real-time feedback on your code
-within your IDE and also processes your code when you push a new revision on your repository.
-It is integrated with every element of the Codiga code analysis platform.
+Rosie is Codiga's Static Code Analyzer. 
+
+Rosie works as an API to provide real-time feedback on your code within your IDE or when you push a new revision on your repository.
+
+It is integrated with every element of Codiga's code analysis platform.
 
 ## Custom Rules
 
-Rosie provides the ability to write custom rules. You can experiment new rules on the [Codiga Playground](https://app.codiga.io/hub/playground)
-and browse rulesets on the [Codiga Hub](https://app.codiga.io/hub/rulesets).
+Rosie provides the ability to write custom rules. More importantly, you can write your own rules and share them with your team. 
 
-More importantly, you can write your own rules and share them with your team. Custom rules are written in JavaScript
-and can check different types of code.
+Custom rules are written in JavaScript and can check different types of code. You can experiment with creating and testing new rules on the [Codiga Playground](https://app.codiga.io/hub/playground). You can also browse rulesets on the [Codiga Hub](https://app.codiga.io/hub/rulesets).
 
 ## Types of Rules
 
 Rosie supports two types of rules:
 
-- **Abstract Syntax Tree (AST)**: parse the AST of the file under analysis and runs rules that report violations and generate fixed based on a code pattern. Learn more about AST rules for [Python](/docs/rosie/python/rosie-python-ast).
-- **Pattern**: matche a sequence of code and report violations based on the pattern content. Learn more about [pattern rules](/docs/rosie/rosie-pattern).
+- **Abstract Syntax Tree (AST)**: parses the AST of the file under analysis and runs rules that report violations and generate fixed based on a code pattern. Learn more about AST rules for [Python](/docs/rosie/python/rosie-python-ast).
+- **Pattern**: matches a sequence of code and reports violations based on the pattern content. Learn more about [pattern rules](/docs/rosie/rosie-pattern).
 
-If you want to write a quick rule, use the **pattern** rule type: it works like a regular expression and can already
-provide good support for error detection.
+If you want to write a quick rule, use the **pattern** rule type. It works like a regular expression and can provide good support for error detection.
 
-If you want to catch complicated error, use the **AST** rule type. It is more complicated than
-the **pattern** rule type but catch precisely code elements.
+If you want to catch more complicated errors, use the **AST** rule type. It is more complicated than the **pattern** rule type but it can catch precise code elements.
 
 ## Learn More
 
