@@ -20,6 +20,7 @@ Every single AST element in the document inherits the `AstElement` and can acces
 ## Attributes
 
 - `astType` (type string): the type of the element. The value depends in what element you are on.
+- `context` (type [`Context`](/docs/rosie/ast/common/rosie-ast-common-context) and depends on the language): the context of the AST
 - `start` (type [`Position`](/docs/rosie/ast/common/rosie-ast-common-position)): the starting position of the element in the AST
 - `end` (type [`Position`](/docs/rosie/ast/common/rosie-ast-common-position)): the starting position of the element in the AST
 
@@ -29,6 +30,11 @@ At any time when you write a rule, use the `astType` to distinguish between the 
 you are working on.
 
 :::
+
+:::info
+
+The `context` attribute depends on your language. It inherits the [`Context`](/docs/rosie/ast/common/rosie-ast-common-context) object.
+If you are using Python, see [`PythonNodeContext`](/docs/rosie/ast/common/rosie-ast-common-context)
 
 ## Usage
 
@@ -46,5 +52,9 @@ const endCol = astObject.end.col;
 // check if the type of the object is string
 if (astObject.astType === "string") {
   ...
+}
+
+if (astObject.context.currentFunction) {
+  // this AST element is in a function
 }
 ```

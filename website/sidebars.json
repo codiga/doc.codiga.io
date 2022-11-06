@@ -34,7 +34,8 @@
     "AST Common Objects": [
       "rosie/ast/common/rosie-ast-common-aststring",
       "rosie/ast/common/rosie-ast-common-astelement",
-      "rosie/ast/common/rosie-ast-common-position"
+      "rosie/ast/common/rosie-ast-common-position",
+      "rosie/ast/common/rosie-ast-common-context"
     ],
     "AST Python Objects": [
       "rosie/ast/python/rosie-ast-python-assignment",
@@ -50,6 +51,7 @@
       "rosie/ast/python/rosie-ast-python-importfromelement",
       "rosie/ast/python/rosie-ast-python-pythonexpression",
       "rosie/ast/python/rosie-ast-python-tryblock",
+      "rosie/ast/python/rosie-ast-python-node-context",
       "rosie/ast/python/rosie-ast-python-functioncallargument",
       "rosie/ast/python/rosie-ast-python-functioncallarguments"
     ],
