@@ -1,0 +1,85 @@
+---
+id: rosie-troubleshoot-slow-rules
+title: Troubleshoot Slow Rules
+sidebar_label: Fix Slow Rules
+description: How to troubleshoot slow rules
+keywords:
+  - custom rules
+  - slow
+  - code analysis rules
+  - sast
+---
+
+When designing a rule, analysis is usually really fast (few milliseconds).
+However, the execution speed decreases exponentially as the size of the AST increases.
+
+## Impact on Performance
+
+When doing analysis in the IDE, Codiga cancels rules that take too long
+to execute. Your rule should be quick to make sure its being consistently
+applied to all files (small or large).
+
+Codiga imposes a time quota for the rule execution. If a rule takes too long
+to execute, it is automatically cancelled by the Codiga Virtual Machine and
+potential results are discarded.
+
+## Check your rule speed
+
+Codiga has a benchmark that indicates how long a rule should take for a given file size.
+This benchmark is run automatically for you and report the speed of your rule:
+
+- On the [Codiga Playground](https://app.codiga.io/hub/playground), you get feedback
+  on your rule speed each time you click "Run".
+- On the main application, when you run all tests for a rule, the application
+  shows the performance of your rule.
+
+## Fix slow rules
+
+There are two main guidelines to make your rule fast
+
+### Rule #1: return early
+
+A rule targets a specific node or pattern (with a certain name, argument name or value, etc).
+
+Make sure you return early when the node does not qualify for the analysis.
+
+For example, if you have a rule that reports some error for a function call of a function
+called `foo`, you will check the function name and do nothing if the name is not `foo`.
+
+Instead of checking the name of the function at the end like this.
+
+```javascript
+function visit(node, filename) {
+  // a lot of work
+
+  // this rule only applies to a function call for the function named foo
+  if (node && node.functionName && node.functionName.value !== "foo") {
+    return;
+  }
+}
+```
+
+Make sure you filter the function name very early in the rule code like below.
+
+```javascript
+function visit(node, filename) {
+  // this rule only applies to a function call for the function named foo
+  if (node && node.functionName && node.functionName.value !== "foo") {
+    return;
+  }
+
+  // a lot of work
+}
+```
+
+### Rule #2: avoid computing the same data
+
+Make sure you compute values only once. Making the same transformation mutliple
+times increase your execution time significantly. If your rule do the same transformation twice
+and your rule is executed on 1,000 AST nodes, it will do 2,000 operations instead of 1,000 operations.
+
+Make sure you only compute the necessary data and do not repeat the same operations.
+
+## Need Help?
+
+Contact us on the [Codiga Slack](https://join.slack.com/t/codigahq/shared_invite/zt-9hvmfwie-9BUVFwZDwvpIGlkHv2mzYQ) for any questions and insights to optimize your rules.

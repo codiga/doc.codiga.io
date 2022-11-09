@@ -29,7 +29,8 @@
       "rosie/rosie-write-rule",
       "rosie/rosie-write-rule-programming-interface",
       "rosie/rosie-pattern",
-      "rosie/python/rosie-python-ast"
+      "rosie/python/rosie-python-ast",
+      "rosie/rosie-troubleshoot-slow-rules"
     ],
     "AST Common Objects": [
       "rosie/ast/common/rosie-ast-common-aststring",
