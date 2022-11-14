@@ -20,9 +20,8 @@ each of them.
 
 ### Default `.gitignore` file
 
-Codiga processes your `.gitignore` files and automatically
-ignore all files specified in that directory. It does not process
-or parse regular expression, our engine ignores files and directory
+Codiga processes your `.gitignore` files and automatically ignores all files specified in that directory.
+It does not process or parse regular expressions, our engine ignores files and directories
 specified by their full name.
 
 ```

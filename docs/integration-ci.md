@@ -1,6 +1,7 @@
 ---
 id: integration-ci
 title: Codiga - Continuous Integration to check code quality
+sidebar_label: Generic CI/CD
 description: Check your code quality with Codiga and integrate with your CI/CD pipeline. Available for 12+ languages and all code hosting platforms. Free 14 days trial.
 keywords:
   [
@@ -20,9 +21,9 @@ keywords:
 
 ## Triggering new analysis from CI
 
-We support analysis trigger from your continuous integration job. This is very simple
+We support analysis triggers from your continuous integration job. This is very simple
 to put in place and we use a generic method that can be adapted to most continuous integration
-environment such as jenkins or travis-ci.
+environments such as jenkins or travis-ci.
 
 ## Installing the CI tools
 
@@ -39,17 +40,13 @@ $ pip install codiga
 
 ### Setting your API keys
 
-In order to use the CI tool, you need to set up one environment variable that
-identifies you are as user: `CODIGA_API_TOKEN`.
+To use the CI tool, you need to set up one environment variable that
+identifies you as a user: `CODIGA_API_TOKEN``.
 
 You can get these keys from the web interface, at [this link](https://app.codiga.io/api-tokens).
 
-**Important Note**: these API keys identify you as a user and not as a project.
+**Important Note**: API keys identify you as a user and not as a project.
 Actions you can perform are limited by your user permissions.
-
-**Deprecation**: early versions of codiga uses API key per-project. These keys are
-no longer working and the REST API that was using them is deprecated in favor of our new
-[GraphQL API](/docs/api).
 
 ### Trigger an Analysis
 
@@ -60,7 +57,7 @@ If you pass the `-w` flag to the `codiga-analyze` binary, the program will produ
 the results of the analysis, with the number of violations, duplicates as well
 as the number of violations per language.
 
-If you are working with a large project that takes time to analyze, you might
+If you are working on a large project that takes time to analyze, you might
 need to increase the timeout to get the analysis results using the `-t` flag.
 This flag defines the value of the timeout (in seconds) before getting the analysis results.
 
@@ -95,7 +92,7 @@ codiga-compare -t 1200 -w -p "MY-AWESOME-PROJECT" --url https://path/to/other/re
 ```
 
 This will then start a comparison of `MY-AWESOME-PROJECT` on Codiga
-with the code on the repository `https://path/to/other/repository.git` on the `development`branch.
+with the code on the repository `https://path/to/other/repository.git` on the `development` branch.
 To checkout the target repository, the Github credentials of the authenticated user are used.
 
 ## Integration with GitLab Continuous Integration
@@ -109,4 +106,4 @@ The project is available on GitLab: [https://gitlab.com/jhctechnology/code-quali
 ## More information and contributing
 
 For more information about the tool used for continuous integration, you can look
-at the related [github project](https://github.com/codiga/clitool).
+at the related [GitHub project](https://github.com/codiga/clitool).

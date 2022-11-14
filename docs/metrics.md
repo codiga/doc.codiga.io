@@ -48,11 +48,10 @@ Violations with the highest priorities should be the one to be prioritized over 
 
 ## Duplicates
 
-Code should not be duplicated; developers should refactor duplicated code
-into function. When writing code, developers should follow the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
+Code should not be duplicated; developers should refactor duplicated code into a function. When writing code, developers should follow the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
 (Do not Repeat Yourself) principle.
 
-Codiga detects code duplicates automatically. Codiga considers a block of code is a duplicate if they share more than 10 similar lines of code. This value can be tuned in the project preferences.
+Codiga detects code duplicates automatically. Codiga considers a block of code is a duplicate if they share more than 10 similar lines of code. This value can be tuned into the project preferences.
 
 ## Complex Functions
 

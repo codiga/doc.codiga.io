@@ -1,6 +1,7 @@
 ---
 id: integration-circle-ci
 title: Codiga - CircleCI Integration for continuous monitoring of Code Quality
+sidebar_label: CircleCI
 description: Check your code quality with Codiga and CircleCI for 12+ languages and all code hosting platforms. Free 14 days trial.
 keywords:
   [
@@ -41,14 +42,13 @@ set the values retrieved from your [api-tokens](https://frontend.codiga.com/api-
 ## Editing your CircleCI configuration
 
 The next step is to edit your CircleCI configuration typically
-in `.circleci/config.yml` at the root of your repository)
-in order to add commands to install and invoke
-`codiga-check-quality` that checks the quality of your code.
+in `.circleci/config.yml` at the root of your repository) to add commands to install and invoke
+`codiga-check-quality` which checks the quality of your code.
 
 In this file, what is important is to invoke the following step:
 
-1. Instal the Codiga tools using `pip`. To install the tool, you need to use `pip install codiga`
-2. Invoking the tool `codiga-check-quality` let's you set the requirements for your code quality gate.
+1. Install the Codiga tools using `pip`. To install the tool, you need to use `pip install codiga`
+2. Invoking the tool `codiga-check-quality` lets you set the requirements for your code quality gate.
 
 In the vast majority of cases, all you need is to add the following step in your configuration:
 
@@ -60,7 +60,7 @@ In the vast majority of cases, all you need is to add the following step in your
       codiga-check-quality --project "${CODIGA_PROJECT_NAME}" --min-quality-score 30  --sha "${CIRCLE_SHA1}" --max-timeout-sec 60
 ```
 
-There is an example a full configuration for CircleCI that installs the tool
+There is an example of a full configuration for CircleCI that installs the tool
 and check that the quality score of the project for the current commit is higher than 75.
 
 ```yaml
@@ -97,8 +97,8 @@ Important notes:
 ## Results
 
 Once your file is committed, you can see the execution of the tool directly
-in the CircleCI execution, as shown below. When the tool fails, it will
-also indicates what metrics does not meet the quality gate requirements.
+in the CircleCI execution, as shown below. When the tool fails, it will also indicate what
+metrics do not meet the quality gate requirements.
 
 ![CircleCI results](/img/circleci-results.png)
 

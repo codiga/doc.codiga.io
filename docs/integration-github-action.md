@@ -1,6 +1,7 @@
 ---
 id: integration-github-action
 title: Codiga - GitHub Action for continous monitoring of your Code Quality
+sidebar_label: GitHub Action
 description: Check your code quality with Codiga and GitHub Actions for 12+ languages and all code hosting platforms. Free 14 days trial.
 keywords:
   [

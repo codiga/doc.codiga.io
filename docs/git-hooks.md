@@ -1,6 +1,7 @@
 ---
 id: git-hooks
 title: Codiga - Using Git Hooks to Check your Code before pushing
+sidebar_label: Git Hooks
 description: Automatically trigger a code analysis using Git Hooks and ensure that your code meets your code quality criteria.
 keywords:
   - code analysis
@@ -18,23 +19,32 @@ Git hooks are scripts you execute before an action is performed. It can be
 some checks on the commit being pushed, either on the commit title, message
 or the code itself.
 
-## Why using hooks with Codiga?
+:::info
+
+The Git hook script uses the Codiga static analyzer. Your project **MUST** have
+a `codiga.yml` file at its root. Make sure you added a `codiga.yml` with the
+list of rules to check for your project. You can get the list of rules on the
+[Codiga Hub](https://app.codiga.io/hub/rulesets).1
+
+:::
+
+## Why use hooks with Codiga?
 
 Using hooks with Codiga, you can check your code before pushing it.
 You invoke Codiga to check your code on what has been modified.
 
-It shows you all errors before you push your code and send it for review.
-That way, no error or warnings are triggered by Codiga during
+It shows you all errors before you push your code and sends it for review.
+That way, no errors or warnings are triggered by Codiga during
 the Code Review since you checked everything before pushing the code!
-In other words, it helps you doing faster code reviews.
+In other words, it helps you do faster code reviews.
 
 ## Setup
 
-### Install citool
+### Install Codiga `clitool` tool
 
-The first step is to install our `codiga-pre-hook-check` tool
-that is distributed in the `codiga` Python package. To install it,
-just run the following command:
+The first step is to install our `codiga-git-hook` tool
+that is distributed in the [`codiga` Python package](https://pypi.org/project/codiga/).
+To install it, run the following command:
 
 ```bash
 pip install codiga
@@ -42,11 +52,31 @@ pip install codiga
 
 ### Environment variables
 
-In order to use the tool, you need to define the following variables:
+To use the tool, you need to define the following variables:
 
 - `CODIGA_API_TOKEN`: your API token
 
 These API keys are available in [your API tokens](https://app.codiga.io/api-tokens).
+
+To make this change persistent, you need to add the variable to your `.bashrc` or `.zshrc`.
+
+For zsh users (common for Mac OS X):
+
+```bash
+echo 'CODIGA_API_TOKEN="<CODIGA-TOKEN-VALUE>"' >> $HOME/.zshrc
+```
+
+For bash users (common the Linux):
+
+```bash
+echo 'CODIGA_API_TOKEN="<CODIGA-TOKEN-VALUE>"' >> $HOME/.bashrc
+```
+
+:::warning
+
+Make sure either `.bashrc` or `.zshrc` are not readable by other users.
+
+:::
 
 ### Configure your Git hooks
 
@@ -56,11 +86,9 @@ and check for violations at each push.
 Create the `.git/hooks/pre-push` in your Git repository and make sure
 to make it executable (`chmod a+x .git/hooks/pre-push`).
 
-The tool is invoked with the local and remote SHA. It also needs the name
-of the corresponding project on Codiga (the argument `<project-name>`).
+The tool is invoked with the local and remote SHA.
 
-Replace `<project-name>` with the name of your project on Codiga so that
-it will filter violations according to your project configuration.
+There is how you invoke the tool.
 
 ```bash
 #!/bin/sh
@@ -72,29 +100,11 @@ z40=0000000000000000000000000000000000000000
 
 while read local_ref local_sha remote_ref remote_sha
 do
-  codiga-pre-hook-check --project-name "<project-name>" --remote-sha $remote_sha --local-sha $local_sha
-  if [ "$?" -ne "0" ]; then
-     echo "Codiga found errors"
-     exit 1
-  fi
+  codiga-git-hook --remote-sha $remote_sha --local-sha $local_sha
 done
 
 exit 0
 ```
-
-### Additional options
-
-You can use some additional options with `codiga-pre-hook-check` to filter
-some violations or categories.
-
-- `--exclude-categories`: exclude categories of violations. Separate multiple categories
-  using a comma. For example `--exclude-categories=Performance,Code_Style,Design` will
-  reports all issues in the code being pushed but the one that are classified
-  under the performance, code style or design categories.
-- `--exclude-severities`: exclude categories of severities. Separate severities
-  are specified using a comma. Severities are specified by number, 4 being the lowest
-  and 1 the highest severity. The option `--exclude-severities=3,4` reports
-  all violations but the one with the severity 3 and 4.
 
 ## Important notes
 
@@ -104,5 +114,10 @@ on Codiga servers to avoid any load on your local machine.
 
 ## Bug reports
 
-If you have any issue with the `pre-push` script, please open
+If you have any issues with the `pre-push` script, please open
 an issue on our [GitHub project](https://github.com/codiga/clitool/issues).
+
+## Support
+
+- **GitHub project**: you can report bugs on the [GitHub project](https://github.com/codiga/clitool/issues)
+- **Slack**: You can also get support directly on our [Slack channel](https://join.slack.com/t/codigahq/shared_invite/zt-9hvmfwie-9BUVFwZDwvpIGlkHv2mzYQ).

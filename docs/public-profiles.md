@@ -44,7 +44,7 @@ and `username` is the identifier of the user on this platform.
 
 The static content is a static HTML version that is great for indexing
 with a search engine. The dynamic version is an implementation of the
-public profile on our frontend and is less SEO friendly.
+public profile on our main app and is less SEO friendly.
 
 ## What do all these numbers mean?
 

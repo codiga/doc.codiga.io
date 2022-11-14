@@ -1,6 +1,7 @@
 ---
 id: integration-bitbucket
 title: Codiga - Bitbucket Integration for Automated Code Reviews
+sidebar_label: Bitbucket
 description: Automated Code Reviews and Code Analysis on Bitbucket for 12+ languages. Install in one click. Free 14 days trial.
 tags:
   - bitbucket
@@ -69,12 +70,12 @@ add the project, as shown below.
 
 **Note**: if the project belongs to a group or team in Bitbucket, Codiga will automatically
 create a group on Codiga. Each Bitbucket user will have access to the project
-on Codiga once logged with their Bitbucket account.
+on Codiga once logged in with their Bitbucket account.
 
 ## Limits
 
-The same limits apply for Bitbucket accounts as for regular accounts.
-See our [pricing page](https://codiga.io/pricing/) for limits on each account type.
+The same limits apply to Bitbucket accounts as to regular accounts.
+See our [pricing page](https://www.codiga.io/pricing/) for limits on each account type.
 
 ## Features
 
@@ -85,35 +86,35 @@ all the data as any other account.
 
 ### Integration of Codiga metrics within the Bitbucket UI
 
-Codiga metrics are directly integrated within the Bitbucket UI and can be view at two places:
+Codiga metrics are directly integrated within the Bitbucket UI and can be viewed at two places:
 
 1.  On the main page of the repository, where the code quality score is shown (first picture below)
 2.  On a dedicated page where key metrics are shown (second picture below)
 
 This brings the ability to quickly see what are the metrics available when you navigate on Bitbucket.
-The main interface of Codiga is available on our [frontend](https://app.codiga.io)
+The main interface of Codiga is available on our [main app](https://app.codiga.io)
 with more details and fine-grained data on code quality and technical debt.
 
-![Metrics overview on project landing](/img/bitbucket-overview.png)
+![Metrics overview on the project landing](/img/bitbucket-overview.png)
 
 ![Dashboard integrated within Bitbucket UI](/img/bitbucket-metrics.png)
 
 ### Automated Code Review
 
 Codiga automatically processes Pull Requests on Bitbucket, analyzes code change
-and annotates the code according to violations, duplicates, complex and unreadable code.
+and annotates the code according to violations, duplicates, and complex and unreadable code.
 
 This functionality is similar to the one offered by our [GitHub application](/docs/integration-github).
 
-The comment in pull requests are being issued with the identity
+The comment in pull requests is being issued with the identity
 of the user that installed the Bitbucket App. Unfortunately,
 this is due to a [limitation from Bitbucket](https://jira.atlassian.com/browse/BCLOUD-11739). Once this limitation is being removed, we will post comments
 under the name of our application.
 
 ## Support for user
 
-In order to use Codiga with your Bitbucket account, you need to install our Bitbucket application.
-The Codiga application enables features such as integration of Codiga metrics in the
+To use Codiga with your Bitbucket account, you need to install our Bitbucket application.
+The Codiga application enables features such as the integration of Codiga metrics in the
 repository view as well as automated code reviews.
 
 ## Support for groups
@@ -147,7 +148,6 @@ to get more information from our sales team.
 
 ## Unsupported features
 
-- Upgrade: account upgrade to gold or silver are not handled automatically at this time.
 - Mercurial repositories: we only support Git repositories at this time.
 
 ## Data protection

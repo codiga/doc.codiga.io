@@ -15,16 +15,16 @@ keywords:
 ---
 
 Codiga detects and analyzes your software dependencies. It reports
-what dependency should be updated by keeping an history of all dependencies
+what dependency should be updated by keeping a history of all dependencies
 available online.
 
 ## Why should you specify a dependency version
 
 Some languages or package managers do not require to specify a version.
-Codiga recommends to specify a version number, which avoids headaches
+Codiga recommends specifying a version number, which avoids headaches
 in the future. In particular, when not specifying a version, you do not
 have any guarantee on what version will be used. When installing your software,
-you might pull a new version that break your code.
+you might pull a new version that breaks your code.
 
 For more details, we recommend you have a look at this
 [Stackoverflow post](https://stackoverflow.com/questions/55052434/does-python-requirements-file-have-to-specify-version)
@@ -32,7 +32,7 @@ about this topic.
 
 ## How do you consider a version as "old"?
 
-Current thresholds are configured as follow:
+Current thresholds are configured as follows:
 
 - The analysis engine considers a warning if there are five (5) new versions
   of a library.
