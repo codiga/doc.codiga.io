@@ -9,6 +9,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import React from "react";
+import DocusaurusLink from "@docusaurus/Link";
 
 // @ts-ignore
 import CodeAnalysisImage from "@site/static/img/landing/code_analysis.png";
@@ -37,17 +38,22 @@ function DescriptionCards() {
           _dark={{ bg: "base.dark" }}
         >
           <Image
-            src={CodeAnalysisImage}
-            alt="Codiga code analysis annotation demo"
+            src={CustomRulesImage}
+            alt="Codiga custom rule test case demo"
           />
           <Flex flexDir="column" gridGap={4} flexGrow={2}>
-            <Heading size="lg">Static Code Analysis</Heading>
+            <Heading size="lg">Custom Rules</Heading>
             <Text fontSize="sm" lineHeight="26px" flexGrow={2}>
-              Codiga works in your CI/CD pipeline and reports error at every
-              code changes in seconds. Codiga static code analysis works on VS
-              Code, JetBrains, VisualStudio, GitHub, Gitlab and Bitbucket.
+              Creating a code analysis rule from your browser or favorite IDE
+              takes less than 5 minutes. New rules are instantly usable in your
+              IDE or CI/CD pipeline.
             </Text>
-            <Link size="md" variant="primary">
+            <Link
+              as={DocusaurusLink}
+              size="md"
+              variant="primary"
+              href="docs/rosie/rosie-introduction/"
+            >
               Learn More
             </Link>
           </Flex>
@@ -62,17 +68,22 @@ function DescriptionCards() {
           _dark={{ bg: "base.dark" }}
         >
           <Image
-            src={CustomRulesImage}
-            alt="Codiga custom rule test case demo"
+            src={CodeAnalysisImage}
+            alt="Codiga code analysis annotation demo"
           />
           <Flex flexDir="column" gridGap={4} flexGrow={2}>
-            <Heading size="lg">Custom Rules</Heading>
+            <Heading size="lg">Static Code Analysis</Heading>
             <Text fontSize="sm" lineHeight="26px" flexGrow={2}>
-              Creating a code analysis rule from your browser or favorite IDE
-              takes less than 5 minutes. New rules are instantly usable in your
-              IDE or CI/CD pipeline.
+              Codiga works in your CI/CD pipeline and reports error at every
+              code changes in seconds. Codiga static code analysis works on VS
+              Code, JetBrains, VisualStudio, GitHub, Gitlab and Bitbucket.
             </Text>
-            <Link size="md" variant="primary">
+            <Link
+              as={DocusaurusLink}
+              size="md"
+              variant="primary"
+              href="docs/getting-started/"
+            >
               Learn More
             </Link>
           </Flex>
@@ -97,7 +108,12 @@ function DescriptionCards() {
               developers. Create and find code snippets from VS Code, JetBrains,
               Visual Studio and Chrome.
             </Text>
-            <Link size="md" variant="primary">
+            <Link
+              as={DocusaurusLink}
+              size="md"
+              variant="primary"
+              href="docs/coding-assistant/coding-assistant-getting-started/"
+            >
               Learn More
             </Link>
           </Flex>

@@ -1,4 +1,5 @@
 import { Box, Container, Heading, Link, Text, VStack } from "@chakra-ui/react";
+import DocusaurusLink from "@docusaurus/Link";
 import React from "react";
 import Swarm from "./Swarm";
 
@@ -23,7 +24,12 @@ const Hero = () => {
           related to Codiga documentation.
         </Text>
 
-        <Link size="md" variant="primary">
+        <Link
+          as={DocusaurusLink}
+          size="md"
+          variant="primary"
+          href="docs/rosie/rosie-introduction/"
+        >
           Get Started
         </Link>
       </Container>

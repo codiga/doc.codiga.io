@@ -67,6 +67,11 @@ module.exports = {
         },
         items: [
           {
+            to: "docs/category/rosie/",
+            label: "Custom Rules",
+            position: "left",
+          },
+          {
             to: "docs/category/coding-assistant/",
             label: "Coding Assistant",
             position: "left",
@@ -74,11 +79,6 @@ module.exports = {
           {
             to: "docs/category/code-analysis/",
             label: "Code Analysis",
-            position: "left",
-          },
-          {
-            to: "docs/category/rosie/",
-            label: "Custom Rules",
             position: "left",
           },
           {
