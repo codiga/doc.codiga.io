@@ -1,8 +1,3 @@
-<!-- markdownlint-disable-next-line -->
-<h3 align="center">
-
-</h3>
-
 <h1 align="center">
   <img src="https://github.com/codiga/.github/blob/main/assets/banner_hero.png" width="80%" />
 </h1>
