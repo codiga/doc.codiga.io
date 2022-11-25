@@ -104,15 +104,15 @@ You can get help by joining our [Slack Community](https://join.slack.com/t/codig
 Codiga provides a playground to experiment our statistic analyzer and write your own rules. Use the playground to test your own rules, experiment by starting from other people rules and let your imagination write the best code analysis rules.
 </Text>
 
-  <Link isExternal size="sm" variant="primary" href="https://app.codiga.io/hub/playground/">
+  <DocLink isExternal size="sm" variant="primary" href="https://app.codiga.io/hub/playground/">
     Learn More
-  </Link>
+  </DocLink>
   </Card>
   <Card>
     <Heading size="md" m={0}>Explore the Hub</Heading>
     <Text fontSize="sm" m={0} lineHeight="tall" flexGrow={2}>
     The Codiga Hub hiosted hundreds of custom analysis rules you can reuse. Browse rules on the Hub, import them in the playground and create new analysis rules for your team.
     </Text>
-    <Link isExternal size="sm" variant="primary" href="https://app.codiga.io/hub/">Learn More</Link>
+    <DocLink isExternal size="sm" variant="primary" href="https://app.codiga.io/hub/">Learn More</DocLink>
   </Card>
 </SimpleGrid>
