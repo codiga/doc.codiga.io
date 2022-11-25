@@ -67,22 +67,24 @@ module.exports = {
         },
         items: [
           {
-            to: "docs/category/rosie/",
-            label: "Custom Rules",
-            position: "left",
-          },
-          {
-            to: "docs/category/coding-assistant/",
-            label: "Coding Assistant",
-            position: "left",
-          },
-          {
-            to: "docs/category/code-analysis/",
+            to: "docs/getting-started/",
             label: "Code Analysis",
             position: "left",
           },
+
           {
-            to: "docs/category/codiga-api/",
+            to: "docs/rosie/rosie-introduction/",
+            label: "Custom Rules",
+            position: "left",
+          },
+
+          {
+            to: "docs/coding-assistant/coding-assistant-getting-started/",
+            label: "Code Snippets",
+            position: "left",
+          },
+          {
+            to: "docs/api/",
             label: "API",
             position: "left",
           },

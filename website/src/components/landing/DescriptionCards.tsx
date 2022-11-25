@@ -38,36 +38,6 @@ function DescriptionCards() {
           _dark={{ bg: "base.dark" }}
         >
           <Image
-            src={CustomRulesImage}
-            alt="Codiga custom rule test case demo"
-          />
-          <Flex flexDir="column" gridGap={4} flexGrow={2}>
-            <Heading size="lg">Custom Rules</Heading>
-            <Text fontSize="sm" lineHeight="26px" flexGrow={2}>
-              Creating a code analysis rule from your browser or favorite IDE
-              takes less than 5 minutes. New rules are instantly usable in your
-              IDE or CI/CD pipeline.
-            </Text>
-            <Link
-              as={DocusaurusLink}
-              size="md"
-              variant="primary"
-              href="docs/rosie/rosie-introduction/"
-            >
-              Learn More
-            </Link>
-          </Flex>
-        </Flex>
-        <Flex
-          flexDir="column"
-          p={6}
-          gridGap={6}
-          boxShadow="md"
-          borderRadius="lg"
-          bg="white"
-          _dark={{ bg: "base.dark" }}
-        >
-          <Image
             src={CodeAnalysisImage}
             alt="Codiga code analysis annotation demo"
           />
@@ -83,6 +53,37 @@ function DescriptionCards() {
               size="md"
               variant="primary"
               href="docs/getting-started/"
+            >
+              Learn More
+            </Link>
+          </Flex>
+        </Flex>
+
+        <Flex
+          flexDir="column"
+          p={6}
+          gridGap={6}
+          boxShadow="md"
+          borderRadius="lg"
+          bg="white"
+          _dark={{ bg: "base.dark" }}
+        >
+          <Image
+            src={CustomRulesImage}
+            alt="Codiga custom rule test case demo"
+          />
+          <Flex flexDir="column" gridGap={4} flexGrow={2}>
+            <Heading size="lg">Custom Rules</Heading>
+            <Text fontSize="sm" lineHeight="26px" flexGrow={2}>
+              Creating a code analysis rule from your browser or favorite IDE
+              takes less than 5 minutes. New rules are instantly usable in your
+              IDE or CI/CD pipeline.
+            </Text>
+            <Link
+              as={DocusaurusLink}
+              size="md"
+              variant="primary"
+              href="docs/rosie/rosie-introduction/"
             >
               Learn More
             </Link>
