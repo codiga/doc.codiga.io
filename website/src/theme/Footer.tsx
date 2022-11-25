@@ -294,7 +294,7 @@ export default function Footer() {
             gridGap={2}
           >
             <Image src={SOC2Image} alt="soc-2 icon" boxSize={10} />
-            <Text fontSize="xs" textAlign="center">
+            <Text fontSize="xs" textAlign="center" m={0}>
               We are SOC-2 Compliance Certified
             </Text>
           </Flex>
