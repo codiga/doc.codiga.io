@@ -96,3 +96,23 @@ Our server returns the list of code snippets that matches your criteria.
 ## Getting help
 
 You can get help by joining our [Slack Community](https://join.slack.com/t/codigahq/shared_invite/zt-9hvmfwie-9BUVFwZDwvpIGlkHv2mzYQ)
+
+<SimpleGrid columns={{base: 1, md: 2}} spacing={6}>
+<Card>
+<Heading size="md" m={0}>Playground</Heading>
+<Text fontSize="sm" m={0} lineHeight="tall" flexGrow={2}>
+Codiga provides a playground to experiment our statistic analyzer and write your own rules. Use the playground to test your own rules, experiment by starting from other people rules and let your imagination write the best code analysis rules.
+</Text>
+
+  <DocLink isExternal size="sm" variant="primary" href="https://app.codiga.io/hub/playground/">
+    Learn More
+  </DocLink>
+  </Card>
+  <Card>
+    <Heading size="md" m={0}>Explore the Hub</Heading>
+    <Text fontSize="sm" m={0} lineHeight="tall" flexGrow={2}>
+    The Codiga Hub hiosted hundreds of custom analysis rules you can reuse. Browse rules on the Hub, import them in the playground and create new analysis rules for your team.
+    </Text>
+    <DocLink isExternal size="sm" variant="primary" href="https://app.codiga.io/hub/">Learn More</DocLink>
+  </Card>
+</SimpleGrid>
