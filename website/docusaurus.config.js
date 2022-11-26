@@ -134,6 +134,10 @@ module.exports = {
                 to: "https://plugins.jetbrains.com/plugin/17969-codiga",
               },
               {
+                label: "Visual Studio",
+                to: "https://marketplace.visualstudio.com/items?itemName=codiga.vsextension",
+              },
+              {
                 label: "Chrome",
                 to: "https://chrome.google.com/webstore/detail/codiga/dbkhkhonmelajjempmoadocgneoadjge",
               },
@@ -143,8 +147,8 @@ module.exports = {
             title: "Community",
             items: [
               {
-                label: "Discord",
-                to: "https://discord.com/invite/5b9bGDtvnc",
+                label: "Slack",
+                to: "https://join.slack.com/t/codigahq/shared_invite/zt-9hvmfwie-9BUVFwZDwvpIGlkHv2mzYQ",
               },
               {
                 label: "Twitter",
