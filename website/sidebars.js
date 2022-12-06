@@ -183,6 +183,21 @@ const sidebars = {
     {
       type: "category",
       link: { type: "generated-index" },
+      label: "AST JavaScript Objects",
+      items: [
+        "rosie/ast/javascript/rosie-ast-javascript-assignment",
+        "rosie/ast/javascript/rosie-ast-javascript-classdefinition",
+        "rosie/ast/javascript/rosie-ast-javascript-functioncall",
+        "rosie/ast/javascript/rosie-ast-javascript-functioncallargument",
+        "rosie/ast/javascript/rosie-ast-javascript-functioncallarguments",
+        "rosie/ast/javascript/rosie-ast-javascript-functiondefinition",
+        "rosie/ast/javascript/rosie-ast-javascript-import",
+        "rosie/ast/javascript/rosie-ast-javascript-node-context",
+      ],
+    },
+    {
+      type: "category",
+      link: { type: "generated-index" },
       label: "Developers",
       items: ["rosie/ide-specification"],
     },

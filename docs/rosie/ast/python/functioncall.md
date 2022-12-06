@@ -11,7 +11,7 @@ keywords:
 
 The `FunctionCall` object matches a Python function, module or object call.
 
-The `astType` value for this node is `forstatement`.
+The `astType` value for this node is `functioncall`.
 
 ## Code Pattern
 
