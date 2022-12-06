@@ -172,7 +172,7 @@ module.exports = {
         darkTheme: darkCodeTheme,
       },
       algolia: {
-        appId: "BH4D9OD16A",
+        appId: "Y38E5PBP7U",
         apiKey: "518bce9a6dfb3bbf0f04bac2f129d095",
         indexName: "code-inspector",
         algoliaOptions: {},
