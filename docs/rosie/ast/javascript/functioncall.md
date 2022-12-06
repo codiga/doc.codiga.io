@@ -17,7 +17,7 @@ The `astType` value for this node is `functioncall`.
 
 This object captures the following code pattern.
 
-```javaScript
+```javascript
 myFunction(argument1, argument2);
 ```
 
