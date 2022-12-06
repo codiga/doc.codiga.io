@@ -173,7 +173,7 @@ module.exports = {
       },
       algolia: {
         appId: "Y38E5PBP7U",
-        apiKey: "518bce9a6dfb3bbf0f04bac2f129d095",
+        apiKey: "06e276f6d33da419fbf5af3470cd1027",
         indexName: "code-inspector",
         algoliaOptions: {},
       },
