@@ -121,7 +121,7 @@ const sidebars = {
   custom_rules: [
     {
       type: "category",
-      link: { type: "generated-index" },
+      link: { type: "doc", id: "rosie/rosie-introduction" },
       label: "Rosie",
       items: ["rosie/rosie-introduction"],
     },
@@ -136,7 +136,7 @@ const sidebars = {
     },
     {
       type: "category",
-      link: { type: "generated-index" },
+      link: { type: "doc", id: "rosie/rosie-write-rule" },
       label: "Write a Rule",
       items: [
         "rosie/rosie-write-rule",
@@ -154,12 +154,14 @@ const sidebars = {
         "rosie/ast/common/rosie-ast-common-aststring",
         "rosie/ast/common/rosie-ast-common-astelement",
         "rosie/ast/common/rosie-ast-common-position",
+        "rosie/ast/common/rosie-ast-common-ifstatement",
+        "rosie/ast/common/rosie-ast-common-forstatement",
         "rosie/ast/common/rosie-ast-common-context",
       ],
     },
     {
       type: "category",
-      link: { type: "generated-index" },
+      link: { type: "doc", id: "rosie/ast/python/rosie-ast-python-index" },
       label: "AST Python Objects",
       items: [
         "rosie/ast/python/rosie-ast-python-assignment",
@@ -182,10 +184,15 @@ const sidebars = {
     },
     {
       type: "category",
-      link: { type: "generated-index" },
+      link: {
+        type: "doc",
+        id: "rosie/ast/javascript/rosie-ast-javascript-index",
+      },
       label: "AST JavaScript Objects",
       items: [
         "rosie/ast/javascript/rosie-ast-javascript-assignment",
+        "rosie/ast/javascript/rosie-ast-javascript-htmlelement",
+        "rosie/ast/javascript/rosie-ast-javascript-htmlattribute",
         "rosie/ast/javascript/rosie-ast-javascript-classdefinition",
         "rosie/ast/javascript/rosie-ast-javascript-functioncall",
         "rosie/ast/javascript/rosie-ast-javascript-functioncallargument",

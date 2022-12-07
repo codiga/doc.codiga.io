@@ -1,8 +1,8 @@
 ---
 id: rosie-ast-common-astelement
-title: AstString AST Common Object
+title: AstElement AST Common Object
 sidebar_label: AstElement
-description: The AstString object in the Python AST
+description: The AstElement object in the Python AST
 keywords:
   - rosie
   - ast
