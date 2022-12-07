@@ -1,6 +1,7 @@
 ---
 id: ignore-files
 title: Codiga - Ignore Files and Violations in Code Analysis
+sidebar_label: Ignore Files
 description: Ignore files and violations for your project in Codiga. Configure your Codiga project and ignore directories for all analyses.
 keywords:
   - code analysis

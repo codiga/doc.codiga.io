@@ -1,6 +1,7 @@
 ---
 id: coding-assistant-vscode-spec
 title: Codiga VS Code Plugin Specification
+sidebar_label: VS Code Specifications
 description: Specification for the Coding Assistant's VSCode plugin to document queries, authentication, and recipes management
 keywords:
   [

@@ -1,6 +1,7 @@
 ---
 id: pricing
-title: Codiga Pricing for Automated Code Reviews and Code Analysis
+sidebar_label: Pricing
+title: Codiga Pricing
 description: Automate your Code Reviews and manage your Technical Debt for all public repositories for free. Free 14 days trial.
 keywords:
   [
@@ -20,13 +21,14 @@ keywords:
   ]
 ---
 
-## User types and pricing
+## Pricing
 
-All memberships are consistent across platforms: no matter where you signed up
-you will pay the same price:
+Pricing is detailed on [our website](https://www.codiga.io/pricing/).
 
-- **Silver Plan**: $10/user per month
-- **Gold Plan**: $18/user per month
+- **Free**: public repositories, public rules and snippets
+- **Paid**: private repositories, private rules and private snippets.
+
+Price is $14/month per developer if paid monthly. And $12/month per developer if pays annually.
 
 This is simple, with no hidden fee or discount. We offer an affordable product
 so that all developers can benefit from our tool and develop better code.
@@ -38,5 +40,5 @@ adding more analysis, supporting other version control software or just
 supporting other languages or platforms.
 
 Please
-[contact us](https://codiga.io/contact-us/) and engage with
+[contact us](https://www.codiga.io/contact-us/) and engage with
 our sales representatives to learn more.

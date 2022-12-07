@@ -16,10 +16,13 @@ const sidebars = {
   coding_assistant: [
     {
       type: "category",
-      label: "Coding Assistant",
-      link: { type: "generated-index" },
+      label: "Code Snippets",
+      link: {
+        type: "doc",
+        id: "coding-assistant/coding-assistant-getting-started",
+      },
       items: [
-        "coding-assistant/coding-assistant-getting-started",
+        ,
         "coding-assistant/coding-assistant-recipes-cookbooks",
         "coding-assistant/coding-assistant-recipe-variables",
         "coding-assistant/coding-assistant-recipes-share",
@@ -49,19 +52,13 @@ const sidebars = {
     {
       type: "category",
       label: "Code Analysis",
-      link: { type: "generated-index" },
-      items: [
-        "getting-started",
-        "create-user",
-        "create-group",
-        "create-project",
-        "add-badge",
-      ],
+      link: { type: "doc", id: "getting-started" },
+      items: ["create-user", "create-group", "create-project", "add-badge"],
     },
     {
       type: "category",
       label: "Metrics and Dashboard",
-      link: { type: "generated-index" },
+      link: { type: "doc", id: "metrics" },
       items: [
         "metrics",
         "analysis-results",
@@ -73,9 +70,8 @@ const sidebars = {
     {
       type: "category",
       label: "Integrations",
-      link: { type: "generated-index" },
+      link: { type: "doc", id: "integration-intro" },
       items: [
-        "integration-intro",
         "integration-github",
         "integration-gitlab",
         "integration-bitbucket",
@@ -90,14 +86,8 @@ const sidebars = {
     {
       type: "category",
       label: "Rules",
-      link: { type: "generated-index" },
+      link: { type: "doc", id: "rules/rules" },
       items: ["rules/rules"],
-    },
-    {
-      type: "category",
-      label: "Public Profile",
-      link: { type: "generated-index" },
-      items: ["public-profiles"],
     },
     {
       type: "category",
@@ -108,7 +98,7 @@ const sidebars = {
     {
       type: "category",
       label: "Pricing and Billing",
-      link: { type: "generated-index" },
+      link: { type: "doc", id: "pricing" },
       items: ["pricing", "billing"],
     },
     {

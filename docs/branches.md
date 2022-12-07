@@ -1,6 +1,7 @@
 ---
 id: branches
 title: Codiga Git Branches Configuration
+sidebar_label: Branches
 description: Manage multiple branches on Codiga to analyze your code and automated your Code Reviews on GitHub, GitLab and Bitbucket. Support for 12+ languages, start for free today.
 keywords:
   - cyclomatic complexity

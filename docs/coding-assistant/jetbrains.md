@@ -1,6 +1,7 @@
 ---
 id: coding-assistant-jetbrains
 title: Codiga JetBrains Integration for Smart Code Snippets
+sidebar_label: JetBrains IDE
 description: Import, share and use code snippets within your JetBrains product. Works IntelliJ, Clion, Datagrip, PHP Storm, Rubymine and more.
 keywords:
   [

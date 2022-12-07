@@ -1,5 +1,6 @@
 ---
 id: coding-assistant-recipes-cookbooks
+sidebar_label: Snippets and Cookbooks
 title: Codiga - Snippets and Cookbooks
 description: Coding Assistant to define and use a collection of code snippets for your IDE. Work for 15+ languages.
 ---

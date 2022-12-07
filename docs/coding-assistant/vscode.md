@@ -1,6 +1,7 @@
 ---
 id: coding-assistant-vscode
 title: Codiga VS Code Integration for Smart Code Snippets
+sidebar_label: VS Code
 description: Coding Assistant to write faster code in VS Code and find safe and secure code within seconds. Work for 15+ languages.
 keywords:
   [

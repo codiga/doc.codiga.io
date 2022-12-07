@@ -1,6 +1,7 @@
 ---
 id: coding-assistant-recipes-share
 title: Codiga Code Snippets Sharing with Groups
+sidebar_label: Group Sharing
 description: Now you can share your private code snippets with groups
 ---
 
