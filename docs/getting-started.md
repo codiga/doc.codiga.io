@@ -20,12 +20,15 @@ keywords:
   - CVE
 ---
 
-Codiga is a code analysis platform that helps developers produce better code
+Codiga is the home of the clean, safe and secure code. Codiga helps developers to produce better code
 and address technical debt. The platform provides the following functions:
 
-- **Code Analysis with historical analysis**: analyze each code change and keep analysis history so that you can monitor trends in your codebase.
-- **Technical Debt Analysis**: estimate the financial cost of your technical debt and prioritize its fix.
+- **Static Code Analysis**: report code violations in your IDE in milliseconds. Codiga works in your CI/CD pipeline and reports errors at every code changes in seconds. Codiga static code analysis works on VS Code, JetBrains, VisualStudio, GitHub, Gitlab and Bitbucket.
+  
+- **Secure Code Analysis**: check your code in real-time in your IDE, and at each code changes in your CI/CD pipelines. Codiga implements code analysis rules for all major standards and follows software practices such as OWASP10 and CWE/SANS Top 25.
+  
 - **Automated Code Reviews**: automatically surface code smells, duplicates or complex functions when sending code for review.
+  
 - **Integration with multiple platforms**: Codiga is integrated with GitHub, Gitlab, Bitbucket, Jenkins, Travis-CI and Slack.
 
 Codiga is an open platform and you can develop your own tool on top of its analysis engine.

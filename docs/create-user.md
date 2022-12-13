@@ -23,9 +23,10 @@ keywords:
   - CVE
 ---
 
-## Do you need to register your account?
+## Create an account
 
 Codiga provides several ways to use the service.
-You can authenticate using a third-party authentication service (such as GitHub, Gitlab or Bitbucket).
-If you want to use these third-party services, click on the service
-you want to use [on the frontpage](https://app.codiga.io).
+You can authenticate using a third-party authentication service (such as GitHub, Gitlab, Bitbucket or Google).
+Click on the service you want to use [on the login page](https://app.codiga.io/login).
+
+![Login](/img/login.png)
