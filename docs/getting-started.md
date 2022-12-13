@@ -1,6 +1,6 @@
 ---
 id: getting-started
-title: Coding Analysis Smart Code Review Tool
+title: Codiga Code Analysis Documentation
 description: Code Analysis and Automated Code Reviews for GitHub, GitLab and Bitbucket. Support for 12+ languages, start for free today.
 keywords:
   - aws
@@ -29,7 +29,7 @@ and address technical debt. The platform provides the following functions:
   
 - **Automated Code Reviews**: automatically surface code smells, duplicates or complex functions when sending code for review.
   
-- **Integration with multiple platforms**: Codiga is integrated with GitHub, Gitlab, Bitbucket, Jenkins, Travis-CI and Slack.
+- **Integration with multiple platforms**: Codiga is integrated with [GitHub](./integration-github.md), [Gitlab](./integration-gitlab.md), [Bitbucket](./integration-bitbucket.md), [Slack](./integration-slack.md), [Generic CI/CD](./integration-ci.md), [AWS CodeBuild](./integration-aws-codebuild.md), [CircleCI](./integration-circle-ci.md), [GitHub Action](./integration-github-action.md) and [Git Hooks](./git-hooks.md).
 
 Codiga is an open platform and you can develop your own tool on top of its analysis engine.
 All data is exposed on a GraphQL API that lets you access all analysis data.

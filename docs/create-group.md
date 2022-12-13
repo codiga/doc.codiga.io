@@ -1,6 +1,7 @@
 ---
 id: create-group
 title: Codiga Create Group Documentation
+sidebar_label: Create a Group
 description: Create an group on Codiga to analyze your code and automated your Code Reviews on GitHub, GitLab and Bitbucket. Support for 12+ languages, start for free today.
 keywords:
   - cyclomatic complexity
@@ -23,13 +24,17 @@ keywords:
   - CVE
 ---
 
-**Note**: creating a group is optional. You only need one if you want to share
+:::info
+
+Creating a group is optional. You only need one if you want to share
 your projects with other users. If you are creating a project for yourself,
 you can safely skip this step.
 
+:::
+
 ## What is a group?
 
-A group assembles users together so that they can share projects together.
+A group assembles users together so that they can share projects.
 
 ## Create a group
 
@@ -42,7 +47,11 @@ Click on the code repository provider that you want to connect (GitHub, GitLab o
 
 ### For GitHub
 
-**Note**: GitHub users cannot create groups. For more information, read the [GitHub integration guide](integration-github.md).
+:::info
+
+GitHub users cannot create groups. For more information, read the [GitHub integration guide](integration-github.md).
+
+:::
 
 ![Add groups](/img/create-group-02.png)
 
@@ -51,7 +60,11 @@ Click the _Install App_ button to install the Codiga App in the GitHub account a
 
 If you don't see your group, install the Codiga App on your user account or organization.
 
-**Note**: If you previously installed the Codiga App on a User or Group, remove the app and reinstall it to renew your installation.
+:::info
+
+If you previously installed the Codiga App on a User or Group, remove the app and reinstall it to renew your installation.
+
+:::
 
 
 ### For GitLab

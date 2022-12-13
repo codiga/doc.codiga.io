@@ -24,7 +24,7 @@ or the code itself.
 The Git hook script uses the Codiga static analyzer. Your project **MUST** have
 a `codiga.yml` file at its root. Make sure you added a `codiga.yml` with the
 list of rules to check for your project. You can get the list of rules on the
-[Codiga Hub](https://app.codiga.io/hub/rulesets).1
+[Codiga Hub](https://app.codiga.io/hub/rulesets).
 
 :::
 
