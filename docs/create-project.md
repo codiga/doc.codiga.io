@@ -1,6 +1,7 @@
 ---
 id: create-project
 title: Codiga Create Project Documentation
+sidebar_label: Create a Project
 description: Create an project on Codiga to analyze your code and automated your Code Reviews on GitHub, GitLab and Bitbucket. Support for 12+ languages, start for free today.
 keywords:
   - cyclomatic complexity
@@ -23,49 +24,39 @@ keywords:
   - CVE
 ---
 
-## Creating Projects for GitHub users
+## Create a project
 
-If you are a GitHub user, all projects are being created using
-our GitHub App. In order to add or remove a project, you need
-to specify the projects to be analyzed on the GitHub App configuration.
+### For GitHub
 
-To access to the GitHub app configuration, select _Manage GitHub App_ under
-your _My Profile_ option, as shown below.
+:::info
 
-![Manage GitHub App menu entry](/img/create-project-github.png)
+To create a project, you **Must** create a group on Codiga first.
 
-## Create Projects for regular Gitlab and Bitbucket accounts
+:::
 
-### Step 1: Type and name
+To create a new project, go to the _Code Analysis_ option in the main navigation bar and click the "Create New Project" button.
 
-![Repository Type and Name](/img/create-project1.png)
+![Create project](/img/create-project-01.png)
 
-The first step is to specify the type and name of the project:
+Select GitHub and click the "Create Project" button on the repository that you want to add to your project.
 
-- **Type**: a project can be either an individual or a group project. An individual
-  project means that only you can access the project. On the other hand, a group project can be accessed by all members of the group.
-- **Name**: use an alphanumeric name for your project. This name will be used to distinguish your project.
+:::info
 
-### Step 2: Repository Provider
+Private repositories are only available on paid plans. Please upgrade your subscription to create a group for them.
 
-The second step is to choose the repository provider.
-You can either use a repository from a popular provider (e.g. GitHub, Gitlab or Bitbucket) or specify a custom URL. If you want to use a repository from a provider, you need
-to either login using this provider or the link to your Codiga account with this provider.
-You can link your account going to your user preferences page.
+:::
 
-Note that when using a provider, you will get additional features such as displaying the
-file content on the Analysis view.
 
-![Repository Provider](/img/create-project2.png)
+![Create project](/img/create-project-02.png)
 
-### Step 3: Repository URL
+Click on the "Start Wizard" button to configure your project.
 
-Finally, select the repository you want to use. When using a repository from a provider,
-you have to select the repository from a list. If no repository is available, make sure
-you correctly linked your account with this provider.
+ ![Create project](/img/create-project-03.png)
 
-If you decided to just specify a URL, enter the **clone URL** in the textfield.
+ Select the languages for open-source rules and click the "Codiga rules" button to configure custom rules. You can select rules later for each language in the project preferences tab.
 
-Once you enter the repository URL, the analysis results will be available in just few minutes.
+ ![Create project](/img/create-project-04.png)
 
-![Repository URL](/img/create-project3.png)
+Explore the Codiga Hub to find and use Codiga rules in your project, and create a codiga.yml file adding the rulesets that you want to add, and add it to your repo. Click the "Preferences" buttons at the bottom of the page to continue.
+
+ ![Create project](/img/create-project-05.png)
