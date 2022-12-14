@@ -1,6 +1,7 @@
 ---
 id: technical-debt
 title: Codiga Technical Debt Estimates
+sidebar_label: Technical Debt Estimates
 description: Technical Debt Evaluation of your software project. Works on any code hosting platform and 12+ languages. Free 14 days trial.
 keywords:
   [
