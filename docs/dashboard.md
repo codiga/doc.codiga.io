@@ -1,6 +1,7 @@
 ---
 id: dashboard
 title: Codiga Code Analysis Dashboard
+sidebar_label: Code Analysis Dashboard
 description: Dashboard of your code quality and technical debt for GitHub, GitLab and Bitbucket. Support for 12+ languages, start for free today.
 keywords:
   - cyclomatic complexity
