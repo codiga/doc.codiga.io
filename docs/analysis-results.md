@@ -42,7 +42,7 @@ in the background:
   its siblings.
 - **green**: the directory/file has about the sane number of violations/duplicates/complex/long than its siblings.
 
-![Analysis Results](/img/analysis-results.png)
+![Analysis Results](/img/analysis-results-01.png)
 
 ## File View
 
@@ -51,4 +51,4 @@ When users attempt to check a file, the interface surfaces the list of metrics s
 If the associated repository is on GitHub, GitLab or Bitbucket, the content of the file is
 shown and the location of the metrics is highlighted with the file content, as shown below.
 
-![Analysis Results](/img/analysis-file.png)
+![Analysis Results](/img/analysis-results-02.png)

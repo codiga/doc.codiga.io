@@ -24,21 +24,20 @@ keywords:
   - CVE
 ---
 
-## Why is the Project Dashboard useful?
+## Project dashboard
 
-The dashboard exposes an overview of the latest project metrics (code smells, complexity, duplicates, etc).
-It also shows all historical data so that you can analyze trends in your code base (for example: is the quality of your code base improving or not).
+The project dashboard is an overview of the latest project metrics It also shows all historical data so that you can analyze trends in your code base (for example: is the quality of your code base improving or not).
 
 ## Metrics
 
 The dashboard includes the following metrics:
 
-- **Code smells aggregated by category**: code violations by category (such as code style, security, safety)
-- **Code smells aggregated by severity**: code violations by severity (from critical to minor)
-- **Number of duplicate lines**: duplicated code across the code base and that should be refactored
-- **Complex functions**: functions that are too complex to be easily understood and maintained
-- **Readable functions**: functions that are too long and causes maintainability issues
+- **Quality score**: indicates how healthy your codebase is. The higher the score, the better.
+- **Distribution of violations per category**: distribution of the violations detected using static analysis tools per category. It helps to identify where bugs are prevalent.
+- **Distribution of violation per severity**: Distribution of the violations detected using static analysis tools per severity. A low severity means the violations is serious. Severities can include:
+- **Code distribution**: an overview of the languages used in your project.
+- **Long functions**: indicates functions that have more than 40 lines of code (SLOCS) [Learn more about why long functions should be avoided.](https://dzone.com/articles/rule-30-%E2%80%93-when-method-class-or)
+- **Complex functions**: Functions that have a a high cyclomatic complexity and are more likely to have bugs. [Learn more about cyclomatic complexity.](https://en.wikipedia.org/wiki/Cyclomatic_complexity)
+- **Duplicated lines**: percentage of the code duplicated in the repository [Learn more about why code should not be duplicated.](https://en.wikipedia.org/wiki/Duplicate_code)
 
-![Dashboard - part1](/img/dashboard-part1.png)
-
-![Dashboard - part2](/img/dashboard-part2.png)
+![Dashboard - part1](/img/dashboard-01.png)

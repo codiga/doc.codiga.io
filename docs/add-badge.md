@@ -29,7 +29,7 @@ keywords:
 ## Add Quality Badges
 A badge displays your code quality on a public webpage, such as your GitHub README file. 
 
-Go to Code Analysis, click on your project, then click on the Preferences tab and copy and paste the Badge URL where you want to show this as your quality score. You can also add a badge on your project page to show the code grade (as shown below).
+Go to Code Analysis, click on your project, then click on the Preferences tab, click on General Information and copy and paste the Badge URL where you want to show this as your quality score. You can also add a badge on your project page to show the code grade (as shown below).
 
 ![Projec preferences](/img/project-preferences-01.png)
 

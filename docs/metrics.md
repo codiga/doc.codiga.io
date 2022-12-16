@@ -40,7 +40,7 @@ Codiga classifies code violations into the following categories:
 - **Performance**: code that negatively impacts your performance (for example: inefficient code). High impact on technical debt.
 - **Security**: code that might introduce a buffer overflow or any other security issues. High impact on technical debt.
 - **Safety**: code that might crash. High impact on technical debt.
-- Other unknown.
+- **Other**: unknown.
 
 ### Severity
 
