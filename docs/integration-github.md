@@ -34,7 +34,7 @@ You can install the [GitHub App](https://github.com/apps/codiga) on individual a
 
 Regardless on where you install the app, you need to create a group for the
 related GitHub entity (e.g. if you install the GitHub App on the `johndoe` user,
-you need to create the `johndoe` group on Codiga)/
+you need to create the `johndoe` group on Codiga).
 
 ### Projects Management
 
@@ -60,7 +60,11 @@ That way, code issues are automatically detected before pushing change. Automati
 code reviews also saves significant developers time since it catches small errors
 before human reviewers do it.
 
-**Note**: automated code reviews work only on GitHub App.
+:::info
+
+Automated code reviews work only on GitHub App.
+
+:::
 
 ### Permissions and Security
 

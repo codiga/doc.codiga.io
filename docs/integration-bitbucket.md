@@ -36,7 +36,7 @@ It will prompt you on what account or group you want to install the app on.
 
 [![Bitbucket link](/img/bitbucket-button.png)](https://bitbucket.org/site/addons/authorize?addon_key=code-inspector&redirect_uri=https://api.codiga.io/bitbucket/app)
 
-Once you install the app, you need
+Once you install the app, you need:
 
 ### From your account
 

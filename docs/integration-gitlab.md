@@ -19,16 +19,16 @@ keywords:
   ]
 ---
 
-## Gitlab Accounts
+## GitLab Accounts
 
-You can log into Codiga using your Gitlab credentials.
-Your account is then automatically linked with Gitlab and you
-can easily add Gitlab repositories in your Codiga projects.
+You can log into Codiga using your GitLab credentials.
+Your account is then automatically linked with GitLab and you
+can easily add GitLab repositories in your Codiga projects.
 
 ## Supported features
 
 - Login
-- Import Gitlab repositories
+- Import GitLab repositories
 - Code Reviews on Merge Requests
 - Automated Code Fix (silver and gold accounts)
 
@@ -37,18 +37,18 @@ can easily add Gitlab repositories in your Codiga projects.
 In order to have code reviews and analyses on push, you need to
 make sure webhooks are activated.
 
-Codiga installs a webhook when you import a Gitlab project.
+Codiga installs a webhook when you import a GitLab project.
 However, you may have deleted it yourself and/or removed it in the past.
 
 Make sure the webhook is activated. You can activate the webhook in your
 project preferences on Codiga.
 
-![Preferences for Gitlab webhook](/img/gitlab-webhook-preferences.png)
+![Preferences for GitLab webhook](/img/gitlab-webhook-preferences.png)
 
 Once you create the webhook from Codiga, you should see
-a webhook appearing in your Gitlab preferences too, as shown below.
+a webhook appearing in your GitLab preferences too, as shown below.
 
-![Webhook on Gitlab](/img/gitlab-webhook-preferences-gitlab.png)
+![Webhook on GitLab](/img/gitlab-webhook-preferences-gitlab.png)
 
 If the webhook is not created, it is because the user attempting to create
 the webhook does not have enough permission to create a webhook. In that
@@ -61,7 +61,7 @@ Codiga will do automated code reviews on merge requests. For
 each new commit, the platform will annotate the code with violations
 it found, as shown below.
 
-![Gitlab Code Review](/img/gitlab-code-review-example.png)
+![GitLab Code Review](/img/gitlab-code-review-example.png)
 
 The Code Review will be done with the account that created the repository.
 You may want to use a service account (e.g. an account that does not
