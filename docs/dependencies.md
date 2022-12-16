@@ -58,8 +58,3 @@ to the dependency file.
 **Note**: the path of the dependency file is relative to your repository.
 
 ![Dependencies Preferences](/img/dependencies-preferences.png)
-
-## I do not have access to this feature!
-
-This feature is for Silver and Gold members only. Upgrade your account to get access
-to this feature.
