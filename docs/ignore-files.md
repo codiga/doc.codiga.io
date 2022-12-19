@@ -37,9 +37,17 @@ You can also add a `.ci-ignore` file in your codebase. This file is
 exactly like a `.gitignore` and specific to Codiga. Put here all
 the files and directories that you want Codiga to ignore.
 
-**Note**: File and directory names are relative to the project root directory.
+:::info
+ 
+ File and directory names are relative to the project root directory.
 
-**Note**: You should not put the starting '/' character in the list of files/directories to ignore
+:::
+
+:::warning
+ 
+ You should not put the starting '/' character in the list of files/directories to ignore.
+
+:::
 
 All files and directories specified in that files will also **not count
 towards your slocs count**. In other words, if your account has too many
@@ -76,14 +84,18 @@ will be removed.
 
 **Note**: always specify the relative path, and remember that your path should never start with `/`.
 
-### File configured in the User Interface
+### Paths to ignore and skip analysis
 
-You can also ignore paths in the project configuration, as shown below,
+Although, it is possible to avoid running analyses for specific commits by defining "Skip Analysis" tags in the project preferences. You can define a list of tags for your projects (for example: `skip_analysis;no_analysis`) and Codiga will ignore commits having these tags in their commit message. Ignore paths in the project configuration, as shown below,
 by entering paths separated by the character `;`.
 
-![Ignore Paths](/img/ignore-paths.png)
+![Analysis configuration](/img/analysis-configuration-03.png)
 
-**Note**: You should not put the starting '/' character in the list of files/directories to ignore
+:::info
+ 
+ You should not put the starting '/' character in the list of files/directories to ignore.
+
+:::
 
 When ignoring files and violations using project preferences, issues
 are filtered when being surfaced through the API. In other words, these

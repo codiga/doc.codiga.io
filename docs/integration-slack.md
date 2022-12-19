@@ -35,8 +35,7 @@ when a new analysis is available.
 
 ## Adding Slack to your project
 
-First, go to your project preferences. A button _Add to Slack_ is available, as shown below.
-Click on this button.
+First, go to your project preferences and click on the "Notifications" tab. Click on the _Add to Slack_ button.
 
 ![Add slack to your project](/img/slack-add.png)
 
@@ -54,10 +53,4 @@ can see the notification being added.
 
 You can see below examples of messages being sent by our Slack integration.
 
-![Slack Added on a workspace](/img/slack-example2.png)
-
-## Support
-
-This is a free feature that is officially supported by Codiga. For any question or support,
-do not hesitate to use the support feature within our product or
-directly [contact us](https://codiga.io/contact-us/).
+![Slack Added on a workspace](/img/slack-example.png)
