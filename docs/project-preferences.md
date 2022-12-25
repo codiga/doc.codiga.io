@@ -1,7 +1,7 @@
 ---
 id: project-preferences
-title: Codiga Project Preferences for Automated Code Analysis
-sidebar_label: Project Preferences
+title: Codiga Analysis Configuration for Automated Code Analysis
+sidebar_label: Analysis Configuration
 description: Configure your project and Code Reviews on Codiga and adapt the code analysis behavior to your needs.
 keywords:
   - code analysis
@@ -19,13 +19,35 @@ keywords:
   - stripe
 ---
 
-## Introduction
+## Analysis Configuration
 
-The Project Preferences page gives access to all the settings for a particular project.
+By default, Codiga runs a new analysis every time a new code is pushed to your project repository. The Project Preferences page gives you access to all the settings for each project. Click on the **"Analysis Configuration"** tab to set up your preferences.
 
-### Skip Analysis
+![Analysis configuration](/img/project-preferences-02.png)
 
-By default, Codiga runs a new analysis every time a new code is pushed to your project repository.
-Although, it is possible to avoid running analyses for specific commits by defining "Skip Analysis" tags in the project preferences. You can define a list of tags for your projects (for example: `skip_analysis;no_analysis`) and Codiga will ignore commits having these tags in their commit message.
+### Integration with Repository
 
-![Skip analysis](/img/skip-analysis.png)
+Integrating with a repository provides a secure and efficient way to store, manage, and track changes to source code.
+
+![Analysis configuration](/img/analysis-configuration-01.png)
+
+- **Analyze project on branch push**: start a new analysis when there is a push on the repository.
+- **Enable Pull/Merge Requests**: Enable pull requests for GitHub and Bitbucket. For GitLab, enable merge requests.
+- **Show violations in Pull/Merge Requests**: violations will be detected and direclty annotated in code changes.
+- **Duplicates detection on Pull/Merge Requests**: identify duplicate code.
+- **Complex functions detection on Pull/Merge Requests**: identify complex functions in the code.
+- **Long functions detection on Pull/Merge Requests**: identify long functions in the code.
+
+### Security
+
+![Analysis configuration](/img/analysis-configuration-02.png)
+
+**Secret detection**: scans your repository for any leaked secret (e.g. passwords, AWS access keys, etc.).
+
+### Threshold
+
+![Analysis configuration](/img/analysis-configuration-04.png)
+
+- **Long functions threshold**: minimum function `lengthReports` functions that are longer than 40 numbers of lines.
+- **Complex function threshold**: cyclomatic `complexityReports` functions that have a cyclomatic complexity higher than 25.
+- **Minimum lines per duplicate**: minimum duplicate `linesReports` functions that have a duplicate lines of code higher than 25.
