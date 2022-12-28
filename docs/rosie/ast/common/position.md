@@ -13,7 +13,7 @@ The `Position` object represent a position in the AST.
 
 :::info
 
-The `Position` object is used by the [AstElement](/docs/rosie/ast/common/astelement.md).
+The `Position` object is used by the [AstElement](/docs/rosie/ast/common/rosie-ast-common-astelement).
 It is used by the `start` end `end` attribute for all AST objects.
 
 :::

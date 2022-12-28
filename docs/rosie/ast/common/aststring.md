@@ -2,7 +2,7 @@
 id: rosie-ast-common-aststring
 title: AstString AST Common Object
 sidebar_label: AstString
-description: The AstString object in the Python AST
+description: The AstString object
 keywords:
   - rosie
   - ast
