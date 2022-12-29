@@ -31,4 +31,4 @@ myFunction(a, ...iterableObj, b);
 ```
 
 In the case of the function call (`myFunction(a, ...iterableObj, b)`), the second argument
-will behave **exactly** like a string except that the argument `isSpread` will exists and be true.
+will behave **exactly** like a string except that the argument `isSpread` will exist and be true.

@@ -104,8 +104,8 @@ in the `visit` function.
 
 ### Do not analyze if this is a test file
 
-First, we will pass the analysis if the file is a test file. We will skip
-the analysis if the file starts with `test_` or ends with `_test.py`.
+First, we will pass the analysis, if the file is a test file. We will skip
+the analysis, if the file starts with `test_` or ends with `_test.py`.
 
 Therefore, we add the following code at the beginning of the `visit` function.
 
@@ -159,7 +159,7 @@ if (exceptionName && exceptionName.value === "foo") {
 
 ### Build an error
 
-Building an error is achieve with the function `buildError`. There is the function signature.
+Building an error is achieved with the function `buildError`. There is the function signature.
 
 ```
 buildError(startLine, startCol, endLine, endCol, message, severity, category)
@@ -181,7 +181,7 @@ The function `buildError` is a built-in function in Rosie.
 
 :::
 
-Our violation reports an error with the messgae `do not assert on foo` right where the name `foo` appears. It is an informational message
+Our violation reports an error with the message `do not assert on foo` right where the name `foo` appears. It is an informational message
 in the category `BEST_PRACTICES`. We use the following code to build the error.
 
 ```javascript

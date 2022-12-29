@@ -28,7 +28,7 @@ keywords:
 
 ## Description of issue
 
-Depending on the plan you're subscribed to, you can run the analysis on projects with a maximum ammount of lines of code (for more information about the limits of your subscription, see [Our Subscription Plans](https://www.codiga.io/pricing)).
+Depending on the plan you're subscribed to, you can run the analysis on projects with a maximum amount of lines of code (for more information about the limits of your subscription, see [Our Subscription Plans](https://www.codiga.io/pricing)).
 
 In case you want to run the analysis on a project with more lines of code than the ones supported by your subscription, you'll see something like this on your home page:
 
@@ -39,7 +39,7 @@ Here are some ways to avoid this issue:
 1. **Gitignore your external dependencies:**
 
    Having the external dependencies in your remote repository is considered a bad practice in general, and it can also be the reason you exceed your lines of code quota in Codiga. To fix this you can create a [.gitignore file](https://git-scm.com/docs/gitignore) where you include the external dependencies folder so it's not tracked with the rest of your code.
-   If you need references take a look at these [.gitignore tamplates for different languages](https://github.com/github/gitignore).
+   If you need references take a look at these [.gitignore templates for different languages](https://github.com/github/gitignore).
 
 2. **Add .ci-ignore to your project:**
    Similar to `.gitignore`, but specific to Codiga, the `.ci-ignore` file contains the files and folders that should be ignored when running the analysis. This is another way you can prevent reaching your maximum lines of code quota. For more information see [Ignore Files and Violations](https://doc.codiga.io/docs/ignore-files/).

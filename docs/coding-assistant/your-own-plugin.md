@@ -135,7 +135,7 @@ The language parameter is a GraphQL enumeration with the following values: `Dock
 ### Snippet variables
 
 There are relevant variables that you can add to a code snippet that will help injecting relevant contextual information in the plugins. A variable is a placeholder that is being replaced by a value from the user.
-The snippet variables are being shown in the RAW reprepsentation of the snippet (attribute `code` of the GraphQL object). When using the `presentableFormat`, we show default values for the placeholder (see the format section below).
+The snippet variables are being shown in the RAW representation of the snippet (attribute `code` of the GraphQL object). When using the `presentableFormat`, we show default values for the placeholder (see the format section below).
 
 For more information refer to the [recipe variables documentation](https://doc.codiga.io/docs/coding-assistant/coding-assistant-recipe-variables/).
 
@@ -228,7 +228,7 @@ There are some extra parameters apart from the described above which might be us
 
 Most implementation caches the shortcuts in the local storage or memory. However, you want to reload shortcuts when new shortcuts are available.
 
-Do do so, clients are polling when a new shortcut is available using the `getRecipesForClientByShortcutLastTimestamp`.
+To do so, clients are polling when a new shortcut is available using the `getRecipesForClientByShortcutLastTimestamp`.
 
 Go to the GraphQL playground and try this query:
 
@@ -246,7 +246,7 @@ It returns the timestamp of the last recipe/snippet created for this `language` 
 
 The current implementation of shortcuts for the VS Code extension uses a polling system to have always a `cache` of relevant shortcuts. This is useful to avoid querying the API everytime the user looks for a shortcut and increase speed of the suggestions showing up.
 
-For a reference you can see our current polling [VSCode implementaion](https://github.com/codiga/vscode-plugin/blob/616eed6bc04336148f44989585a643aa509ce1a7/src/graphql-api/shortcut-cache.ts#L199)
+For a reference you can see our current polling [VSCode implementation](https://github.com/codiga/vscode-plugin/blob/616eed6bc04336148f44989585a643aa509ce1a7/src/graphql-api/shortcut-cache.ts#L199)
 
 So the query `getRecipesForClientByShortcutLastTimestamp` is used in the current implementations for `cache management`. The timestamp is stored in local storage, and if we do a request and this timestamp has changed, it means there are new relevant shortcuts and we should fetch them again.
 
@@ -352,7 +352,7 @@ Some queries (`assistantRecipesSemanticSearch`, `getRecipesForClientByShortcut`,
 the file path relative to the project. For example, if you request snippet in a file name `src/mypackage/foobar.py`, you should pass
 `src/mypackage/foobar.py` as the filename argument.
 
-Some snippet are designed to only match a given filename (for example, snippet for testing in JavaScript must match the pattern `**/*.test.js`). Passing
+Some snippets are designed to only match a given filename (for example, snippet for testing in JavaScript must match the pattern `**/*.test.js`). Passing
 the `filename` argument will ensure that the snippet is returned if it matches the pattern.
 
 ## Implement your IDE plugin
@@ -459,7 +459,7 @@ There are therefore two components for the shortcut features:
 
 Shortcuts polling should occur regularly when the IDE is active. Shortcut polling occurs only if the IDE was used in the last 10 minutes. After 10 minutes of inactivity, polling stops and resume when the user used the IDE. To check the IDE activity, we can check if a character was typed.
 
-We need to poll the list of shortcuts available for each file opened in the IDE. Snippets depends on the file and therefore, we need to maintain a list of potential snippets for each file.
+We need to poll the list of shortcuts available for each file opened in the IDE. Snippets depend on the file and therefore, we need to maintain a list of potential snippets for each file.
 
 :::warning
 
@@ -616,7 +616,7 @@ See the code we use for the [VS Code plugin](https://github.com/codiga/vscode-pl
 
 ### Sending a callback when a snippet is used
 
-Anytime a snippet is insert by any of the mechanism (inline completion, shortcut or snippet search), we need to send a callback to Codiga to indicate that a user inserted a snippet.
+Anytime a snippet is inserted by any of the mechanism (inline completion, shortcut or snippet search), we need to send a callback to Codiga to indicate that a user inserted a snippet.
 
 To do so, we call the `recordAccess` mutation. We pass the snippet identifier that was inserted as a parameter. The `userFingerprint` is a string that is
 at least 40 characters long and is unique to the IDE. This string is generated only once through the life of the plugin and is never generated again.

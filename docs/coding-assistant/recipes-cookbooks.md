@@ -33,7 +33,7 @@ can share the code snippets directly using a badge.
 
 ### Visibility
 
-A code snippet can be either public or private. You cannot change the code snippets visbility once created.
+A code snippet can be either public or private. You cannot change the code snippets visibility once created.
 
 When a code snippet is created as public, it's automatically shared and reusable by anybody on the platform.
 
@@ -53,7 +53,7 @@ The matching engine uses the following parameters to select code snippets:
 - **keywords**: the engine checks that the keywords from the user request and the keywords from code snippets.
 - **popularity**: the engine surfaces code snippets that are used and popular.
 - **rating**: the engine avoids unsafe code snippets (e.g. code snippets flagged as unsafe).
-- **language**: the langauge of the code snippet must match the language of the file edited in the IDE.
+- **language**: the language of the code snippet must match the language of the file edited in the IDE.
 - **libraries**: the code snippet must be usable with the libraries and language used within the IDE.
 
 ## Cookbooks

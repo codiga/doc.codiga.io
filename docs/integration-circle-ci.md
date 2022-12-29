@@ -41,7 +41,7 @@ set the values retrieved from your [api-tokens](https://frontend.codiga.com/api-
 
 ## Editing your CircleCI configuration
 
-The next step is to edit your CircleCI configuration typically
+The next step is to edit your CircleCI configuration (typically
 in `.circleci/config.yml` at the root of your repository) to add commands to install and invoke
 `codiga-check-quality` which checks the quality of your code.
 

@@ -30,7 +30,7 @@ a code pipeline and avoid any changes with errors to be pushed into production.
 
 ## Setting up your environment
 
-First, create a AWS CodeBuild to build your software. You need to define
+First, create an AWS CodeBuild to build your software. You need to define
 the following three variables in your build environment:
 
 - `CODIGA_API_TOKEN`: API token you get from your [tokens page](https://app.codiga.io/api-tokens)
@@ -53,7 +53,7 @@ use for this project) in order to add commands to install and invoke
 `codiga-check-quality`.
 
 1. Installing the tool is done using `pip`. To install the tool, you need to use `pip install codiga`
-2. Invoking the tool `codiga-check-quality` let's you set the requirements for your code quality gate.
+2. Invoking the tool `codiga-check-quality` lets you set the requirements for your code quality gate.
 
 There is an example of how to modify your `buildspec.yml` to install the tool
 and check that the quality score of the project for the current commit is higher than 75.
@@ -96,7 +96,7 @@ Important notes:
 
 Once your file is committed, you can see the execution of the tool directly
 in the CodeBuild execution trace, as shown below. When the tool fails, it will
-also indicates what metrics does not meet the quality gate requirements.
+also indicate what metrics do not meet the quality gate requirements.
 
 ![CodeBuild results](/img/aws-codebuild-results.png)
 

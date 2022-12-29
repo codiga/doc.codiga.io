@@ -121,7 +121,7 @@ The server response has the following schema:
     - `category`: the category of the violation. Possible values are: `ERROR_PRONE`, `CODE_STYLE`, `BEST_PRACTICE`, `SAFETY`, `SECURITY`, `DESIGN`, `DEPLOYMENT`, `UNKNOWN`
     - `fixes`: a list of fix, each containing
       - `description`: the description of the fix to show in the IDE
-      - `edits`: list of edit to apply **sequencially**, each edit has
+      - `edits`: list of edit to apply **sequentially**, each edit has
         - an `editType` to explain what action to do. Values are `add`, `update` or `remove`
         - a `start` position: where to start editing the code
         - an `end` position: where to stop editing the code

@@ -97,7 +97,7 @@ JWT are short-lived token, used for the web application at app.codiga.io. They a
 for any custom-integration.
 :::
 
-A Json Web Token is a lightweigh authentication mechanism that provide a token to authenticate
+A Json Web Token is a lightweight authentication mechanism that provide a token to authenticate
 within a given period of time.
 
 The JWT authentication works in two passes:
@@ -220,7 +220,7 @@ print(data)
 
 ## Pagination
 
-When a query or sub-query may potentially returns a large nuber of results, the user has to specify two parameters
+When a query or sub-query may potentially return a large number of results, the user has to specify two parameters
 to limit the number of results:
 
 - `skip`: specify how many elements we skip before we start returning elements.
