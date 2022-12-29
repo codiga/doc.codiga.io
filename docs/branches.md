@@ -32,7 +32,7 @@ keywords:
 ## Default branch
 
 When the default branch is not set, Codiga uses the default
-branch of your repository, similar to which branch would be have checked
+branch of your repository, similar to which branch would be checked
 out when you run `git clone <url-of-repository>`.
 
 For GitHub and Bitbucket accounts, the default branch used for push notifications

@@ -30,7 +30,7 @@ finally:
 ## Attributes
 
 - `exceptClauses` (array or `ExceptClause`): a list of exception in the `except` clause
-- `finallyClause` (type `FinallyClause`): the finaly clause
+- `finallyClause` (type `FinallyClause`): the finally clause
 - `arguments` (type `FunctionCallArguments`): the list of arguments
 
 ## Examples of rules

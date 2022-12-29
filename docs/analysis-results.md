@@ -28,7 +28,7 @@ keywords:
 
 ## Directory view
 
-When you click on the anaysis results, the frontend surfaces
+When you click on the analysis results, the frontend surfaces
 the list of directories. For each of them, the interface
 shows the number of code violations, duplicates, complex functions
 and long functions.

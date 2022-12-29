@@ -22,7 +22,7 @@ keywords:
 ## Triggering new analysis from CI
 
 We support analysis triggers from your continuous integration job. This is very simple
-to put in place and we use a generic method that can be adapted to most continuous integration
+to put in place, and we use a generic method that can be adapted to most continuous integration
 environments such as jenkins or travis-ci.
 
 ## Installing the CI tools
@@ -80,10 +80,10 @@ The project compares your project against another codebase hosted
 on another repository. You can specify a revision (flag `--target-revision`)
 or specific branch (`--target-branch`) to compare against.
 
-You can also use your Github/Gitlab or Bitbucket credentials to checkout
+You can also use your GitHub/Gitlab or Bitbucket credentials to checkout
 the target repository (flag `--kind`).
 
-You can use it as follow:
+You can use it as follows:
 
 ```bash
 
@@ -93,7 +93,7 @@ codiga-compare -t 1200 -w -p "MY-AWESOME-PROJECT" --url https://path/to/other/re
 
 This will then start a comparison of `MY-AWESOME-PROJECT` on Codiga
 with the code on the repository `https://path/to/other/repository.git` on the `development` branch.
-To checkout the target repository, the Github credentials of the authenticated user are used.
+To checkout the target repository, the GitHub credentials of the authenticated user are used.
 
 ## Integration with GitLab Continuous Integration
 

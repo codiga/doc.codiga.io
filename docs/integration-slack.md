@@ -44,7 +44,7 @@ shown below.
 
 ![Asking confirmation to add](/img/slack-confirmation.png)
 
-Once you select the channel and click on _Allow_ you are redirected on Codiga and you
+Once you select the channel and click on _Allow_, you are redirected to Codiga and you
 can see the notification being added.
 
 ![Slack Added on a workspace](/img/slack-added.png)

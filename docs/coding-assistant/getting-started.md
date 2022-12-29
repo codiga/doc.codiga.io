@@ -111,7 +111,7 @@ Codiga provides a playground to experiment our statistic analyzer and write your
   <Card>
     <Heading size="md" m={0}>Explore the Hub</Heading>
     <Text fontSize="sm" m={0} lineHeight="tall" flexGrow={2}>
-    The Codiga Hub hiosted hundreds of custom analysis rules you can reuse. Browse rules on the Hub, import them in the playground and create new analysis rules for your team.
+    The Codiga Hub hosted hundreds of custom analysis rules you can reuse. Browse rules on the Hub, import them in the playground and create new analysis rules for your team.
     </Text>
     <DocLink isExternal size="sm" variant="primary" href="https://app.codiga.io/hub/">Learn More</DocLink>
   </Card>

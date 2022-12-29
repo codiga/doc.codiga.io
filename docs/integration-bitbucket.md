@@ -54,7 +54,7 @@ In the `Code Quality` section, look for Codiga.Click on `Add`.
 
 #### Step 3: Add repositories
 
-When you navigate to your repository, select the `Codiga` menu (old instlallations will see a `Code Inspector` menu).
+When you navigate to your repository, select the `Codiga` menu (old installations will see a `Code Inspector` menu).
 Select `Add Project to Codiga`.
 
 You can then see metrics directly on Bitbucket or all metrics on our [app](https://app.codiga.io).

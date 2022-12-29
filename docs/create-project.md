@@ -2,7 +2,7 @@
 id: create-project
 title: Codiga Create Project Documentation
 sidebar_label: Create a Project
-description: Create an project on Codiga to analyze your code and automated your Code Reviews on GitHub, GitLab and Bitbucket. Support for 12+ languages, start for free today.
+description: Create a project on Codiga to analyze your code and automated your Code Reviews on GitHub, GitLab and Bitbucket. Support for 12+ languages, start for free today.
 keywords:
   - cyclomatic complexity
   - function complexity
