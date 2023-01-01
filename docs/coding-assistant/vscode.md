@@ -28,22 +28,22 @@ The extension is available on the [VS Code marketplace](https://marketplace.visu
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wrMy6hQWCrs?start=193" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-You can use a code snippet by opening the command `Codiga: Use Recipe` (CTRL + SHIFT + P and search for "Codiga") or by
-directly using the shortcut CTRL + SHIFT + C.
+You can use a code snippet by opening the command `Codiga: Use Snippet` (`CTRL + SHIFT + P` and search for "Codiga") or by
+directly using the shortcut `CTRL + SHIFT + C`.
 
 We have multiple shortcuts that can help you while using Codiga:
 
 **For Mac**
 
-- CMD + SHIFT + C opens Codiga Coding Assistant to find snippets based on a search like a google search.
+- `CMD + SHIFT + C` opens Codiga Coding Assistant to find snippets based on a search like a google search.
 
-- CMD + SHIFT + S opens the list of all shortcuts
+- `CMD + SHIFT + S` opens the list of all shortcuts
 
 **For Windows**
 
-- CTRL + ALT + C opens Codiga Coding Assistant to find snippets based on a search like a google search.
+- `CTRL + ALT + C` opens Codiga Coding Assistant to find snippets based on a search like a google search.
 
-- CTRL + ALT + S opens the list of all shortcuts
+- `CTRL + ALT + S` opens the list of all shortcuts
 
 In vscode, you can also type your keywords on a single line and suggestions from Codiga will automatically appear.
 
@@ -66,7 +66,7 @@ In order to use shortcuts in python file. Please follow the below steps:
 
 **Step 4**: Select from the suitable recommendation
 
-![PYTHON SHORTCUT DEMO](/img/shortcuts-vs-code/pydemo.gif)
+![Python Shortcut Demo](/img/shortcuts-vs-code/pydemo.gif)
 
 Done! That's it. Your code snippet is directly imported & populated to your IDE.
 
@@ -79,10 +79,10 @@ Similarly, follow the below steps if you want to use this in your javascript fil
 **Step 3**: Type the library you want to use, e.g. "react" followed by a ‘.’ to get a recommendation.
 
 **Step 4**: Select from the suitable recommendation.
-![JS SHORTCUT DEMO](/img/shortcuts-vs-code/jsdemo.gif)
+
+![JS Shortcut Demo](/img/shortcuts-vs-code/jsdemo.gif)
 
 You can also make your code snippets and shortcuts from our dashboard. You can find detailed information on our [documentation](https://doc.codiga.io).
-Currently, we are working on more code recommendations, i.e. adding more quality code snippets.
 
 ## Creating a code snippet
 
@@ -90,9 +90,11 @@ Currently, we are working on more code recommendations, i.e. adding more quality
 
 To create a code snippet in VS Code, select the code you want to share, click right and select `"Create Codiga snippet"`.
 
+![Create code snippet](/img/coding-assistant/vscode-create-snippet-01.png)
+
 Your browser opens with the code and its language directly initialized.
 
-![Create code snippet](/img/coding-assistant/vscode-create-recipe.gif)
+![Create code snippet](/img/coding-assistant/vscode-create-snippet-02.png)
 
 ## Linking your Codiga account
 
@@ -100,9 +102,15 @@ Your browser opens with the code and its language directly initialized.
 
 If you want to use the code snippets, you need to link your Codiga account using an API token.
 
-First, create your token on the platform as shown below.
+:::info
 
-![Generating API token](/img/coding-assistant/api-token-creation.gif)
+An API token is what you need if you want to start an integration with Codiga. It relies on tokens
+provided by the user.
+
+:::
+
+Go on the [API tokens page](https://app.codiga.io/api-tokens) and generate a new token. You can create multiple tokens
+and associate a description to them (for example, if you want to have one token for VS Code, one for your CI pipeline, etc.).
 
 Then, go into the VS Code settings and enter your API Token in the Codiga configuration section.
 

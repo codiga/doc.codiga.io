@@ -68,9 +68,11 @@ It will open up a cheat sheet with a list of shortcuts. Once you are familiar wi
 
 To create a code snippet, select the code you want to share, click right and select `"Create Codiga code snippet"`.
 
+![Creating code snippets](/img/coding-assistant/jetbrains-create-snippet-01.png)
+
 Your browser opens with the code and its language directly initialized.
 
-![Creating code snippets](/img/coding-assistant/jetbrains-create-recipe.gif)
+![Creating code snippets](/img/coding-assistant/jetbrains-create-snippet-02.png)
 
 ## Linking your Codiga account
 
@@ -78,9 +80,15 @@ Your browser opens with the code and its language directly initialized.
 
 If you want to use the code snippets, you need to link your Codiga account using an API token.
 
-First, create your token on the platform as shown below.
+:::info
 
-![Generating API token](/img/coding-assistant/api-token-creation.gif)
+An API token is what you need if you want to start an integration with Codiga. It relies on tokens
+provided by the user.
+
+:::
+
+Go on the [API tokens page](https://app.codiga.io/api-tokens) and generate a new token. You can create multiple tokens
+and associate a description to them (for example, if you want to have one token for VS Code, one for your CI pipeline, etc.).
 
 Then, go into the Jetbrains settings, search for the configuration section `Tools > Codiga API` and enter your API Token, as shown below.
 

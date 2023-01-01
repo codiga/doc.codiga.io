@@ -32,7 +32,7 @@ Depending on the plan you're subscribed to, you can run the analysis on projects
 
 In case you want to run the analysis on a project with more lines of code than the ones supported by your subscription, you'll see something like this on your home page:
 
-![Too Many Lines of Code Card](/img/troubleshooting/too-many-lines-of-code-card.jpg)
+![Too Many Lines of Code Card](/img/troubleshooting/too-many-lines-of-code-card.png)
 
 Here are some ways to avoid this issue:
 

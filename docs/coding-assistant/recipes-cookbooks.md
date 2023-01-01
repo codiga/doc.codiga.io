@@ -11,37 +11,46 @@ description: Coding Assistant to define and use a collection of code snippets fo
 
 A Code Snippet is a reusable block of code shared on the platform.
 
-- A **name**: how you call your code snippet (e.g. `Read a CSV file`)
-- A **description**, optional (e.g. `code snippet that read a CSV file from the local filesystem`)
-- A set of **tags**, optional, to organize your code snippets
-- A block of **reusable code** that is what is being stored on the platform and reused by other developers.
-- A set of **imports**, optional, that are imports being automatically when importing the code snippet.
-- A set of **keywords** that are used to trigger the code snippet.
-
 ### How to create a Code Snippet?
 
-You can create code snippets on the platform, using the web interface.
+You can create code snippets at [app.codiga.io](https://app.codiga.io). Go to the Code Snippets section in the main navigation, click the Add new snippet button.
 
-![Creating Code snippets](/img/coding-assistant/creating-recipes.gif)
+![Creating Code snippets](/img/coding-assistant/add-new-snippet-02.png)
 
-You can also create a code snippets directly from your IDE by selecting the text and selecting to create a code snippet.
+Add the following information for your code snippet:
 
-### How to share a code snippets?
+- **Name**: how you call your code snippet (e.g. `Read a CSV file`)
+- **Language**: specify the language of code snippet.
+- **Library**: specify the libraries to use with your code snippet.
+- **Snippet privacy**: set the privacy of your code snippet. A code snippet can be either public or private. You cannot change the code snippets visibility once created. When a code snippet is created as public, it's automatically shared and reusable by anybody on the platform. Only you or shared groups can reuse a code snippet when created as private.
 
-You can share a code snippets using a direct link or embed a badge on your website. On the public code snippets page, you
-can share the code snippets directly using a badge.
 
-### Visibility
+![Creating Code snippets](/img/coding-assistant/add-new-snippet-01.png)
 
-A code snippet can be either public or private. You cannot change the code snippets visbility once created.
+ Now, you can edit the metadata for your code snippet:
 
-When a code snippet is created as public, it's automatically shared and reusable by anybody on the platform.
+- **Description**: details about your code snippet (optional) (e.g. `code snippet that read a CSV file from the local filesystem`)
+- **Keywords**: a set of keywords that are used to trigger the code snippet.
+- **Tags**: a set of tags to organize your code snippets.
+- **Filename pattern**: this snippet only applies to a file that matches this pattern. 
+- **Shortcut**: a string to type in your IDE and import your code snippet.
 
-When a code snippet is created as private, only you can reuse it.
+You can also add the new code snippet to an existing cookbook.
+
+![Creating Code snippets](/img/coding-assistant/add-new-snippet-03.png)
+
+You can create new code snippets directly from your IDE by selecting the text and clicking the create a code snippet option.
+
+### How to share a public code snippets?
+
+You can go to the public code snippet you want to share and click on the Share button in the options on the right. You can share code snippets on social media, a direct link, and as markdown or HTML. To share private code snippets, go to [Group Sharing](./share-recipes-groups.md)
+
+![Share Public Code snippets](/img/coding-assistant/share-snippet-01.png)
 
 ### Using a code snippet
 
-To use a code snippet, you need to subscribe to it. You can favor a code snippet on Codiga Hub, once you are logged.
+Use public code snippets directly in your IDE and browser. Install the plugin for [VS Code](./coding-assistant-vscode.md), [JetBrains](./jetbrains.md) and [Google Chrome](./chrome.md).
+
 
 ### How a code snippet get selected in my IDE?
 
@@ -60,11 +69,12 @@ The matching engine uses the following parameters to select code snippets:
 
 ### What is a cookbook?
 
-A cookbook is a collection of code snippets. You can add multiple code snippets in the same cookbook.
+A cookbook is a collection of code snippets. You can add multiple code snippets in the same cookbook. Cookbooks can be either public or private and you cannot change the cookbook visibility once created. When a cookbook is created as public, it's automatically shared and reusable by anybody on the platform. Only you or shared groups can reuse a code snippet when created as private.
 
-When a user subscribe to a cookbook, they automatically subscribe to all public code snippets within that cookbook.
+![Cookbooks](/img/coding-assistant/cookbook-01.png)
 
-### How to share a cookbook?
+### How to share a public cookbook?
 
-You can share a cookbook using a direct link or embed a badge on your website. On the public code snippet page, you
-can share the cookbook directly using a badge.
+You can go to the public cookbook you want to share and click on the Share button in the options on the right. To share private cookbooks, go to [Group Sharing](./share-recipes-groups.md)
+
+![Cookbooks](/img/coding-assistant/cookbook-02.png)
