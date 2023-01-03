@@ -29,7 +29,7 @@ import ReactPlayer from 'react-player'
 ## What Are Variables?
 
 Variables are a powerful feature in snippet definition, but the lack of
-standarized variable definition across IDEs makes it difficult to create code
+standardized variable definition across IDEs makes it difficult to create code
 recipes that can be shared across editors, team members, or not be locked with
 one IDE only. Each IDE have a set of defined variables to return values or
 behave in a specific way once they are in place and loaded.

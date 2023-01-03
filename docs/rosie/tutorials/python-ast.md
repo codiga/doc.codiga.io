@@ -107,8 +107,8 @@ The value of the `node` parameter depends on the element type checked:
 
 ### Ignore test files
 
-First, we will pass the analysis if the file is a test file. We will skip
-the analysis if the file starts with `test_` or ends with `_test.py`.
+First, we will pass the analysis, if the file is a test file. We will skip
+the analysis, if the file starts with `test_` or ends with `_test.py`.
 
 Therefore, we add the following code at the beginning of the `visit` function.
 This code exists the `visit` function if the test matches the patterns in the condition.

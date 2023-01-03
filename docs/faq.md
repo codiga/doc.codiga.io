@@ -109,7 +109,7 @@ However, our engine attempts to reuse previous analyses to avoid to waste quota.
 For example, if you are doing a pull request, we will initially analyze
 the source and the destination revisions, taking 2 analysis from your quota.
 When the code of the pull request is updated, only the target is analyzed again,
-taking only one analysys from your quota.
+taking only one analysis from your quota.
 
 ## Analysis
 

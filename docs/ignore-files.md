@@ -63,7 +63,7 @@ directory_to_ignore
 
 #### Using regular expressions
 
-You can use the same expression than you use in a shell in order to ignore
+You can use the same expression you use in a shell in order to ignore
 files.
 
 For example, if you have the following directories

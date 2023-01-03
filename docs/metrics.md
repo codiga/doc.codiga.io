@@ -34,7 +34,7 @@ Codiga classifies code violations into the following categories:
 - **Best Practice**: the code is not following the language best practices (for example: common function to use, avoid printing the stack trace, do not reassign parameters, etc).
 - **Code Style**: potential syntax error or language-specific coding style (for example: correct casing, varible names, etc.), not critical but something that can facilitate maintenance and readability.
 - **Documentation**: any documentation issues (for example: any function that is not documented or some parameters documentation that are missing). Low impact on your technical debt (but something to keep in mind for maintenance purposes).
-- **Design**: potential design issues in classes or functions (for example: number of parameters, functions are too long, etc). High impact on technical debt.
+- **Design**: potential design issues in classes or functions (for example: number of parameters, functions are too long, etc.). High impact on technical debt.
 - **Deployment**: any issue regarding deployment (for example: deployment script in AWS, etc.). Medium to high impact on technical debt.
 - **Error Prone**: any statement that can be confusing and impact software maintenance (for example: comparison issue, statements without any effect). Medium impact on technical debt.
 - **Performance**: code that negatively impacts your performance (for example: inefficient code). High impact on technical debt.

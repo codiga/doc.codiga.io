@@ -30,3 +30,7 @@ return <MyComponent attr="val" />;
 ## See Also
 
 - [HTML Element](/docs/rosie/ast/javascript/rosie-ast-javascript-htmlelement)
+
+## Examples of rules
+
+- [jsx-react/jsx-no-duplicate-props](https://app.codiga.io/hub/ruleset/jsx-react/jsx-no-duplicate-props)

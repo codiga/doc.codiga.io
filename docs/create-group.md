@@ -2,7 +2,7 @@
 id: create-group
 title: Codiga Create Group Documentation
 sidebar_label: Create a Group
-description: Create an group on Codiga to analyze your code and automated your Code Reviews on GitHub, GitLab and Bitbucket. Support for 12+ languages, start for free today.
+description: Create a group on Codiga to analyze your code and automated your Code Reviews on GitHub, GitLab and Bitbucket. Support for 12+ languages, start for free today.
 keywords:
   - cyclomatic complexity
   - function complexity
@@ -81,7 +81,7 @@ You have linked your GitLab account. To unlink your account anytime, go to _User
 
 ![Add groups](/img/create-group-05.png)
 
- Now, let's create groups for GitLab. Click on the menu item _Groups_, click the _New Groups_ tab, and select GitLab. Now you can see the a list of your projects. To join an existent group, click on the _Join Group_ button on the right side of the screen. To create a new group, click on the _Create Group_ button.
+ Now, let's create groups for GitLab. Click on the menu item _Groups_, click the _New Groups_ tab, and select GitLab. Now you can see the list of your projects. To join an existent group, click on the _Join Group_ button on the right side of the screen. To create a new group, click on the _Create Group_ button.
 
 ![Add groups](/img/create-group-06.png)
 
@@ -104,7 +104,7 @@ You have linked your Bitbucket account. To unlink your account anytime, go to _U
 
 ![Add groups](/img/create-group-09.png)
 
- Now, let's create groups for Bitbucket. Click on the menu item _Groups_, click the _New Groups_ tab, and select Bitbucket. Now you can see the a list of your projects. To join an existent group, click on the _Join Group_ button on the right side of the screen. To create a new group, click on the _Create Group_ button.
+ Now, let's create groups for Bitbucket. Click on the menu item _Groups_, click the _New Groups_ tab, and select Bitbucket. Now you can see the list of your projects. To join an existent group, click on the _Join Group_ button on the right side of the screen. To create a new group, click on the _Create Group_ button.
 
 ![Add groups](/img/create-group-10.png)
 

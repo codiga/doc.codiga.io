@@ -33,7 +33,7 @@ Integrating with a repository provides a secure and efficient way to store, mana
 
 - **Analyze project on branch push**: start a new analysis when there is a push on the repository.
 - **Enable Pull/Merge Requests**: Enable pull requests for GitHub and Bitbucket. For GitLab, enable merge requests.
-- **Show violations in Pull/Merge Requests**: violations will be detected and direclty annotated in code changes.
+- **Show violations in Pull/Merge Requests**: violations will be detected and directly annotated in code changes.
 - **Duplicates detection on Pull/Merge Requests**: identify duplicate code.
 - **Complex functions detection on Pull/Merge Requests**: identify complex functions in the code.
 - **Long functions detection on Pull/Merge Requests**: identify long functions in the code.

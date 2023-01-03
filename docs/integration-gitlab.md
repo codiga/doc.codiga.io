@@ -2,11 +2,11 @@
 id: integration-gitlab
 title: Codiga GitLab Integration for Automated Code Reviews and Code Analysis
 sidebar_label: GitLab
-description: Check your code quality with Codiga for all GitLab repositories. Work for for 12+ languages. Free 14 days trial.
+description: Check your code quality with Codiga for all GitLab repositories. Works for 12+ languages. Free 14 days trial.
 keywords:
   [
     gitlab,
-    continous deployment,
+    continuous deployment,
     codiga,
     static analysis,
     static code analysis,

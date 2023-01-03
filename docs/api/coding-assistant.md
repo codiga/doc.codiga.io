@@ -34,7 +34,7 @@ Authentication is discussed in the commonalities of the [GraphQL API here](/docs
 ### Fingerprint
 
 In order to improve the recommendation system, we need to know what search the user is doing and what snippets
-they are using. In order to do so, we used an anonymzed fingerprint system. Some requests requires a unique
+they are using. In order to do so, we used an anonymized fingerprint system. Some requests require a unique
 fingerprint to be sent. This fingerprint must be generated locally and must be unique.
 
 This fingerprint is not used to track nor identify users (e.g. the API works if users are not authenticated). It
@@ -57,7 +57,7 @@ The `AssistantRecipe` type has the following attributes:
 - `tags`: list of tags to simplify the organization of the snippet
 - `code`: code of the snippet encoded in Base64. This is the RAW format of the snippet with all variables. You can learn more about the [variables system here](/docs/coding-assistant/coding-assistant-recipe-variables/)
 - `imports`: list of imports for the snippet (e.g. `import java.util.*` for Java or `from datetime import datetime` for Python)
-- `language`: language of the snippet. This is an enumeration, see below for the list of supported languages and their enumaration values.
+- `language`: language of the snippet. This is an enumeration, see below for the list of supported languages and their enumeration values.
 - `creationTimestampMs`: when the recipe was created.
 - `isSubscribed`: indicates if the user favorited the recipe/snippet. Returns false if the user is not authenticated.
 - `groups`: list of groups the recipe is shared with.
@@ -71,7 +71,7 @@ The `AssistantRecipe` type has the following attributes:
 
 ### AssistantRecipeWithStats
 
-The `AssistantRecipeWithStats` type has the same attributes than `AssistantRecipe` except that it adds
+The `AssistantRecipeWithStats` type has the same attributes as `AssistantRecipe` except that it adds
 one attribute:
 
 - `uses`: the number of time the recipe has been used.
@@ -223,7 +223,7 @@ It helps for pagination (e.g. how many recipes can you expect).
 This query only works when the user is logged in.
 :::
 
-The `sharedCookbooks` query returns cookcooks being shared with the current user groups.
+The `sharedCookbooks` query returns cookbooks being shared with the current user groups.
 
 ```graphql
 {
@@ -530,7 +530,7 @@ mutation{
 
 ## Common Queries and Mutations
 
-### Create a new assistant cookcook
+### Create a new assistant cookbook
 
 The following request creates a new cookbook. The query returns a AssistantCookbook object that
 can be queried later.
@@ -553,7 +553,7 @@ mutation{
 
 This query updates an assistant cookbook. The identifier must be passed as parameter.
 
-Only users that own the cookcook can update it.
+Only users that own the cookbook can update it.
 
 ```
 mutation{
@@ -570,12 +570,12 @@ mutation{
 Create a new assistant recipe. The recipe is then owned by the user
 issuing the request. This query returns the new recipe.
 
-Required parameters (other are optional and can be ommitted):
+Required parameters (other are optional and can be omitted):
 
 - name: name of the recipe (string)
 - description: description of the recipe (Markdown format)
 - code: code of the recipe (encoded in base64)
-- language: language of the recipe (enumeartion)
+- language: language of the recipe (enumeration)
 - keywords: list of keywords (list of strings)
 - isPublic: boolean to indicate if the recipe is public or not
 
@@ -599,7 +599,7 @@ mutation{
 Update a recipe and returns it. The recipe must be owned by the user
 issuing the request.
 
-Required parameters (other are optional and can be ommitted):
+Required parameters (other are optional and can be omitted):
 
 - name
 - description
@@ -619,7 +619,7 @@ Required parameters (other are optional and can be ommitted):
 
 Add a dependency to a recipe.
 
-Required parameters (other are optional and can be ommitted):
+Required parameters (other are optional and can be omitted):
 
 - id (identifier to the recipe we add the constraint)
 - name: name of the dependency
@@ -642,7 +642,7 @@ All parameters are required.
 
 List all public recipes based on search terms/criteria.
 
-Required parameters (other are optional and can be ommitted):
+Required parameters (other are optional and can be omitted):
 
 - howmany
 - skip
@@ -667,10 +667,10 @@ Required parameters (other are optional and can be ommitted):
 
 ### Get a public recipe
 
-Get a public recipe using its identifier. If the recipe does not exists
+Get a public recipe using its identifier. If the recipe does not exist
 or is not public, the request returns null.
 
-Required parameters (other are optional and can be ommitted):
+Required parameters (other are optional and can be omitted):
 
 - id
 
@@ -694,10 +694,10 @@ Required parameters (other are optional and can be ommitted):
 
 ### Get a public cookbook
 
-Get a public cookbook using its identifier. If the cookbook does not exists
+Get a public cookbook using its identifier. If the cookbook does not exist
 or is not public, the request returns null.
 
-Required parameters (other are optional and can be ommitted):
+Required parameters (other are optional and can be omitted):
 
 - id
 
@@ -804,7 +804,7 @@ This is the request used by clients to get code recipes.
 It returns a list of recipes that are relevant based on the request.
 The list of items being returned is sorted by relevance.
 
-Required parameters (other are optional and can be ommitted):
+Required parameters (other are optional and can be omitted):
 
 - language
 - keywords
@@ -878,7 +878,7 @@ Example of query for a recipe
 }
 ```
 
-### Know if a user put a upvote/downvote on an element
+### Know if a user put an upvote/downvote on an element
 
 If you want to know if the current logged-in user upvoted an element, query the `isUpVoted` or `isDownVoted` attribute of the element.
 

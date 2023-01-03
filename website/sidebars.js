@@ -181,6 +181,7 @@ const sidebars = {
       label: "AST JavaScript Objects",
       items: [
         "rosie/ast/javascript/rosie-ast-javascript-assignment",
+        "rosie/ast/javascript/rosie-ast-javascript-aststringwithspread",
         "rosie/ast/javascript/rosie-ast-javascript-htmlelement",
         "rosie/ast/javascript/rosie-ast-javascript-htmlattribute",
         "rosie/ast/javascript/rosie-ast-javascript-classdefinition",

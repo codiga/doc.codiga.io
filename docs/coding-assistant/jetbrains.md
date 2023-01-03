@@ -50,7 +50,7 @@ You can search and use code snippet by triggering the menu (`Tools > Codiga Assi
 
 ![Codiga menu](/img/coding-assistant/jetbrains-menu.png).
 
-A window appear and you can enter keywords to search for a code snippet. Suggestions appear and you can go back and forth between code suggestions.
+A window appears and you can enter keywords to search for a code snippet. Suggestions appear and you can go back and forth between code suggestions.
 
 ![Using code snippets](/img/coding-assistant/jetbrains-use-recipe.gif)
 
@@ -92,7 +92,7 @@ and associate a description to them (for example, if you want to have one token 
 
 Then, go into the Jetbrains settings, search for the configuration section `Tools > Codiga API` and enter your API Token, as shown below.
 
-![Associte API token](/img/coding-assistant/jetbrains-api-token.png)
+![Associated API token](/img/coding-assistant/jetbrains-api-token.png)
 
 ## Reporting an issue
 

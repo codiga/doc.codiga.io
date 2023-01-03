@@ -59,7 +59,7 @@ You can see all projects owned by the user by using the list `ownedProjects`.
 
 All administrative details of the user (address, company, etc.) are found in the `info` member.
 
-If the user if a `GitHub` account, the `githubInstallationIdentifier` will contain the external GitHub app installation
+If the user is a `GitHub` account, the `githubInstallationIdentifier` will contain the external GitHub app installation
 identifier.
 
 Finally, `linkedAccount` list all accounts from external providers (such as `GitHub`, `Gitlab`) linked to this account.
@@ -163,14 +163,14 @@ The `Analysis` object is the entrypoint to getting analysis results.
 First of all, the `status` attribute indicate if an analysis was completed (`Done`) or has any issues (state `Error`).
 It gives various indication on the repository revision/branch.
 
-The `violations` attributes let's you get violations for this analysis. You can filter for a particular path
+The `violations` attribute lets you get violations for this analysis. You can filter for a particular path
 by specifying the `path` attribute when querying the `violations` attribute. You can also filter by category, severity
 or languages. Make sure to use pagination mechanisms (attributes `howmany` and `skip`).
 
 The `duplicates` attribute works similarly and expose duplicated code for this analysis. You can also filter by `path`
 and need to pass pagination arguments.
 
-The `complexFunctions` atttribute works similarly.
+The `complexFunctions` attribute works similarly.
 
 The `techdebt` attribute gives all the information relative to the technical debt: its associated cost,
 and the list of files to fix.
@@ -675,7 +675,7 @@ type ComplexFunction {
 
 The `Duplicate` type represents a block of duplicate code. The `Duplicate` object itself
 represent the concept of duplicated code. It indicates the length of the duplicated code (`lineCount` attribute)
-and the code itself. Then, the `occurrences` attribute list all the occurrences of this duplicates (make sure
+and the code itself. Then, the `occurrences` attribute lists all the occurrences of this duplicates (make sure
 to pass the `howmany` and `skip` attributes). An occurrence is shown using the `DuplicateOccurrence` object type.
 This type contains the file containing the occurrence (attribute `filename`) as well as the line where the occurrence
 occurs (attribute `line`).
@@ -915,7 +915,7 @@ enum AccountType {
 }
 ```
 
-### Userlevel enumation
+### Userlevel enumeration
 
 ```java
 enum UserLevel {

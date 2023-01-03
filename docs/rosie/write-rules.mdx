@@ -27,24 +27,42 @@ There are two kinds of rules:
 - **AST**: analyze the program AST to report errors
 - **Pattern**: use regular expressions to detect potential issues
 
-<SimpleGrid columns={{base: 1, md: 2}} spacing={6}>
-<Card>
-<Heading size="md" m={0}>Create an AST rule</Heading>
-<Text fontSize="sm" m={0} lineHeight="tall" flexGrow={2}>
-By writing an AST rule, you accurately check the language element, which reduces the number of false positives.
-</Text>
-
-<DocLink size="sm" variant="primary" href="/docs/rosie/tutorials/analysis-rule-tutorial-python-ast">Learn More</DocLink>
-</Card>
-<Card>
-<Heading size="md" m={0}>Create a pattern rule</Heading>
-<Text fontSize="sm" m={0} lineHeight="tall" flexGrow={2}>
-A pattern ruleset lets you catch a pattern of code and emits violations/errors. This tutorial explains how to write a Codiga Pattern rule.
-</Text>
-<DocLink size="sm" variant="primary" href="/docs/rosie/tutorials/analysis-rule-tutorial-pattern">
-    Learn More
-  </DocLink>
-</Card>
+<SimpleGrid columns={{ base: 1, md: 2 }} spacing={6}>
+  <Card>
+    <Heading size="md" m={0}>
+      Create an AST rule
+    </Heading>
+    <Text fontSize="sm" m={0} lineHeight="tall" flexGrow={2}>
+      By writing an AST rule, you accurately check the language element, which
+      reduces the number of false positives.
+    </Text>
+    <Link
+      isExternal
+      size="sm"
+      variant="primary"
+      href="http://app.codiga.io/hub/tutorial/ast-rules/get-started/"
+    >
+      Play Tutorial
+    </Link>
+  </Card>
+  <Card>
+    <Heading size="md" m={0}>
+      Create a pattern rule
+    </Heading>
+    <Text fontSize="sm" m={0} lineHeight="tall" flexGrow={2}>
+      A pattern ruleset lets you catch a pattern of code and emits
+      violations/errors. This tutorial explains how to write a Codiga Pattern
+      rule.
+    </Text>
+    <Link
+      isExternal
+      size="sm"
+      variant="primary"
+      href="http://app.codiga.io/hub/tutorial/pattern-rules/get-started/"
+    >
+      Play Tutorial
+    </Link>
+  </Card>
 </SimpleGrid>
 
 ## Playground
@@ -53,6 +71,20 @@ Codiga provides a [playground](https://app.codiga.io/hub/playground) to experime
 static analyzer and write your own rules. Use the playground to test your own rules,
 experiment by starting from other people rules and let your imagination write the best
 code analysis rules!
+
+<Card>
+  <Heading size="md" m={0}>
+    Explore the Hub
+  </Heading>
+  <Text fontSize="sm" m={0} lineHeight="tall" flexGrow={2}>
+    The Codiga Hub hosts hundreds of custom analysis rules you can reuse. Browse
+    rules on the hub, import them in the playground and create new analysis
+    rules for your team!
+  </Text>
+  <Link isExternal size="sm" variant="primary" href="http://app.codiga.io/hub/">
+    Explore Codiga Hub
+  </Link>
+</Card>
 
 ## Tutorials
 

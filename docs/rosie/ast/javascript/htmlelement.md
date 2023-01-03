@@ -18,10 +18,24 @@ The `astType` value for this node is `htmlelement`.
 This object captures the following code pattern.
 
 ```jsx
-return <MyComponent attr="val" />;
+return (
+  <MyComponent attr="val">
+    <div>
+      <ul>
+        <li>item</li>
+      </ul>
+    </div>
+  </MyComponent>
+);
 ```
 
 ## Attributes
 
 - `tag` (type [`AstString`](/docs/rosie/ast/common/rosie-ast-common-aststring)): the tag of the HTML object
 - `attributes` (array of type [`HTMLAttribute`](/docs/rosie/ast/javascript/rosie-ast-javascript-htmlattribute)): the list of attributes
+- `htmlChildren` (type [`HtmlElement[]`](/docs/rosie/ast/javascript/rosie-ast-javascript-htmlelement)): arrays that contains all the children of an HTML node.
+
+## Examples of rules
+
+- [jsx-a11y/html-has-lang](https://app.codiga.io/hub/ruleset/jsx-a11y/html-has-lang)
+- [jsx-react/jsx-no-duplicate-props](https://app.codiga.io/hub/ruleset/jsx-react/jsx-no-duplicate-props)

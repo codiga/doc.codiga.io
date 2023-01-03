@@ -37,7 +37,7 @@ The dashboard includes the following metrics:
 - **Distribution of violation per severity**: Distribution of the violations detected using static analysis tools per severity. A low severity means the violations is serious. Severities can include:
 - **Code distribution**: an overview of the languages used in your project.
 - **Long functions**: indicates functions that have more than 40 lines of code (SLOCS) [Learn more about why long functions should be avoided.](https://dzone.com/articles/rule-30-%E2%80%93-when-method-class-or)
-- **Complex functions**: Functions that have a a high cyclomatic complexity and are more likely to have bugs. [Learn more about cyclomatic complexity.](https://en.wikipedia.org/wiki/Cyclomatic_complexity)
+- **Complex functions**: Functions that have a high cyclomatic complexity and are more likely to have bugs. [Learn more about cyclomatic complexity.](https://en.wikipedia.org/wiki/Cyclomatic_complexity)
 - **Duplicated lines**: percentage of the code duplicated in the repository [Learn more about why code should not be duplicated.](https://en.wikipedia.org/wiki/Duplicate_code)
 
 ![Dashboard - part1](/img/dashboard-01.png)

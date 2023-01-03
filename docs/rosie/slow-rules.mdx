@@ -74,7 +74,7 @@ function visit(node, filename) {
 
 ### Rule #2: avoid computing the same data
 
-Make sure you compute values only once. Making the same transformation mutliple
+Make sure you compute values only once. Making the same transformation multiple
 times increase your execution time significantly. If your rule do the same transformation twice
 and your rule is executed on 1,000 AST nodes, it will do 2,000 operations instead of 1,000 operations.
 
