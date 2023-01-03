@@ -33,13 +33,13 @@ Go to [app.codiga.io](https://app.codiga.io) and click the Code Snippet option i
 
 Select the private code snippet you want to share with your group, and click the edit button on the right to open the edit mode. You can also click the more options buttons on the right and select the edit option.
 
-![Share code snippet](/img/share-recipe-with-groups/group-sharing-01.png)
+![Codiga code snippets list](/img/share-recipe-with-groups/group-sharing-01.png)
 
 ### Step 3
 
 Click on the Groups tab and select the group with which you want to share the code snippet.
 
-![Share code snippet](/img/share-recipe-with-groups/group-sharing-03.png)
+![Share a private code snippet](/img/share-recipe-with-groups/group-sharing-03.png)
 
 ## Share private cookbooks
 
@@ -58,10 +58,10 @@ Go to [app.codiga.io](https://app.codiga.io) and click the Code Snippet option i
 
 Click on the Cookbooks tab, and select the private cookbook you want to share with your group. Click the edit button on the right to open the edit mode. You can also click the more options buttons on the right and select the edit option.
 
-![Share cookbooks](/img/share-recipe-with-groups/group-sharing-04.png)
+![Codiga cookbooks list](/img/share-recipe-with-groups/group-sharing-04.png)
 
 ### Step 3
 
 Click on the Groups tab and select the group with which you want to share the cookbook.
 
-![Share cookbooks](/img/share-recipe-with-groups/group-sharing-05.png)
+![Share a cookbook](/img/share-recipe-with-groups/group-sharing-05.png)

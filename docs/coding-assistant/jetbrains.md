@@ -72,7 +72,7 @@ To create a code snippet, select the code you want to share, click right and sel
 
 Your browser opens with the code and its language directly initialized.
 
-![Creating code snippets](/img/coding-assistant/jetbrains-create-snippet-02.png)
+![Code snippets details](/img/coding-assistant/jetbrains-create-snippet-02.png)
 
 ## Linking your Codiga account
 

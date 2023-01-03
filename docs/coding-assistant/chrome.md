@@ -32,7 +32,7 @@ To create a code snippet, select the code you want to share anywhere in Chrome, 
 
 Your browser opens with the code. You just need to fill the name, description, language and keywords to create a snippet.
 
-![Creating snippets](/img/coding-assistant/chrome-create-snippet-02.png)
+![Code snippets details](/img/coding-assistant/chrome-create-snippet-02.png)
 
 ## Support
 

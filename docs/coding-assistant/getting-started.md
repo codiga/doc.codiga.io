@@ -56,7 +56,7 @@ A code snippet is either public or private:
 - When a code snippet is marked **public**, any user on the platform can reuse the code snippet. A user needs to subscribe to the code snippet or to the cookbook that contains this code snippet.
 - When a code snippet is marked **private**, only you can use this code snippet.
 
-![How the coding assistant works](/img/coding-assistant/visibility.png)
+![Code snippets visibility](/img/coding-assistant/visibility.png)
 
 ## Code snippets available by default
 
@@ -91,7 +91,7 @@ When you look for a code snippet, we only send the following elements to our ser
 
 Our server returns the list of code snippets that matches your criteria.
 
-![How the coding assistant works](/img/coding-assistant/using-recipe.png)
+![Using a code snippet](/img/coding-assistant/using-recipe.png)
 
 ## Getting help
 

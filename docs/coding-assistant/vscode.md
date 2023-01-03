@@ -94,7 +94,7 @@ To create a code snippet in VS Code, select the code you want to share, click ri
 
 Your browser opens with the code and its language directly initialized.
 
-![Create code snippet](/img/coding-assistant/vscode-create-snippet-02.png)
+![Code snippet details](/img/coding-assistant/vscode-create-snippet-02.png)
 
 ## Linking your Codiga account
 
