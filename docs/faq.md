@@ -18,6 +18,8 @@ keywords:
 
 ## Metrics
 
+![Quality Score and Grade](/img/metrics-01.png)
+
 ### What is the Code Quality Score?
 
 The Code Quality Score is an aggregate of quality metrics (detects, duplicates, long and complex functions).
@@ -30,7 +32,7 @@ This value indicates how good or bad your code is. To compute the code quality s
 
 ### What is the Code Quality Grade?
 
-The Code Quality Grade is an easier visualization of the Code Quality Score, nothing more.
+The Code Quality Grade is an easier visualization of the Code Quality Score.
 
 ## GitHub Integration
 
@@ -49,8 +51,7 @@ Yes, you can learn everything about it in the [dedicated page](/docs/integration
 
 ### How do I stop receiving emails?
 
-Go in your project preferences (see below) and delete the email you do not want to receive
-notifications on.
+Go to your project preferences and click on the notifications. Go to the email notifications section to add or delete email accounts to receive notifications.
 
 ![Project Preferences](/img/project-preferences.png)
 
@@ -124,13 +125,11 @@ You can set up the ES version in the project preferences. Set the version accord
 
 ## Payments
 
-### How can I change my membership?
+### How can I change my plan?
 
-At that time, we only support upgrade via a paid membership on a GitHub account.
+Go to the groups section by clicking the option in the main navigation. Click on the billing tab and go to the plans tab. If you already have a Basic plan, you can upgrade it to a Team plan by clicking the "Start Trial" button.
 
-### When do you plan to have upgrade for regular accounts?
-
-We plan to have a payment processing integration in Q2 2020.
+![Plans](/img/plans-01.png)
 
 ## Privacy
 

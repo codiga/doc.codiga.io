@@ -26,11 +26,13 @@ The extension is available on the [Chrome Web Store](https://chrome.google.com/w
 
 ## Creating a code snippet
 
-To create a code snippet, select the code you want to share anywhere in Chrome, click right and select `"Create Codiga Recipe"`.
+To create a code snippet, select the code you want to share anywhere in Chrome, click right and select `"Create Codiga Snippet"`.
 
-Your browser opens with the code. You just need to fill the name, description, language and keywords to create a recipe.
+![Creating snippets](/img/coding-assistant/chrome-create-snippet-01.png)
 
-![Creating recipes](/img/coding-assistant/chrome-create-recipe.gif)
+Your browser opens with the code. You just need to fill the name, description, language and keywords to create a snippet.
+
+![Code snippets details](/img/coding-assistant/chrome-create-snippet-02.png)
 
 ## Support
 

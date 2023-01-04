@@ -1,11 +1,11 @@
 ---
 id: coding-assistant-recipes-share
-title: Codiga Code Snippets Sharing with Groups
+title: Codiga Code Snippets and Cookbooks Group Sharing
 sidebar_label: Group Sharing
 description: Now you can share your private code snippets with groups
 ---
 
-A group assembles users so that they can share projects. Please see this [document](https://doc.codiga.io/docs/create-group/ "Create Group | Codiga Documentation") for more information on groups.
+A group assembles users so that they can share projects and private code snippets and cookbooks. Please see this [document](https://doc.codiga.io/docs/create-group/ "Create Group | Codiga Documentation") for more information on groups.
 
 ![Share graphic](/img/share-recipe-with-groups/share.png)
 
@@ -15,44 +15,53 @@ If you use other integrations, you can create groups without much of an issue. R
 
 Now let us see how one can share your private code snippets with your selected group.
 
-## Step 1: Go to your code snippets and select the private code snippet you want to share with your group
 
-Follow these steps to go to your code snippets
 
-![code snippet dashboard](/img/share-recipe-with-groups/3.jpeg)
+## Share private code snippets
 
-1. Go to [app.codiga.io](https://app.codiga.io/)
-2. Login to your account
-3. Click on Coding Assistant on the left horizontal menu
-4. Click on code snippets
+:::info
 
-![Selected code snippet](/img/share-recipe-with-groups/4.jpeg)
+Sharing private code snippets is only available with groups on a Team plan.
 
-For example, We will take the test code as the code snippet we want to share with the group.
+:::
 
-## Step 2: Click on edit code snippet
+### Step 1
 
-This is where you will get an option to share code snippets among the group. You can go to this section by clicking the "Edit code snippet" button on the top right corner of your screen.
+Go to [app.codiga.io](https://app.codiga.io) and click the Code Snippet option in the navigation at the top.
 
-![Edit code snippet](/img/share-recipe-with-groups/2.jpeg)
+### Step 2
 
-## Step 3: Scroll down to the section with the title “Share”
+Select the private code snippet you want to share with your group, and click the edit button on the right to open the edit mode. You can also click the more options buttons on the right and select the edit option.
 
-![Share code snippet](/img/share-recipe-with-groups/hero.jpeg)
+![Codiga code snippets list](/img/share-recipe-with-groups/group-sharing-01.png)
 
-## Step 4: Using the drop-down menu select the group you want to share the code snippet with.
+### Step 3
 
-![Selected group](/img/share-recipe-with-groups/5.png)
+Click on the Groups tab and select the group with which you want to share the code snippet.
 
-This is how a code snippet is shared among a group. Once the code snippet is shared, your group/teammates will use these code snippets in their code and projects.
+![Share a private code snippet](/img/share-recipe-with-groups/group-sharing-03.png)
 
-You can check the shared code snippets for your group using the below steps.
+## Share private cookbooks
 
-# How to check shared code snippets on Dashboard?
+:::info
 
-Follow these steps to check shared code snippets on your Codiga Dashboard.
+Sharing private cookbooks is only available with groups on a Team plan.
 
-1. Go to [app.codiga.io](https://app.codiga.io/)
-2. Login to your account
-3. Click on Coding Assistant on the left horizontal menu
-4. Click on Group sharing
+:::
+
+### Step 1
+
+Go to [app.codiga.io](https://app.codiga.io) and click the Code Snippet option in the navigation at the top.
+
+
+### Step 2
+
+Click on the Cookbooks tab, and select the private cookbook you want to share with your group. Click the edit button on the right to open the edit mode. You can also click the more options buttons on the right and select the edit option.
+
+![Codiga cookbooks list](/img/share-recipe-with-groups/group-sharing-04.png)
+
+### Step 3
+
+Click on the Groups tab and select the group with which you want to share the cookbook.
+
+![Share a cookbook](/img/share-recipe-with-groups/group-sharing-05.png)
