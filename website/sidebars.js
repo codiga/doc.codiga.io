@@ -134,6 +134,7 @@ const sidebars = {
         "rosie/rosie-pattern",
         "rosie/python/rosie-python-ast",
         "rosie/rosie-troubleshoot-slow-rules",
+        "rosie/rosie-helper-functions",
       ],
     },
     {
@@ -178,7 +179,7 @@ const sidebars = {
         type: "doc",
         id: "rosie/ast/javascript/rosie-ast-javascript-index",
       },
-      label: "AST JavaScript Objects",
+      label: "AST JavaScript/TypeScript Objects",
       items: [
         "rosie/ast/javascript/rosie-ast-javascript-assignment",
         "rosie/ast/javascript/rosie-ast-javascript-aststringwithspread",
@@ -189,8 +190,23 @@ const sidebars = {
         "rosie/ast/javascript/rosie-ast-javascript-functioncallargument",
         "rosie/ast/javascript/rosie-ast-javascript-functioncallarguments",
         "rosie/ast/javascript/rosie-ast-javascript-functiondefinition",
+        "rosie/ast/javascript/rosie-ast-javascript-functiondefinitionparameters",
+        "rosie/ast/javascript/rosie-ast-javascript-functiondefinitionparameter",
         "rosie/ast/javascript/rosie-ast-javascript-import",
         "rosie/ast/javascript/rosie-ast-javascript-node-context",
+        "rosie/ast/javascript/rosie-ast-javascript-variabledeclaration",
+      ],
+    },
+    {
+      type: "category",
+      link: {
+        type: "doc",
+        id: "rosie/ast/typescript/rosie-ast-typescript-index",
+      },
+      label: "AST TypeScript Specific Objects",
+      items: [
+        "rosie/ast/typescript/rosie-ast-typescript-typeoperation",
+        "rosie/ast/typescript/rosie-ast-typescript-type",
       ],
     },
     {

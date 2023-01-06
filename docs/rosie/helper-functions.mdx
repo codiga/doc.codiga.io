@@ -1,0 +1,33 @@
+---
+id: rosie-helper-functions
+title: Helper Functions for Rosie
+sidebar_label: Helper Functions
+description: Write your custom code analysis rules with Codiga
+keywords:
+  - vscode
+  - jetbrains
+  - intellij
+  - code analysis rules
+  - sast
+---
+
+:::tip
+
+Helper functions help you to debug. Make sure you remove any call to helper functions when executing rules.
+
+:::
+
+## Print an object
+
+Use the function `printObject` to inspect the object in the console.
+
+Example of usage
+
+```javascript
+function visit(node, filename, code) {
+  printObject(node);
+}
+```
+
+Try [this playground link](https://app.codiga.io/hub/playground?name=my-new-rule&rule=ZnVuY3Rpb24gdmlzaXQobm9kZSwgZmlsZW5hbWUsIGNvZGUpIHsKCXByaW50T2JqZWN0KG5vZGUpOwp9&ruleType=ast&test=Y29uc3QgZm9vID0gImJhciI7&filename=my-rule.js&language=Javascript&pattern=&entityChecked=Assignment) to try.
+Click "Run" and inspect the console.

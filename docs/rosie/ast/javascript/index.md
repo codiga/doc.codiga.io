@@ -1,7 +1,7 @@
 ---
 id: rosie-ast-javascript-index
-title: JavaScript Objects
-sidebar_label: JavaScript Objects
+title: JavaScript/TypeScript Objects
+sidebar_label: JavaScript/TypeScript Objects
 description: JavaScript EntryPoint objects
 keywords:
   - rosie
