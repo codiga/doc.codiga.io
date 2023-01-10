@@ -102,7 +102,7 @@ const edit = buildEdit(1, 10, 1, 20, "update", "foobar");
 
 - `buildEditUpdate(startLine, startCol, endLine, endCol, content)`: create an edit that updates the code from starLine:startCol to endLine:endCol
 - `buildEditRemove(startLine, startCol, endLine, endCol)`: remove content from startLine:startCol to endLine:endCol
-- `buildEditUpdate(startLine, startCol, endLine, endCol, content)`: update content from startLine:startCol to endLine:endCol with `content`
+- `buildEditAdd(startLine, startCol, content)`: add the string `content` at startLine:startCol
 
 ### Build the fix
 
