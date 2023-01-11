@@ -35,7 +35,7 @@ return (
 - `openingTag` (type [`HTML Tag`](/docs/rosie/ast/javascript/rosie-ast-javascript-htmltag)): the tag element (with the position) of the opening tag
 - `closingTag` (type [`HTML Tag`](/docs/rosie/ast/javascript/rosie-ast-javascript-htmltag)): the tag element (with the position) of the closing tag
 - `attributes` (array of type [`HTMLAttribute`](/docs/rosie/ast/javascript/rosie-ast-javascript-htmlattribute)): the list of attributes
-- `htmlChildren` (type [`HtmlElement[]`](/docs/rosie/ast/javascript/rosie-ast-javascript-htmlelement)): arrays that contains all the children of an HTML node.
+- `content` (array of [`AstElement`](/docs/rosie/ast/common/rosie-ast-common-astelement)): arrays that contains all the children of an HTML node.
 
 ## Examples of rules
 
