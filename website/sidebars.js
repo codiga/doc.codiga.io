@@ -184,6 +184,7 @@ const sidebars = {
         "rosie/ast/javascript/rosie-ast-javascript-assignment",
         "rosie/ast/javascript/rosie-ast-javascript-aststringwithspread",
         "rosie/ast/javascript/rosie-ast-javascript-htmlelement",
+        "rosie/ast/javascript/rosie-ast-javascript-htmltag",
         "rosie/ast/javascript/rosie-ast-javascript-htmlattribute",
         "rosie/ast/javascript/rosie-ast-javascript-classdefinition",
         "rosie/ast/javascript/rosie-ast-javascript-functioncall",
