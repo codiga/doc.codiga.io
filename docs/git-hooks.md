@@ -14,97 +14,136 @@ keywords:
 
 ## What are Git hooks?
 
-Git hooks are scripts you execute before an action is performed. It can be
-`pre-push`, `pre-merge`, `pre-rebase`. Often, developers use them to perform
-some checks on the commit being pushed, either on the commit title, message
-or the code itself.
+Git hooks are scripts that run automatically every time certain events occur in a Git repository.
+These events can include actions such as committing, pushing, and merging changes. For these actions,
+you could use the `pre-commit`, `pre-push`, or `pre-merge` hook to run a script before completing that action.
+
+You can view a full list of possible hooks in the [Git documentation](https://git-scm.com/docs/githooks).
+
+## What git hook does Codiga support?
+
+We offer support for the `pre-push` hook.
+
+We only support the `pre-push` hook because we believe in committing code often. If we were to use the
+`pre-commit` hook that would go against that. So developers can commit freely, but once you're ready to
+push your code, Codiga will be there to catch any violations. This way you're assured that the code you
+pushed is violation free.
 
 :::info
 
-The Git hook script uses the Codiga static analyzer. Your project **MUST** have
-a `codiga.yml` file at its root. Make sure you added a `codiga.yml` with the
-list of rules to check for your project. You can get the list of rules on the
-[Codiga Hub](https://app.codiga.io/hub/rulesets).
+In order for our `pre-push` hook to work, your project **MUST** have
+a `codiga.yml` file. Make sure you have added a `codiga.yml` to your root folder with the
+list of rulesets you'd like your project to check. You can view all our publically available rulesets
+on the [Codiga Hub](https://app.codiga.io/hub/rulesets).
 
 :::
 
 ## Why use hooks with Codiga?
 
-Using hooks with Codiga, you can check your code before pushing it.
-You invoke Codiga to check your code on what has been modified.
+Integrating our `pre-push` hook is super simple and effective.
 
-It shows you all errors before you push your code and sends it for review.
-That way, no errors or warnings are triggered by Codiga during
-the Code Review since you checked everything before pushing the code!
-In other words, it helps you do faster code reviews.
+We check your code that has been modified before pushing it and show you any violations that have
+been detected.
 
-## Setup
+This way, if your changes have violations or warnings, we'll exit your `git push` to allow you to
+make the necessary changes, so you don't end up pushing bad code for review.
 
-### Install Codiga `clitool` tool
+:::info
 
-The first step is to install our `codiga-git-hook` tool
-that is distributed in the [`codiga` Python package](https://pypi.org/project/codiga/).
-To install it, run the following command:
-
-```bash
-pip install codiga
-```
-
-### Environment variables
-
-To use the tool, you need to define the following variables:
-
-- `CODIGA_API_TOKEN`: your API token
-
-These API keys are available in [your API tokens](https://app.codiga.io/api-tokens).
-
-To make this change persistent, you need to add the variable to your `.bashrc` or `.zshrc`.
-
-For zsh users (common for Mac OS X):
-
-```bash
-echo 'CODIGA_API_TOKEN="<CODIGA-TOKEN-VALUE>"' >> $HOME/.zshrc
-```
-
-For bash users (common the Linux):
-
-```bash
-echo 'CODIGA_API_TOKEN="<CODIGA-TOKEN-VALUE>"' >> $HOME/.bashrc
-```
-
-:::warning
-
-Make sure either `.bashrc` or `.zshrc` are not readable by other users.
+If you're in a rush and accept the risks, you can always bypass our `pre-push` hook by adding
+a `--no-verify` flag to your `git push` command. Bare in mind, if you have configured your project
+on Codiga, you'll still be able to review any bypassed violations or warning in your project page.
 
 :::
 
-### Configure your Git hooks
+## Setup
 
-You need to add a script in your Git repository to integrate with Codiga
-and check for violations at each push.
+### Install Node.js
 
-Create the `.git/hooks/pre-push` in your Git repository and make sure
-to make it executable (`chmod a+x .git/hooks/pre-push`).
+To use our `pre-push` hook, you'll need to ensure you have Node.js downloaded on your machine.
 
-The tool is invoked with the local and remote SHA.
+> If you don't have it installed, go to [download Node.js](https://nodejs.org/en/download/) now.
 
-There is how you invoke the tool.
+You can see if Node.js is installed with the following command:
+
+```bash
+node -v
+```
+
+### Create a git `pre-push` script
+
+There are two ways you can set up this script: `.git` or `.husky`. The main difference between the two is sharability.
+
+Using [husky](https://github.com/typicode/husky) allows a developer to setup a `pre-push` hook, commit and push it. Now anyone pushing to that repository will have this Git hook running.
+
+Using the `.git` method will make it local to your machine only. If you wanted other users working on your project to use the git `pre-push` hook, they would need to set it up locally as well.
+
+#### Using `.git`
+
+Create a `.git/hooks/pre-push` file and paste the following:
 
 ```bash
 #!/bin/sh
 
-remote="$1"
-url="$2"
-
-z40=0000000000000000000000000000000000000000
-
 while read local_ref local_sha remote_ref remote_sha
 do
-  codiga-git-hook --remote-sha $remote_sha --local-sha $local_sha
+  npx @codiga/cli git-push-hook --remote-sha $remote_sha --local-sha $local_sha
 done
 
 exit 0
 ```
+
+:::info
+
+Depending on your existing setup, you may need to run `chmod a+x .git/hooks/pre-push`
+to make the script above executable.
+
+:::
+
+#### Using `.husky`
+
+If you're already using a tool like [Husky](https://github.com/typicode/husky) to handle git hooks the following would go into a `.husky/pre-push` file.
+
+> If you weren't using Husky before, please follow the [Husky documentation](https://github.com/typicode/husky) to setup it up.
+
+```bash
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+while read local_ref local_sha remote_ref remote_sha
+do
+  codiga git-push-hook --remote-sha $remote_sha --local-sha $local_sha
+done
+
+exit 0
+```
+
+:::info
+
+Depending on your existing setup, you may need to run `chmod +x .husky/pre-push`
+to make the script above executable.
+
+:::
+
+The following public repositories of ours all use this Husky setup and might be of help to you.
+
+- [codiga-home](https://github.com/codiga/codiga-home)
+- [doc.codiga.io](https://github.com/codiga/doc.codiga.io)
+- [vscode-plugin](https://github.com/codiga/vscode-plugin)
+- [chrome-extension](https://github.com/codiga/chrome-extension)
+- [code-snippets.dev](https://github.com/codiga/code-snippets.dev)
+- [code-snippets-manager](https://github.com/codiga/code-snippets-manager)
+
+### On your first push
+
+On your first `git push`, you and/or any of your team developers, will be prompted to set a Codiga API token.
+
+If you wish to set your token beforehand, in your terminal you can:
+
+- install the Codiga CLI tool globally with: `npm i @codiga/cli`
+- run `codiga token-add` to get started
+
+> Any token set here will be available to your `pre-push` hook.
 
 ## Important notes
 
@@ -112,12 +151,16 @@ When using the `pre-push` script, your code is being sent to the Codiga
 servers for analysis. The analysis is not local, it is done directly
 on Codiga servers to avoid any load on your local machine.
 
-## Bug reports
+## Related Links
 
-If you have any issues with the `pre-push` script, please open
-an issue on our [GitHub project](https://github.com/codiga/clitool/issues).
+- [GitHub project](https://github.com/codiga/codiga-cli)
+- [NPM package](https://www.npmjs.com/package/@codiga/cli)
+- [Codiga CLI tool](/docs/cli)
 
 ## Support
 
-- **GitHub project**: you can report bugs on the [GitHub project](https://github.com/codiga/clitool/issues)
-- **Slack**: You can also get support directly on our [Slack channel](https://join.slack.com/t/codigahq/shared_invite/zt-9hvmfwie-9BUVFwZDwvpIGlkHv2mzYQ).
+If you have any issues with the `pre-push` script:
+
+- open an issue on our [GitHub issues page](https://github.com/codiga/codiga-cli/issues)
+- get support directly on our [Slack channel](https://join.slack.com/t/codigahq/shared_invite/zt-9hvmfwie-9BUVFwZDwvpIGlkHv2mzYQ)
+- contact us through [Codiga support](https://www.codiga.io/contact-us/)
