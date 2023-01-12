@@ -70,9 +70,17 @@ You can see if Node.js is installed with the following command:
 node -v
 ```
 
-### Create a `.git/hooks/pre-push` script
+### Create a git `pre-push` script
 
-Now create a `.git/hooks/pre-push` file and paste the following:
+There are two ways you can set up this script: `.git` or `.husky`. The main difference between the two is sharability.
+
+Using [husky](https://github.com/typicode/husky) allows a developer to setup a `pre-push` hook, commit and push it. Now anyone pushing to that repository will have this Git hook running.
+
+Using the `.git` method will make it local to your machine only. If you wanted other users working on your project to use the git `pre-push` hook, they would need to set it up locally as well.
+
+#### Using `.git`
+
+Create a `.git/hooks/pre-push` file and paste the following:
 
 ```bash
 #!/bin/sh
@@ -91,6 +99,40 @@ Depending on your existing setup, you may need to run `chmod a+x .git/hooks/pre-
 to make the script above executable.
 
 :::
+
+#### Using `.husky`
+
+If you're already using a tool like [Husky](https://github.com/typicode/husky) to handle git hooks the following would go into a `.husky/pre-push` file.
+
+> If you weren't using Husky before, please follow the [Husky documentation](https://github.com/typicode/husky) to setup it up.
+
+```bash
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+while read local_ref local_sha remote_ref remote_sha
+do
+  codiga git-push-hook --remote-sha $remote_sha --local-sha $local_sha
+done
+
+exit 0
+```
+
+:::info
+
+Depending on your existing setup, you may need to run `chmod +x .husky/pre-push`
+to make the script above executable.
+
+:::
+
+The following public repositories of ours all use this Husky setup and might be of help to you.
+
+- [codiga-home](https://github.com/codiga/codiga-home)
+- [doc.codiga.io](https://github.com/codiga/doc.codiga.io)
+- [vscode-plugin](https://github.com/codiga/vscode-plugin)
+- [chrome-extension](https://github.com/codiga/chrome-extension)
+- [code-snippets.dev](https://github.com/codiga/code-snippets.dev)
+- [code-snippets-manager](https://github.com/codiga/code-snippets-manager)
 
 ### On your first push
 
@@ -113,6 +155,7 @@ on Codiga servers to avoid any load on your local machine.
 
 - [GitHub project](https://github.com/codiga/codiga-cli)
 - [NPM package](https://www.npmjs.com/package/@codiga/cli)
+- [Codiga CLI tool](/docs/cli)
 
 ## Support
 
