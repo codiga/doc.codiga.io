@@ -81,6 +81,7 @@ const sidebars = {
         "integration-circle-ci",
         "integration-github-action",
         "git-hooks",
+        "cli",
       ],
     },
     {
