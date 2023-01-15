@@ -85,13 +85,14 @@ sending a request to the rosie server, filter the rules that apply to the file b
 In other words, you must have a function with a signature like the one below to filter the rules you will be sending to the server.
 
 ```typescript
-
-const filterRulesForFile = (filename: string!, rules: Rule[], codigaYmlConfiguration: unknown): Rule[] => {
-};
-
+const filterRulesForFile = (
+  filename: string!,
+  rules: Rule[],
+  codigaYmlConfiguration: unknown
+): Rule[] => {};
+```
 
 ## `server`
 
 Specify the URL of the server to use. By default, it uses `analysis.codiga.io` to analyze all files
 on the Codiga server. However, you can use your server.
-```
