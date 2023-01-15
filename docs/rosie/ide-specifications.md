@@ -156,6 +156,8 @@ rulesets:
 
 The `rulesets` elements list all the rulesets being used for the IDE.
 
+More information about the complete structure of the `codiga.yml` file in the [dedicated section](/docs/rosie/rosie-codiga-yml/).
+
 ### Caching strategy
 
 For each project opened in the IDE, the rules from the rulesets being used are cached.

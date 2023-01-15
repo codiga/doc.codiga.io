@@ -114,7 +114,7 @@ const sidebars = {
       type: "category",
       link: { type: "doc", id: "rosie/rosie-introduction" },
       label: "Rosie",
-      items: ["rosie/rosie-introduction"],
+      items: ["rosie/rosie-introduction", "rosie/rosie-codiga-yml"],
     },
     {
       type: "category",

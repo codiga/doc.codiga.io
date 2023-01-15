@@ -1,0 +1,97 @@
+---
+id: rosie-codiga-yml
+title: Rosie codiga.yml structure
+sidebar_label: codiga.yml structure
+description: How to configure codiga with codiga.yml
+keywords:
+  - sast
+  - code analysis
+  - code analysis rules
+  - sast
+---
+
+```yaml
+rulesets:
+  - my-python-ruleset
+  - my-other-ruleset
+ignore:
+  - my-python-ruleset:
+      - rule1:
+          - prefix: /path/to/file/to/ignore
+      - rule2
+      - rule3:
+          - prefix:
+              - /path1
+              - /path2
+server:
+  - hostname: analysis.codiga.io
+  - port: 443
+```
+
+## `rulesets`
+
+The `rulesets` section provides an array of rulesets to use. `rulesets` should be available on
+[the Codiga Hub](https://app.codiga.io/hub/rulesets).
+
+## `ignore`
+
+The `ignore` section specifies what rules should be ignored for a ruleset. Ignoring a rule is done
+for the whole project or just for a prefix. The path is a path in the project.
+
+### Ignoring specific path
+
+The user can ignore a rule only for a given prefix in the source tree.
+
+#### Ignoring only for a directory
+
+```yaml
+ignore:
+  - my-python-ruleset:
+      - rule1:
+          - prefix: /path/to/file/to/ignore
+```
+
+The rule named `rule1` in `my-python-ruleset` is enabled for all the project but `/path/to/file/to/ignore`.
+In other words, only `/path/to/file/to/ignore` is disabled only for `/path/to/file/to/ignore`.
+
+#### Ignoring for the whole project
+
+```yaml
+ignore:
+  - my-python-ruleset:
+      - rule2
+```
+
+Here, the rule `rule2` from ruleset `my-python-ruleset` is ignored for the whole project.
+
+#### Ignoring for multiple directories
+
+```yaml
+ignore:
+  - my-python-ruleset:
+      - rule3:
+          - prefix:
+              - /path1
+              - /path2
+```
+
+Here, the rule named `rule3` in ruleset `my-python-ruleset` is disabled for `/path1` and `/path2`.
+
+### Underlying behavior for ignore
+
+The `ignore` section contains a list of rules to ignore. The behavior in the IDE is the following: when
+sending a request to the rosie server, filter the rules that apply to the file being analyzed.
+
+In other words, you must have a function with a signature like the one below to filter the rules you will be sending to the server.
+
+```typescript
+
+const filterRulesForFile = (filename: string!, rules: Rule[], codigaYmlConfiguration: unknown): Rule[] => {
+};
+
+
+## `server`
+
+Specify the URL of the server to use. By default, it uses `analysis.codiga.io` to analyze all files
+on the Codiga server. However, you can use your server.
+```
