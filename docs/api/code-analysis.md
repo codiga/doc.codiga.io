@@ -25,7 +25,7 @@ keywords:
 ---
 
 :::info
-If you have any question about the API, please join [our discord channel](https://discord.com/invite/5b9bGDtvnc),
+If you have any questions about the API, please join [our Slack channel](https://join.slack.com/t/codigahq/shared_invite/zt-9hvmfwie-9BUVFwZDwvpIGlkHv2mzYQ),
 we provide direct support on our channel.
 :::
 

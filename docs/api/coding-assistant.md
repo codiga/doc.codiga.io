@@ -11,7 +11,7 @@ keywords:
 ---
 
 :::info
-If you have any question about the API, please join [our discord channel](https://discord.com/invite/5b9bGDtvnc),
+If you have any questions about the API, please join [our Slack channel](https://join.slack.com/t/codigahq/shared_invite/zt-9hvmfwie-9BUVFwZDwvpIGlkHv2mzYQ),
 we provide direct support on our channel.
 :::
 
@@ -55,7 +55,7 @@ The `AssistantRecipe` type has the following attributes:
 - `filenamePatterns`: list of patterns a file must match so that the snippet applies.
 - `keywords`: list of keywords to improve the recipe search
 - `tags`: list of tags to simplify the organization of the snippet
-- `code`: code of the snippet encoded in Base64. This is the RAW format of the snippet with all variables. You can learn more about the [variables system here](/docs/coding-assistant/coding-assistant-recipe-variables/)
+- `code`: code of the snippet encoded in Base64. This is the RAW format of the snippet with all variables. You can learn more about the [variables system here](/docs/coding-snippets/snippets-variables/)
 - `imports`: list of imports for the snippet (e.g. `import java.util.*` for Java or `from datetime import datetime` for Python)
 - `language`: language of the snippet. This is an enumeration, see below for the list of supported languages and their enumeration values.
 - `creationTimestampMs`: when the recipe was created.

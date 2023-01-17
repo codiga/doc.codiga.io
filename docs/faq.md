@@ -39,13 +39,13 @@ The Code Quality Grade is an easier visualization of the Code Quality Score.
 ### When I import the projects on GitHub, only some of them are added. What is wrong?
 
 If not all your repositories are being added, this is very likely you are hitting the limits of the number of
-projects for your account. See [the GitHub integration](/docs/integration-github) for more information.
+projects for your account. See [the GitHub integration](/docs/code-analysis/integration/github) for more information.
 
 ## Bitbucket integration
 
 ### Do you have a Bitbucket App?
 
-Yes, you can learn everything about it in the [dedicated page](/docs/integration-bitbucket)
+Yes, you can learn everything about it on the [dedicated page](/docs/code-analysis/integration/bitbucket)
 
 ## Notifications
 
@@ -61,8 +61,7 @@ Go to your project preferences and click on the notifications. Go to the email n
 
 If you are using a regular account and have just a link to your GitHub account,
 that is normal since automated code reviews are only done for users
-that log with GitHub. If you want to have automated pull requests, log
-using your GitHub account and use our GitHub app.
+that log in with GitHub. If you want to have automated pull requests, log in using your GitHub account and use our GitHub app.
 
 ### Can I customize pull requests?
 
@@ -71,7 +70,7 @@ on the pull request.
 
 ### Can I disable automatic code reviews on pull requests?
 
-Yes, go in your project preferences and disabled the option
+Yes, go into your project preferences and disabled the option
 `Pull requests enabled`.
 
 ### Can I disable what is being surfaced in pull requests?
@@ -86,7 +85,7 @@ to look for.
 
 ### Can I disable automatic analyses on push?
 
-Yes, go in your project preferences and disabled the option
+Yes, go into your project preferences and disabled the option
 `Push notification enabled`.
 
 ## Quota
@@ -102,12 +101,12 @@ Any request after Tuesday 8am will be accepted.
 
 ### How quota is consumed?
 
-Any push requests consumes one quota element.
+Any push requests consume one quota element.
 
 Pull requests can take up to two analyses.
-However, our engine attempts to reuse previous analyses to avoid to waste quota.
+However, our engine attempts to reuse previous analyses to avoid wasting quota.
 For example, if you are doing a pull request, we will initially analyze
-the source and the destination revisions, taking 2 analysis from your quota.
+the source and the destination revisions, taking 2 analyses from your quota.
 When the code of the pull request is updated, only the target is analyzed again,
 taking only one analysis from your quota.
 
@@ -135,8 +134,8 @@ Go to the groups section by clicking the option in the main navigation. Click on
 
 ### How long do you keep the code on your servers?
 
-We keep the code only during the analysis. We automatically delete it afterwards.
-We copy the section that are relevant to our analysis in the database and it is limited to the section
+We keep the code only during the analysis. We automatically delete it afterward.
+We copy the section that is relevant to our analysis in the database and it is limited to the section
 of code you can see in the duplicates section.
 
 ### What personal information do you keep on your server?
@@ -149,7 +148,7 @@ Note that we use google analytics to track visitors on the platform.
 ### How do you use my data?
 
 We solely use the data for code analysis purposes. We do not sell the data
-to any third party vendor.
+to any third-party vendor.
 
 ## Tools
 
