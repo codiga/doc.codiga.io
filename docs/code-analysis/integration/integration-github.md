@@ -1,5 +1,5 @@
 ---
-id: integration-github
+id: github
 title: Codiga GitHub Integration
 sidebar_label: GitHub
 description: Check your code quality with Codiga for all GitHub repositories. Work for 12+ languages. Free 14 days trial.

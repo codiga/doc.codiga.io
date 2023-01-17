@@ -1,6 +1,6 @@
 ---
 id: create-project
-title: Codiga Create Project Documentation
+title: Create Project on Codiga
 sidebar_label: Create a Project
 description: Create a project on Codiga to analyze your code and automated your Code Reviews on GitHub, GitLab and Bitbucket. Support for 12+ languages, start for free today.
 keywords:
@@ -45,7 +45,6 @@ Select the repository platform and click the "Create Project" button on the repo
 Private repositories are only available on paid plans. Please upgrade your subscription to create a group for them.
 
 :::
-
 
 ![Create project](/img/create-project-02.png)
 

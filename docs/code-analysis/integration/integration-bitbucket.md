@@ -1,5 +1,5 @@
 ---
-id: integration-bitbucket
+id: bitbucket
 title: Codiga - Bitbucket Integration
 sidebar_label: Bitbucket
 description: Automated Code Reviews and Code Analysis on Bitbucket for 12+ languages. Install in one click. Free 14 days trial.
@@ -104,7 +104,7 @@ with more details and fine-grained data on code quality and technical debt.
 Codiga automatically processes Pull Requests on Bitbucket, analyzes code change
 and annotates the code according to violations, duplicates, and complex and unreadable code.
 
-This functionality is similar to the one offered by our [GitHub application](/docs/integration-github).
+This functionality is similar to the one offered by our [GitHub application](/docs/code-analysis/integration/github).
 
 The comment in pull requests is being issued with the identity
 of the user that installed the Bitbucket App. Unfortunately,

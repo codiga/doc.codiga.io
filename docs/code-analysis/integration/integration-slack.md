@@ -1,6 +1,6 @@
 ---
-id: integration-slack
-title: Codiga Slack Integration
+id: slack
+title: Slack Integration
 sidebar_label: Slack
 description: Real Time notification on Slack of your code quality changes from Codiga at each push. Free 14 days trial.
 keywords:

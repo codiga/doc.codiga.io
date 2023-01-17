@@ -39,13 +39,13 @@ The Code Quality Grade is an easier visualization of the Code Quality Score.
 ### When I import the projects on GitHub, only some of them are added. What is wrong?
 
 If not all your repositories are being added, this is very likely you are hitting the limits of the number of
-projects for your account. See [the GitHub integration](/docs/code-analysis/integration-github) for more information.
+projects for your account. See [the GitHub integration](/docs/code-analysis/integration/github) for more information.
 
 ## Bitbucket integration
 
 ### Do you have a Bitbucket App?
 
-Yes, you can learn everything about it on the [dedicated page](/docs/code-analysis/integration-bitbucket)
+Yes, you can learn everything about it on the [dedicated page](/docs/code-analysis/integration/bitbucket)
 
 ## Notifications
 

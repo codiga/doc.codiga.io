@@ -24,9 +24,9 @@ Codiga is the home of the clean, safe and secure code. Codiga helps developers t
 and address technical debt. The platform provides the following functions:
 
 - **Static Code Analysis**: report code violations in your IDE in milliseconds. Codiga works in your CI/CD pipeline and reports errors at every code changes in seconds. Codiga static code analysis works on VS Code, JetBrains, VisualStudio, GitHub, Gitlab and Bitbucket.
-- **Secure Code Analysis**: check your code in real-time in your IDE, and at each code changes in your CI/CD pipelines. Codiga implements code analysis rules for all major standards and follows software practices such as OWASP10 and CWE/SANS Top 25.
+- **Secure Code Analysis**: check your code in real-time in your IDE, and at each code change in your CI/CD pipelines. Codiga implements code analysis rules for all major standards and follows software practices such as OWASP10 and CWE/SANS Top 25.
 - **Automated Code Reviews**: automatically surface code smells, duplicates or complex functions when sending code for review.
-- **Integration with multiple platforms**: Codiga is integrated with [GitHub](./integration-github.md), [Gitlab](./integration-gitlab.md), [Bitbucket](./integration-bitbucket.md), [Slack](./integration-slack.md), [Generic CI/CD](./integration-ci.md), [AWS CodeBuild](./integration-aws-codebuild.md), [CircleCI](./integration-circle-ci.md), [GitHub Action](./integration-github-action.md) and [Git Hooks](./git-hooks.md).
+- **Integration with multiple platforms**: Codiga is integrated with [GitHub](/docs/code-analysis/integration/github), [Gitlab](/docs/code-analysis/integration/gitlab), [Bitbucket](/docs/code-analysis/integration/bitbucket), [Slack](/docs/code-analysis/integration/slack), [Generic CI/CD](/docs/code-analysis/integration/generic), [AWS CodeBuild](/docs/code-analysis/integration/aws-codebuild), [CircleCI](/docs/code-analysis/integration/circleci), [GitHub Action](/docs/code-analysis/integration/github-action) and [Git Hooks](/docs/code-analysis/integration/git-hooks).
 
 Codiga is an open platform and you can develop your own tool on top of its analysis engine.
 All data is exposed on a GraphQL API that lets you access all analysis data.

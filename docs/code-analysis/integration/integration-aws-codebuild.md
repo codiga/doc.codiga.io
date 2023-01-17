@@ -1,6 +1,6 @@
 ---
-id: integration-aws-codebuild
-title: Codiga - AWS CodeBuild Integration for Code Analysis
+id: aws-codebuild
+title: AWS CodeBuild Integration
 sidebar_label: AWS CodeBuild
 description: Check your code quality with Codiga and AWS CodeBuild for 12+ languages and all code hosting platforms. Free 14 days trial.
 keywords:

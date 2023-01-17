@@ -1,6 +1,6 @@
 ---
 id: add-badge
-title: Codiga Add a Badge Documentation
+title: Add a Code Quality Badge
 sidebar_label: Add Quality Badges
 description: Create a badge on Codiga to show your code quality on GitHub, GitLab and Bitbucket. Support for 12+ languages, start for free today.
 keywords:
@@ -27,7 +27,8 @@ keywords:
 ---
 
 ## Add Quality Badges
-A badge displays your code quality on a public webpage, such as your GitHub README file. 
+
+A badge displays your code quality on a public webpage, such as your GitHub README file.
 
 Go to Code Analysis, click on your project, then click on the Preferences tab, click on General Information and copy and paste the Badge URL where you want to show this as your quality score. You can also add a badge on your project page to show the code grade (as shown below).
 

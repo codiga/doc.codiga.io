@@ -1,6 +1,6 @@
 ---
-id: integration-ci
-title: Codiga - Continuous Integration to check code quality
+id: generic
+title: Generic Continuous Integration Integration
 sidebar_label: Generic CI/CD
 description: Check your code quality with Codiga and integrate with your CI/CD pipeline. Available for 12+ languages and all code hosting platforms. Free 14 days trial.
 keywords:

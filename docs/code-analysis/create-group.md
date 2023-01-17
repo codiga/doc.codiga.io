@@ -1,6 +1,6 @@
 ---
 id: create-group
-title: Codiga Create Group Documentation
+title: Create a Group
 sidebar_label: Create a Group
 description: Create a group on Codiga to analyze your code and automated your Code Reviews on GitHub, GitLab and Bitbucket. Support for 12+ languages, start for free today.
 keywords:
@@ -44,19 +44,17 @@ Once logged, click on the menu item _Groups_ and select the _New Groups_ tab.
 
 Click on the code repository provider that you want to connect (GitHub, GitLab or Bitbucket)
 
-
 ### For GitHub
 
 :::info
 
-GitHub users cannot create groups. For more information, read the [GitHub integration guide](integration-github.md).
+GitHub users cannot create groups. For more information, read the [GitHub integration guide](/docs/code-analysis/integration/github).
 
 :::
 
 ![Add groups](/img/create-group-02.png)
 
 Click the _Install App_ button to install the Codiga App in the GitHub account associated.
-
 
 If you don't see your group, install the Codiga App on your user account or organization.
 
@@ -65,7 +63,6 @@ If you don't see your group, install the Codiga App on your user account or orga
 If you previously installed the Codiga App on a User or Group, remove the app and reinstall it to renew your installation.
 
 :::
-
 
 ### For GitLab
 
@@ -81,14 +78,13 @@ You have linked your GitLab account. To unlink your account anytime, go to _User
 
 ![Add groups](/img/create-group-05.png)
 
- Now, let's create groups for GitLab. Click on the menu item _Groups_, click the _New Groups_ tab, and select GitLab. Now you can see the list of your projects. To join an existent group, click on the _Join Group_ button on the right side of the screen. To create a new group, click on the _Create Group_ button.
+Now, let's create groups for GitLab. Click on the menu item _Groups_, click the _New Groups_ tab, and select GitLab. Now you can see the list of your projects. To join an existent group, click on the _Join Group_ button on the right side of the screen. To create a new group, click on the _Create Group_ button.
 
 ![Add groups](/img/create-group-06.png)
 
 Once you have joined or created a group, you will be redirected to _My Groups_ tab.
 
 ![Add groups](/img/create-group-07.png)
-
 
 ### For Bitbucket
 
@@ -104,7 +100,7 @@ You have linked your Bitbucket account. To unlink your account anytime, go to _U
 
 ![Add groups](/img/create-group-09.png)
 
- Now, let's create groups for Bitbucket. Click on the menu item _Groups_, click the _New Groups_ tab, and select Bitbucket. Now you can see the list of your projects. To join an existent group, click on the _Join Group_ button on the right side of the screen. To create a new group, click on the _Create Group_ button.
+Now, let's create groups for Bitbucket. Click on the menu item _Groups_, click the _New Groups_ tab, and select Bitbucket. Now you can see the list of your projects. To join an existent group, click on the _Join Group_ button on the right side of the screen. To create a new group, click on the _Create Group_ button.
 
 ![Add groups](/img/create-group-10.png)
 
@@ -112,15 +108,13 @@ Once you have joined or created a group, you will be redirected to _My Groups_ t
 
 ![Add groups](/img/create-group-07.png)
 
-
-
 ## Adding users to the group
 
 **Note:** You need to have administrator privileges for the specific group to add users.
 
 ### Add a Codiga user
 
-If the user already have a Codiga account, enter the following information: 
+If the user already have a Codiga account, enter the following information:
 
 - **Username:** The GitHub, GitLab or Bitbucket username. For Google accounts enter the user's Gmail address.
 - **Account type:** The account provider (GitHub, Gitlab, Bitbucket or Google).

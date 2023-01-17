@@ -1,6 +1,6 @@
 ---
 id: dependencies
-title: Codiga Code Dependencies Analysis
+title: Code Dependencies Analysis
 sidebar_label: Code Dependencies Analysis
 description: Analyze your dependencies. Detect any outdated dependency that might be unsafe or insecure and get notification to upgrade them.
 keywords:

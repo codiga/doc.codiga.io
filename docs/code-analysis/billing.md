@@ -1,6 +1,6 @@
 ---
 id: billing
-title: Billing
+title: Codiga Billing
 description: Manage your account and payment options on Codiga. Secure payment through our Stripe integration. Free 14 days trial.
 keywords:
   - billing

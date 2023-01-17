@@ -9,7 +9,7 @@ A group assembles users so that they can share projects and private code snippet
 
 ![Share graphic](/img/share-recipe-with-groups/share.png)
 
-Unfortunately, while using Github, groups cannot be created; instead, you can use the GitHub organization as a Group in GitHub Integration. In that case, you need to install Codiga to your GitHub organization as you are good to go. For more information on this, please refer to this [document](/docs/code-analysis/integration-github/).
+Unfortunately, while using Github, groups cannot be created; instead, you can use the GitHub organization as a Group in GitHub Integration. In that case, you need to install Codiga to your GitHub organization as you are good to go. For more information on this, please refer to this [document](/docs/code-analysis/integration/github/).
 
 If you use other integrations, you can create groups without much of an issue. Refer to this [document](/docs/code-analysis/create-group/) to create a group and add users.
 

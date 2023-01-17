@@ -1,6 +1,6 @@
 ---
 id: create-user
-title: Codiga User Account Documentation
+title: Create a User on Codiga
 sidebar_label: Create an Account
 description: Create an account on Codiga to analyze your code and automated your Code Reviews on GitHub, GitLab and Bitbucket. Support for 12+ languages, start for free today.
 keywords:

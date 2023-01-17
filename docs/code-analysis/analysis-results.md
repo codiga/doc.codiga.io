@@ -1,6 +1,6 @@
 ---
 id: analysis-results
-title: Code Analysis and Automated Code Reviews Results
+title: Code Analysis Results
 sidebar_label: Code Analysis Results
 description: Analyze your code quality on GitHub, GitLab and Bitbucket and spot any security or vulnerability issue. Support for 12+ languages, start for free today.
 keywords:
