@@ -25,7 +25,7 @@ keywords:
 ---
 
 :::info
-If you have any questions about the API, please join [our Slackchannel ](https://join.slack.com/t/codigahq/shared_invite/zt-9hvmfwie-9BUVFwZDwvpIGlkHv2mzYQ), we provide direct support on our channel.
+If you have any questions about the API, please join [our Slack channel](https://join.slack.com/t/codigahq/shared_invite/zt-9hvmfwie-9BUVFwZDwvpIGlkHv2mzYQ), we provide direct support on our channel.
 :::
 
 :::info
@@ -36,17 +36,17 @@ Codiga API is completely implemented in [GraphQL](https://graphql.org/).
 
 ## What is GraphQL?
 
-GraphQL is a new way to interact between system. It exposes a typed API to the client that can
-structure his own query and decide exactly what data to query and receive.
+GraphQL is a new way to interact between systems. It exposes a typed API to the client that can
+structure his query and decide exactly what data to query and receive.
 
-There are many advantages for using GraphQL, such as query optimization but also
+There are many advantages to using GraphQL, such as query optimization but also
 a strong tool ecosystem and libraries in many languages. If you do not know
 GraphQL, we encourage you to learn more on [graphql.org](https://graphql.org).
 
 We have an accessible API to empower developers and let them develop new tools
 around our eco-system. By giving access to the data, we believe developers
 can extract the data they need and integrate the analysis data into their own
-development process (CI jobs, dashboard, etc.).
+development process (CI jobs, dashboards, etc.).
 
 ## Accessing the GraphQL API
 
@@ -64,7 +64,7 @@ To query the API, you need to be authenticated. There are two ways to do this:
 
 :::info
 
-An API token is what you need if you want to start an integration with Codiga. It relies on tokens
+An API token is what you need if you want to start integration with Codiga. It relies on tokens
 provided by the user.
 
 :::
@@ -92,11 +92,11 @@ When you use the API programmatically, make sure you set these headers when you 
 
 :::warning
 
-JWT are short-lived token, used for the web application at app.codiga.io. They are not recommended
+JWTs are short-lived tokens, used for the web application at app.codiga.io. They are not recommended
 for any custom-integration.
 :::
 
-A Json Web Token is a lightweight authentication mechanism that provide a token to authenticate
+A JSON Web Token is a lightweight authentication mechanism that provides a token to authenticate
 within a given period of time.
 
 The JWT authentication works in two passes:
@@ -148,13 +148,13 @@ that contains the value of your JWT.
 
 ## Querying the API with third-party libraries
 
-GraphQL has a rich eco-system with [multiple clients written in different languages](https://graphql.org/code/#graphql-clients).
+GraphQL has a rich ecosystem with [multiple clients written in different languages](https://graphql.org/code/#graphql-clients).
 We show the use of such libraries for two languages: Python and Javascript.
 
 ### Python
 
 There is a simple query example using the [sgqlc](https://github.com/profusion/sgqlc) client
-for Python. In the following code snippet, we authenticate using the couple of access and secret keys
+for Python. In the following code snippet, we authenticate using a couple of access and secret keys
 and print the username.
 
 ```python
@@ -227,6 +227,6 @@ to limit the number of results:
 
 If the `howmany` argument is too high, the query will be considered as too expensive and therefore, rejected.
 
-These two argument can be used to implement pagination. For example, to show the first ten element of an object, you
+These two arguments can be used to implement pagination. For example, to show the first ten elements of an object, you
 will first call with `skip` set to 0 and `howmany` set to 10. To see the next 10 elements, you will set `skip` to 10 and `howmany`
 still to 10.
