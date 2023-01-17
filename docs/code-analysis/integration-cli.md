@@ -56,7 +56,7 @@ The outcome of these two `--help` commands will be the same.
 
 :::tip
 
-In our `pre-push` [git hook documentation](/docs/git-hooks), we recommend using the following
+In our `pre-push` [git hook documentation](/docs/code-analysis/git-hooks), we recommend using the following
 `npx` form as it's simpler to share amongst teams.
 
 :::
@@ -75,13 +75,13 @@ In the example above, `123` would be your remote SHA and `456` would be your loc
 
 :::tip
 
-We've dedicated a whole page, [Git Hooks](/docs/git-hooks), for you to read more on how to setup our Git `pre-push` hook. Once set up, the hook can get your SHA values automatically and run the command above for you on each `git push`.
+We've dedicated a whole page, [Git Hooks](/docs/code-analysis/git-hooks), for you to read more on how to setup our Git `pre-push` hook. Once set up, the hook can get your SHA values automatically and run the command above for you on each `git push`.
 
 :::
 
 :::info
 
-To run the command, `codiga git-push-hook`, you will need to have a valid Codiga API token set. If you do not have a valid API token set, our CLI will prompt you to enter one. We detail how to set a Codiga API token in the [Adding a Codiga API token](/docs/cli/#adding-a-codiga-api-token) section below.
+To run the command, `codiga git-push-hook`, you will need to have a valid Codiga API token set. If you do not have a valid API token set, our CLI will prompt you to enter one. We detail how to set a Codiga API token in the [Adding a Codiga API token](/docs/code-analysis/cli/#adding-a-codiga-api-token) section below.
 
 :::
 
@@ -148,7 +148,7 @@ codiga --version
 
 - [GitHub project](https://github.com/codiga/codiga-cli)
 - [NPM package](https://www.npmjs.com/package/@codiga/cli)
-- [Git pre push hook](https://doc.codiga.io/docs/git-hooks/)
+- [Git pre-push hook](/docs/code-analysis/git-hooks/)
 
 ## Support
 

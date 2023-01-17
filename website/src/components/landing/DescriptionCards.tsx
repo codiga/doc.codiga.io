@@ -52,7 +52,7 @@ function DescriptionCards() {
               as={DocusaurusLink}
               size="md"
               variant="primary"
-              href="docs/getting-started/"
+              href="docs/code-analysis/getting-started/"
             >
               Learn More
             </Link>
@@ -113,7 +113,7 @@ function DescriptionCards() {
               as={DocusaurusLink}
               size="md"
               variant="primary"
-              href="docs/coding-assistant/coding-assistant-getting-started/"
+              href="docs/code-snippets/getting-started/"
             >
               Learn More
             </Link>

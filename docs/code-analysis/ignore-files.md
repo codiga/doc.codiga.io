@@ -1,6 +1,6 @@
 ---
 id: ignore-files
-title: Codiga - Ignore Files and Violations in Code Analysis
+title: Ignore Files and Violations
 sidebar_label: Ignore Files
 description: Ignore files and violations for your project in Codiga. Configure your Codiga project and ignore directories for all analyses.
 keywords:
@@ -38,14 +38,14 @@ exactly like a `.gitignore` and specific to Codiga. Put here all
 the files and directories that you want Codiga to ignore.
 
 :::info
- 
- File and directory names are relative to the project root directory.
+
+File and directory names are relative to the project root directory.
 
 :::
 
 :::warning
- 
- You should not put the starting '/' character in the list of files/directories to ignore.
+
+You should not put the starting '/' character in the list of files/directories to ignore.
 
 :::
 
@@ -92,8 +92,8 @@ by entering paths separated by the character `;`.
 ![Analysis configuration](/img/analysis-configuration-03.png)
 
 :::info
- 
- You should not put the starting '/' character in the list of files/directories to ignore.
+
+You should not put the starting '/' character in the list of files/directories to ignore.
 
 :::
 

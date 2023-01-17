@@ -42,7 +42,7 @@ Here are some ways to avoid this issue:
    If you need references take a look at these [.gitignore templates for different languages](https://github.com/github/gitignore).
 
 2. **Add .ci-ignore to your project:**
-   Similar to `.gitignore`, but specific to Codiga, the `.ci-ignore` file contains the files and folders that should be ignored when running the analysis. This is another way you can prevent reaching your maximum lines of code quota. For more information see [Ignore Files and Violations](https://doc.codiga.io/docs/ignore-files/).
+   Similar to `.gitignore`, but specific to Codiga, the `.ci-ignore` file contains the files and folders that should be ignored when running the analysis. This is another way you can prevent reaching your maximum lines of code quota. For more information see [Ignore Files and Violations](/docs/code-analysis/ignore-files/).
 
 3. **Upgrade your plan:**
    If you need to run the analysis on larger projects, and you already prevented unnecessary files to be tracked by Git or Codiga, you can upgrade your subscription plan such that enough lines of code are allowed per repository. See our [Upgrade Account](https://app.codiga.io/account/upgrade) page for more information. If you need a custom plan, do not hesitate in [contacting us](https://codiga.io/contact-us/).

@@ -1,5 +1,5 @@
 ---
-id: coding-assistant-recipes-cookbooks
+id: code-snippets-cookbooks
 sidebar_label: Snippets and Cookbooks
 title: Codiga - Snippets and Cookbooks
 description: Coding Assistant to define and use a collection of code snippets for your IDE. Work for 15+ languages.
@@ -24,15 +24,14 @@ Add the following information for your code snippet:
 - **Library**: specify the libraries to use with your code snippet.
 - **Snippet privacy**: set the privacy of your code snippet. A code snippet can be either public or private. You cannot change the code snippets visibility once created. When a code snippet is created as public, it's automatically shared and reusable by anybody on the platform. Only you or shared groups can reuse a code snippet when created as private.
 
-
 ![Code snippet information](/img/coding-assistant/add-new-snippet-01.png)
 
- Now, you can edit the metadata for your code snippet:
+Now, you can edit the metadata for your code snippet:
 
 - **Description**: details about your code snippet (optional) (e.g. `code snippet that read a CSV file from the local filesystem`)
 - **Keywords**: a set of keywords that are used to trigger the code snippet.
 - **Tags**: a set of tags to organize your code snippets.
-- **Filename pattern**: this snippet only applies to a file that matches this pattern. 
+- **Filename pattern**: this snippet only applies to a file that matches this pattern.
 - **Shortcut**: a string to type in your IDE and import your code snippet.
 
 You can also add the new code snippet to an existing cookbook.
@@ -50,7 +49,6 @@ You can go to the public code snippet you want to share and click on the Share b
 ### Using a code snippet
 
 Use public code snippets directly in your IDE and browser. Install the plugin for [VS Code](./coding-assistant-vscode.md), [JetBrains](./jetbrains.md) and [Google Chrome](./chrome.md).
-
 
 ### How a code snippet get selected in my IDE?
 

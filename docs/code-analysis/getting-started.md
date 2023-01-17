@@ -24,12 +24,29 @@ Codiga is the home of the clean, safe and secure code. Codiga helps developers t
 and address technical debt. The platform provides the following functions:
 
 - **Static Code Analysis**: report code violations in your IDE in milliseconds. Codiga works in your CI/CD pipeline and reports errors at every code changes in seconds. Codiga static code analysis works on VS Code, JetBrains, VisualStudio, GitHub, Gitlab and Bitbucket.
-  
 - **Secure Code Analysis**: check your code in real-time in your IDE, and at each code changes in your CI/CD pipelines. Codiga implements code analysis rules for all major standards and follows software practices such as OWASP10 and CWE/SANS Top 25.
-  
 - **Automated Code Reviews**: automatically surface code smells, duplicates or complex functions when sending code for review.
-  
 - **Integration with multiple platforms**: Codiga is integrated with [GitHub](./integration-github.md), [Gitlab](./integration-gitlab.md), [Bitbucket](./integration-bitbucket.md), [Slack](./integration-slack.md), [Generic CI/CD](./integration-ci.md), [AWS CodeBuild](./integration-aws-codebuild.md), [CircleCI](./integration-circle-ci.md), [GitHub Action](./integration-github-action.md) and [Git Hooks](./git-hooks.md).
 
 Codiga is an open platform and you can develop your own tool on top of its analysis engine.
 All data is exposed on a GraphQL API that lets you access all analysis data.
+
+<SimpleGrid columns={{base: 1, md: 2}} spacing={6}>
+<Card>
+<Heading size="md" m={0}>Playground</Heading>
+<Text fontSize="sm" m={0} lineHeight="tall" flexGrow={2}>
+Codiga provides a playground to experiment our statistic analyzer and write your own rules. Use the playground to test your own rules, experiment by starting from other people rules and let your imagination write the best code analysis rules.
+</Text>
+
+  <DocLink isExternal size="sm" variant="primary" href="https://app.codiga.io/hub/playground/">
+    Learn More
+  </DocLink>
+  </Card>
+  <Card>
+    <Heading size="md" m={0}>Explore the Hub</Heading>
+    <Text fontSize="sm" m={0} lineHeight="tall" flexGrow={2}>
+    The Codiga Hub hosted hundreds of custom analysis rules you can reuse. Browse rules on the Hub, import them in the playground and create new analysis rules for your team.
+    </Text>
+    <DocLink isExternal size="sm" variant="primary" href="https://app.codiga.io/hub/rulesets">Learn More</DocLink>
+  </Card>
+</SimpleGrid>

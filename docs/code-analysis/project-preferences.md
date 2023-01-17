@@ -1,7 +1,7 @@
 ---
 id: project-preferences
-title: Codiga Analysis Configuration for Automated Code Analysis
-sidebar_label: Analysis Configuration
+title: Project Configuration
+sidebar_label: Project Configuration
 description: Configure your project and Code Reviews on Codiga and adapt the code analysis behavior to your needs.
 keywords:
   - code analysis

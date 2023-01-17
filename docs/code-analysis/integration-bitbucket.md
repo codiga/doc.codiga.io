@@ -1,6 +1,6 @@
 ---
 id: integration-bitbucket
-title: Codiga - Bitbucket Integration for Automated Code Reviews
+title: Codiga - Bitbucket Integration
 sidebar_label: Bitbucket
 description: Automated Code Reviews and Code Analysis on Bitbucket for 12+ languages. Install in one click. Free 14 days trial.
 tags:

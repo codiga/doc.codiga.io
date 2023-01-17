@@ -1,6 +1,6 @@
 ---
 id: git-hooks
-title: Codiga - Using Git Hooks to Check your Code before pushing
+title: Using pre-push Git Hooks
 sidebar_label: Git Hooks
 description: Automatically trigger a code analysis using Git Hooks and ensure that your code meets your code quality criteria.
 keywords:
@@ -155,7 +155,7 @@ on Codiga servers to avoid any load on your local machine.
 
 - [GitHub project](https://github.com/codiga/codiga-cli)
 - [NPM package](https://www.npmjs.com/package/@codiga/cli)
-- [Codiga CLI tool](/docs/cli)
+- [Codiga CLI tool](/docs/code-analysis/cli)
 
 ## Support
 

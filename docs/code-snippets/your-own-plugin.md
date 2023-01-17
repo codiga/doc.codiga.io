@@ -1,5 +1,5 @@
 ---
-id: coding-assistant-your-own-plugin
+id: your-own-plugin
 sidebar_label: Write an IDE Integration
 title: Codiga - Implement your own Plugin to use Code Snippets
 description: Plugin specification for the Codiga coding assistant. Implement your own Codiga Integration.
@@ -16,7 +16,7 @@ keywords:
 
 # Codiga Plugin Specifications
 
-In this documentation you'll find everything you need to know to create your own plugin for Codiga's coding assistant in any IDE. Taking as a reference the [VSCode plugin specification](/docs/coding-assistant/coding-assistant-vscode-spec/).
+In this documentation you'll find everything you need to know to create your own plugin for Codiga's coding assistant in any IDE. Taking as a reference the [VSCode plugin specification](/docs/code-snippets/vscode/).
 
 :::note
 
@@ -99,7 +99,7 @@ The Codiga API is implemented with [GraphQL](https://spec.graphql.org/June2018/)
 
 There are some queries that are publicly accessible, for example `assistantPublicRecipes`. But there are others that require the user to be authenticated, for example `assistantRecipes`. The authentication process for a plugin is done by adding an API token to the header of any query or mutation.
 
-You can see how to generate an API token in our [VS Code Integration documentation](/docs/coding-assistant/coding-assistant-vscode/#linking-your-codiga-account).
+You can see how to generate an API token in our [VS Code Integration documentation](/docs/code-snippets/vscode/#linking-your-codiga-account).
 This token has to be assigned to the `X-Api-Token` header.
 
 In the playground you can click on `HTTP HEADERS` and add the `X-Api-Token` so you can test the API directly from there.
@@ -137,7 +137,7 @@ The language parameter is a GraphQL enumeration with the following values: `Dock
 There are relevant variables that you can add to a code snippet that will help injecting relevant contextual information in the plugins. A variable is a placeholder that is being replaced by a value from the user.
 The snippet variables are being shown in the RAW representation of the snippet (attribute `code` of the GraphQL object). When using the `presentableFormat`, we show default values for the placeholder (see the format section below).
 
-For more information refer to the [recipe variables documentation](https://doc.codiga.io/docs/coding-assistant/coding-assistant-recipe-variables/).
+For more information refer to the [code snippets variables documentation](/docs/code-snippets/snippets-variables/).
 
 ### Snippet formats
 
@@ -288,7 +288,7 @@ Where:
 
 ### Snippet selection menu
 
-A quick pick menu is just an input that shows up in the IDE where you can do a google-like search, and see the results in real time. For more information you can check our current documentation for semantic search in [VSCode](https://doc.codiga.io/docs/coding-assistant/coding-assistant-vscode/#using-a-recipe) and [JetBrains](https://doc.codiga.io/docs/coding-assistant/coding-assistant-jetbrains/#using-a-recipe).
+A quick pick menu is just an input that shows up in the IDE where you can do a google-like search, and see the results in real time. For more information you can check our current documentation for semantic search in [VSCode](/docs/code-snippets/vscode/) and [JetBrains](/docs/code-snippets/jetbrains/).
 
 ### Record access
 

@@ -1,5 +1,5 @@
 ---
-id: coding-assistant-vscode-spec
+id: vscode-spec
 title: Codiga VS Code Plugin Specification
 sidebar_label: VS Code Specifications
 description: Specification for the Coding Assistant's VSCode plugin to document queries, authentication, and recipes management
@@ -21,11 +21,11 @@ This is a document describing the general features of the VSCode plugin from an 
 
 ## Where is it?
 
-The VSCode plugin is an open source project located in a [public GitHub repository](https://github.com/codiga/vscode-plugin/).
+The VSCode plugin is an open-source project located in a [public GitHub repository](https://github.com/codiga/vscode-plugin/).
 
 ## VSCode documentation
 
-All information related with VSCode plugin development and the VSCode API can be found [here](https://code.visualstudio.com/api).
+All information related to VSCode plugin development and the VSCode API can be found [here](https://code.visualstudio.com/api).
 
 ## Structure
 
@@ -36,20 +36,20 @@ The root structure of the project source (e.g `/src`) is:
   - `activate()`: When the extension is activated this is run, it initializes the features of the plugin such as:
 
     - Initialize GraphQL client
-    - Initialize local storage.Used to save cached recipes for example.
-    - Creates a status bar item such that the state of the plugin is shown in the bottom of the IDE
-    - Register all commands to be used in the plugin. These will be described below with detail.
-    - Fetches user information (If user is authenticated). If user is not signed in it shows a message
-    - Shows message explaining general functionality of the plugin
+    - Initialize local storage. Used to save cached recipes for example.
+    - Creates a status bar item such that the state of the plugin is shown at the bottom of the IDE
+    - Register all commands to be used in the plugin. These will be described below in detail.
+    - Fetches user information (If the user is authenticated). If the user is not signed in it shows a message
+    - Shows message explaining the general functionality of the plugin
     - Starts polling process for the recipes and shortcuts. Explained with details below.
 
   - `deactivate()`: When the extension is deactivated this is run, it stops the shortcut/recipes polling.
 
 - **constants.ts**: Shared file with all constants that are shared between components of the plugin.
 
-- **/utils**: Set of functionalities that are used by commands to manipulate editor, clean data, generate custom information, etc.
+- **/utils**: Set of functionalities that are used by commands to manipulate the editor, clean data, generate custom information, etc.
 
-  - **configurationUtils.ts**: Contains function to generate, and store in local storage, a random 10 character string that we call a `fingerprint` which is necessary to communicate with the Codiga API.
+  - **configurationUtils.ts**: Contains function to generate, and store in local storage, a random 10 characters string that we call a `fingerprint` which is necessary to communicate with the Codiga API.
   - **fileUtils.ts**: Utilities for analysis of a VSCode file information (e.g. does the file have imports, what's its indentation, etc.) and metadata information (e.g. what is the language given a specific extension). Some of the features in this file are:
     - Get a programming language given a file or a document. Using the extension of the file. In `getLanguageForDocument`, `EXTENSION_TO_LANGUAGE` and `getLanguageForFile`.
     - Check if a document has a specific import in `hasImport`.
@@ -71,7 +71,7 @@ The root structure of the project source (e.g `/src`) is:
   - **client.ts**: Where the client is initialized (See `initializeClient`) and set up through a set of functionalities.
     - In `generateHeaders` we add the header `X-Api-Token` that is used by all queries and mutations when set. This is an optional header as a user that is not authenticated can also use the Codiga extension with no problem.
     - `doQuery` and `doMutation` are the common functionalities for all API GraphQL interaction, here are injected the headers from above.
-  - **configuration.ts**: Provides a function `getApiToken` that gets the API Token from the workspace configuration. For more information on the token generation refer to the [VSCode plugin user documentation](https://doc.codiga.io/docs/coding-assistant/coding-assistant-vscode/#linking-your-codiga-account)
+  - **configuration.ts**: Provides a function `getApiToken` that gets the API Token from the workspace configuration. For more information on the token generation refer to the [VSCode plugin user documentation](/docs/code-snippets/vscode/#linking-your-codiga-account)
   - **queries.ts**: All queries required to run the VSCode extension, there are two major ways of looking for recipes at the moment. Semantic search and shortcuts. _Semantic search_ is done by a set of words that have to match somehow the `description`, `keywords` or `name` of the recipe in order for it to be retrieved. This is used by the `codiga.recipeUse`, that pops up an input field where the user can browser snippets in a similar way of the google search bar. _Shortcuts_ are defined by the user when creating a recipe, have the form `this.is.a.shorcut`, and can be accessed in the IDE by typing `.` or `/`.
     - `GET_RECIPES`: Uses the GraphQL API `getRecipesForClient` which given `keywords`, `fingerprint`, `dependencies`, `parameters`, `language` and `filename` returns a set of available recipes.
     - `GET_RECIPES_BY_SHORTCUT`: Uses the GraphQL API `getRecipesForClientByShortcut`. Given a `term` (shortcut typed by the user which contains a `.` or a `/` to be triggered), and some extra parameters, returns the list of recipes which match the shortcut. This is used by the command `get-recipes-for-client.ts` in the `getRecipesForClientByShorcut` function.

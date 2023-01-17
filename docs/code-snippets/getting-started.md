@@ -1,6 +1,6 @@
 ---
-id: coding-assistant-getting-started
-title: Coding Assistant Find Smart Code Snippets in your IDE
+id: getting-started
+title: Find Code Snippets in your IDE
 description: Coding Assistant to write faster code in your IDE and find safe and secure code within seconds. Work for 15+ languages.
 keywords:
   [
@@ -24,7 +24,7 @@ The Codiga coding assistant helps you create, share and import in your IDE reusa
 
 In just entering a few words in a box, a code snippet is imported in your IDE, which makes you write safe and secure code faster.
 
-![Use code snippet in Jetbrains](/img/coding-assistant/jetbrains-use-recipe.gif)
+![Use code snippets in Jetbrains](/img/coding-assistant/jetbrains-use-recipe.gif)
 
 ## How it works
 
@@ -67,13 +67,13 @@ These sets of code snippets are being moderated by the Codiga team and are consi
 
 The Coding Assistant is compatible with the following IDE:
 
-- [VS Code](/docs/coding-assistant/coding-assistant-vscode)
-- [Jetbrains IDEs](/docs/coding-assistant/coding-assistant-jetbrains): IntelliJ, PyCharm, PHPStorm, etc.
-- [Chrome](/docs/coding-assistant/coding-assistant-chrome)
+- [VS Code](/docs/code-snippets/vscode)
+- [Jetbrains IDEs](/docs/code-snippets/jetbrains): IntelliJ, PyCharm, PHPStorm, etc.
+- [Chrome](/docs/code-snippets/chrome)
 
 ## Platform safety
 
-Users can rate code snippet and flag them as unsafe. When being flagged as unsafe, they are removed from the suggestions in your IDE.
+Users can rate code snippets and flag them as unsafe. When being flagged as unsafe, they are removed from the suggestions in your IDE.
 It guarantees that all code snippets are safe and secure to use.
 
 ## Note on code snippet reusability
@@ -87,7 +87,7 @@ When you look for a code snippet, we only send the following elements to our ser
 
 - the language you are using
 - the list of dependencies (packages) you are using (some code snippets depend on specific packages)
-- the keywords you typed that triggers the code snippet
+- the keywords you typed that trigger the code snippet
 
 Our server returns the list of code snippets that matches your criteria.
 
@@ -96,23 +96,3 @@ Our server returns the list of code snippets that matches your criteria.
 ## Getting help
 
 You can get help by joining our [Slack Community](https://join.slack.com/t/codigahq/shared_invite/zt-9hvmfwie-9BUVFwZDwvpIGlkHv2mzYQ)
-
-<SimpleGrid columns={{base: 1, md: 2}} spacing={6}>
-<Card>
-<Heading size="md" m={0}>Playground</Heading>
-<Text fontSize="sm" m={0} lineHeight="tall" flexGrow={2}>
-Codiga provides a playground to experiment our statistic analyzer and write your own rules. Use the playground to test your own rules, experiment by starting from other people rules and let your imagination write the best code analysis rules.
-</Text>
-
-  <DocLink isExternal size="sm" variant="primary" href="https://app.codiga.io/hub/playground/">
-    Learn More
-  </DocLink>
-  </Card>
-  <Card>
-    <Heading size="md" m={0}>Explore the Hub</Heading>
-    <Text fontSize="sm" m={0} lineHeight="tall" flexGrow={2}>
-    The Codiga Hub hosted hundreds of custom analysis rules you can reuse. Browse rules on the Hub, import them in the playground and create new analysis rules for your team.
-    </Text>
-    <DocLink isExternal size="sm" variant="primary" href="https://app.codiga.io/hub/">Learn More</DocLink>
-  </Card>
-</SimpleGrid>

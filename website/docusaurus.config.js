@@ -67,7 +67,7 @@ module.exports = {
         },
         items: [
           {
-            to: "docs/getting-started/",
+            to: "docs/code-analysis/getting-started/",
             label: "Code Analysis",
             position: "left",
           },
@@ -79,7 +79,7 @@ module.exports = {
           },
 
           {
-            to: "docs/coding-assistant/coding-assistant-getting-started/",
+            to: "docs/code-snippets/getting-started/",
             label: "Code Snippets",
             position: "left",
           },
