@@ -156,7 +156,7 @@ Our code editor uses `codemirror` sublime keymaps, plus some extra keymaps for y
 
 ### UNIX
 
-- `Shift-Cmd-F1`: format
+- `Shift-Cmd-F`: format
 - `Ctrl-Q`: fold-unfold
 - `Ctrl-Space`: autocomplete
 - `Cmd-Left`: goLineStartSmart
