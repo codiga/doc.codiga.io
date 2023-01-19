@@ -215,6 +215,9 @@ const sidebars = {
       items: [
         "rosie/ast/typescript/rosie-ast-typescript-typeoperation",
         "rosie/ast/typescript/rosie-ast-typescript-type",
+        "rosie/ast/typescript/rosie-ast-typescript-interface",
+        "rosie/ast/typescript/rosie-ast-typescript-interface-property",
+        "rosie/ast/typescript/rosie-ast-typescript-interface-index-signature",
       ],
     },
     {
