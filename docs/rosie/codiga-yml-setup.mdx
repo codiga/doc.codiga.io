@@ -1,0 +1,56 @@
+---
+id: rosie-codiga-yml-setup
+title: Rosie codiga.yml setup
+sidebar_label: codiga.yml setup
+description: How to setup a codiga.yml
+keywords:
+  - sast
+  - code analysis
+  - code analysis rules
+---
+
+To use the Codiga's Static Analyzer, Rosie, a `codiga.yml` file is necessary.
+
+This file is used to provide real-time feedback on your code within your IDE or when you push a new revision on your repository and should be located in your project root directory.
+
+## How to create a `codiga.yml`
+
+### Automatically
+
+By using the [Codiga CLI](https://github.com/codiga/codiga-cli), you can have a `codiga.yml` created quickly.
+
+If you run the following command in your terminal (at your project's root directory), it'll open an interactive menu where we can suggest languages and rulesets. A `codiga.yml` will then be created for you with your chosen rulesets it in.
+
+```bash
+npx @codiga/cli@latest ruleset-add
+```
+
+:::info
+
+Requires [Node.js](https://nodejs.org/) installed. If you do not have Node.js, follow our [Getting Started](/docs/code-analysis/integration/cli/#getting-started) documentation or our [manual setup](#manually) below.
+
+:::
+
+### Manually
+
+If you don't want to or you're not allowed to have Node.js installed on your system, you can manually create a `codiga.yml` file too.
+
+#### Step 1
+
+In your project root directory, create a `codiga.yml` file.
+
+#### Step 2
+
+Visit the [rulesets page](https://app.codiga.io/hub/rulesets) on the Codiga Hub and search for some rulesets that fit your project.
+
+#### Step 3
+
+Take the names of your desired rulesets and add them to your `codiga.yml` in a `rulesets` list.
+
+For example, let's say you found and wanted to use `my-python-ruleset` and `my-other-ruleset`. You would add them to your `codiga.yml` under `rulesets`, to make it look like the following.
+
+```yaml
+rulesets:
+  - my-python-ruleset
+  - my-other-ruleset
+```

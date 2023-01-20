@@ -63,6 +63,28 @@ In our `pre-push` [git hook documentation](/docs/code-analysis/git-hooks), we re
 
 ## Features
 
+### Create or add rulesets to a `codiga.yml`
+
+To create a `codiga.yml` file with rulesets or to quickly add new rulesets to a `codiga.yml` file, we offer a single command.
+
+If you run the command below, we'll open an interactive menu where we can suggest languages and rulesets, and you can choose which ones to use.
+
+```bash
+codiga ruleset-add
+```
+
+If you know what rulesets you want to add, you can pass their names into the command like you see below.
+
+```bash
+codiga ruleset-add my-public-ruleset my-private-ruleset
+```
+
+:::info
+
+Remember to run this command in your project's root directory. If we detect a `codiga.yml` file, we will add the given/chosen rulesets to it. If you don't have a `codiga.yml` file, we'll create one for you.
+
+:::
+
 ### Analysis and report issues between two commits
 
 To check for violations between two commits manually, you can use the following command.
