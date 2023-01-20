@@ -175,13 +175,6 @@ module.exports = {
         appId: "Y38E5PBP7U",
         apiKey: "d53ab77e8cc34e860d226276347bddb7",
         indexName: "code-inspector",
-        /**
-         * keep contextual search as false otherwise search will fail
-         * see link for reference.
-         *
-         * https://discourse.algolia.com/t/algolia-searchbar-is-not-working-with-docusaurus-v2/14659/2
-         */
-        contextualSearch: false,
       },
     }),
 };
