@@ -46,4 +46,4 @@ if (node.pkg.value === "\"module-name\"") {
 ## Attributes
 
 - `pkg` ([`AstString`](/docs/rosie/ast/common/rosie-ast-common-aststring)): name of the package imported
-- `importedNames` (array of [`AstString`](/docs/rosie/ast/common/rosie-ast-common-aststring)): array of imported names.
+- `importedNames` (array of [`JavaScriptImportedName`](/docs/rosie/ast/javascript/rosie-ast-javascript-importedname)): array of imported names.

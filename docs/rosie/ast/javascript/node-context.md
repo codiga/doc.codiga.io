@@ -15,7 +15,8 @@ The `JavaScriptNodeContext` is attached to each AST object for Python via the `c
 
 - `currentFunction` (array or [`FunctionDefinition`](/docs/rosie/ast/javascript/rosie-ast-javascript-functiondefinition/)): the current function we are in (`null` if we are not in a function)
 - `currentClass` (type [`ClassDefinition`](/docs/rosie/ast/javascript/rosie-ast-javascript-classdefinition/)): the current class (or `null` if not in a class)
-- `imports` (type [`Import`](/docs/rosie/ast/javascript/rosie-ast-javascript-import/)
+- `imports` (array of type [`Import`](/docs/rosie/ast/javascript/rosie-ast-javascript-import/): list of all imports
+- `assignments` (array of type [`Assignment`](/docs/rosie/ast/common/rosie-ast-common-assignment/)): list of assignments
 
 ## Example of use
 
