@@ -3,8 +3,7 @@ id: ide-integration-jetbrains
 title: Code Analysis Integration for JetBrains IDEs
 sidebar_label: JetBrains IDEs
 description: Integration of the Codiga Code Analysis platform for JetBrains IDEs.
-keywords:
-  [
+keywords: [
     jetbrains,
     clion,
     datagrip,
@@ -18,13 +17,14 @@ keywords:
     webstorm,
     intellij,
     android studio
-    pycharm
+    pycharm,
   ]
 ---
 
 The Codiga JetBrains IDE plugin provides integration of Codiga's Rosie Code Analysis platform.
 
 You can find the plugin on:
+
 - [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/17969-codiga/) - you can also find the list of supported IDEs and versions here
 - GitHub at [codiga/jetbrains-plugin](https://github.com/codiga/jetbrains-plugin)
 
@@ -33,7 +33,7 @@ You can find the plugin on:
 The Rosie platform and the integration in JetBrains IDEs support the following languages and file extensions for code analysis:
 
 | Language   | File Extensions  |
-|------------|------------------|
+| ---------- | ---------------- |
 | Python     | .py. py3, .ipynb |
 | JavaScript | .js, .jsx        |
 | TypeScript | .ts, .tsx        |
@@ -50,9 +50,9 @@ NOTE: The file must have the `.yml` extension. Creating the file as `codiga.yaml
 ### API Token
 
 Configuring the API Token is not mandatory at the moment, but if you'd like to use your private rulesets and rules,
-you must configure it in the IDE Settings under the `Tools > Codiga` page. 
+you must configure it in the IDE Settings under the `Tools > Codiga` page.
 
-![Codiga API Token Configuration](/img/rosie/ide-integration/jetbrains/codiga_api_token.PNG)
+![Codiga API Token Configuration](/img/rosie/ide-integration/jetbrains/codiga_api_token.png)
 
 ### Manually via NPM
 
@@ -79,6 +79,7 @@ that the project could benefit from Codiga code analysis.
 ![Default Rulesets Suggestion Notification](/img/rosie/ide-integration/jetbrains/default_rulesets_suggestion_notification.png)
 
 There are two options on this notification:
+
 - **Create codiga.yml**: creates the configuration file in the project root with a default list of rulesets for the found language.
 - **Never for this project**: it saves your choice for this project, and won't remind you again about creating a `codiga.yml` file.
 
@@ -127,26 +128,28 @@ rulesets:
 ignore:
   - python-security:
       - request-verify:
-        # Ignores 'request-verify' in any file in any folder whose relative path starts with this prefix.
-        - prefix: /src/some/project/path  
+          # Ignores 'request-verify' in any file in any folder whose relative path starts with this prefix.
+          - prefix: /src/some/project/path
       - requests-timeout:
-        # Ignores 'requests-timeout' in files whose relative paths start with at least one of the listed prefixes.
-        - prefix:
-          - src/some/project/path # The leading slash is optional
-          - src/some/project/path/python_file.py # Exact matching for a file path
+          # Ignores 'requests-timeout' in files whose relative paths start with at least one of the listed prefixes.
+          - prefix:
+              - src/some/project/path # The leading slash is optional
+              - src/some/project/path/python_file.py # Exact matching for a file path
 ```
 
 The prefix paths must be specified with forward slashes (/), the plugin handles OS specific file system paths under the hood.
 
 Currently, there is no support for:
+
 - Ignoring entire rulesets. If you'd like to do so, simply comment out or remove the given ruleset from the `rulesets` property.
 - `.`, `..` or other wildcard characters or pattern matching. The prefix is processed as a literal value.
 
 #### Troubleshooting
 
 In order for the ignore functionality to work properly, make sure that:
-  - the ruleset names in the `ignore` section are all specified in the `rulesets` section as well,
-  - the rule names specified under the ruleset names target rules that actually exist in those rulesets.
+
+- the ruleset names in the `ignore` section are all specified in the `rulesets` section as well,
+- the rule names specified under the ruleset names target rules that actually exist in those rulesets.
 
 ### Validation of Rulesets
 
@@ -178,7 +181,7 @@ in a similar fashion you would expect regular code Inspections to be highlighted
 Highlighting types are mapped to the Rosie severities as per the following:
 
 | Rosie Severity          | Highlighting in the Editor                                                                   |
-|-------------------------|----------------------------------------------------------------------------------------------|
+| ----------------------- | -------------------------------------------------------------------------------------------- |
 | CRITICAL                | ![Critical Violation](/img/rosie/ide-integration/jetbrains/critical_violation.png)           |
 | ERROR                   | ![Error Violation](/img/rosie/ide-integration/jetbrains/error_violation.png)                 |
 | WARNING                 | ![Warning Violation](/img/rosie/ide-integration/jetbrains/warning_violation.png)             |
@@ -187,6 +190,7 @@ Highlighting types are mapped to the Rosie severities as per the following:
 ### Quick Fixes
 
 There are three types of quick fixes that you can use on an annotation:
+
 1. **Fix: &lt;fix description>**: applies an actual code fix for the violation
 2. **Remove error '&lt;rule name>'**: disables Codiga code analysis for the line on which the violation occurred
 3. **See rule '&lt;rule name>' on the Codiga Hub**: opens the related rule on Codiga Hub
@@ -219,7 +223,8 @@ request = get('https://some.url', verify=False)
 ```
 
 You can add this comment either by invoking the **Remove error ...** quick fix on a violation, or add it manually.
-In the latter case  make sure that:
+In the latter case make sure that:
+
 - there is a whitespace between the comment sign and the `codiga-disable` text, for example `# codiga-disable` and not `#codiga-disable`, otherwise the exclusion is not applied,
 - also, that the indentation of the comment matches the line's below it, that it is supposed to exclude.
 
