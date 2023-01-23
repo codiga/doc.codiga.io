@@ -88,6 +88,16 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "IDE Integrations",
+      link: { type: "generated-index" },
+      items: [
+        "ide-integration-jetbrains",
+        "ide-integration-visual-studio",
+        "ide-integration-vscode"
+      ],
+    },
+    {
+      type: "category",
       label: "Rules",
       link: { type: "doc", id: "code-analysis/rules/rules" },
       items: ["code-analysis/rules/rules"],
