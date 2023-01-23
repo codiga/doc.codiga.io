@@ -36,10 +36,12 @@ Click "Run" and inspect the console.
 
 ## Python
 
-### Module usage
+### useModule
 
-```
-function useModule(imports, moduleName)
+Return `true` if a module is used.
+
+```javascript
+function useModule(imports, moduleName);
 ```
 
 Example
@@ -48,4 +50,32 @@ Example
 if (!useModule(node.context.imports, "boto3")) {
   return;
 }
+```
+
+### findVariableFromFunctionCall
+
+```
+function findVariableFromFunctionCall(assignments, module, functionName)
+```
+
+Find a variable that has been assigned from a function call.
+
+```javascript
+const clientVariable = findVariableFromFunctionCall(
+  node.context.assignments,
+  "boto3",
+  "client"
+);
+```
+
+### useImportFrom
+
+```javascript
+function useImportFrom(imports, package, element);
+```
+
+Example
+
+```javascript
+useImportFrom(node.context.imports, "requests", "get");
 ```
