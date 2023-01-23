@@ -1,6 +1,6 @@
 ---
-id: ide-integration-visual-studio
-title: Code Analysis Integration for Visual Studio
+id: visualstudio
+title: Code Analysis for Visual Studio
 sidebar_label: Visual Studio
 description: Integration of the Codiga Code Analysis platform for Visual Studio.
 keywords: [vs, visual studio, secure code, safe code]

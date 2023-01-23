@@ -91,9 +91,9 @@ const sidebars = {
       label: "IDE Integrations",
       link: { type: "generated-index" },
       items: [
-        "ide-integration-jetbrains",
-        "ide-integration-visual-studio",
-        "ide-integration-vscode"
+        "code-analysis/ide/vscode",
+        "code-analysis/ide/jetbrains",
+        "code-analysis/ide/visualstudio",
       ],
     },
     {
@@ -145,6 +145,7 @@ const sidebars = {
         "rosie/tutorials/analysis-rule-tutorial-python-ast",
       ],
     },
+
     {
       type: "category",
       link: { type: "doc", id: "rosie/rosie-write-rule" },
