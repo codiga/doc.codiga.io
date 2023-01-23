@@ -155,6 +155,7 @@ const sidebars = {
       items: [
         "rosie/ast/common/rosie-ast-common-aststring",
         "rosie/ast/common/rosie-ast-common-astelement",
+        "rosie/ast/common/rosie-ast-common-assignment",
         "rosie/ast/common/rosie-ast-common-position",
         "rosie/ast/common/rosie-ast-common-ifstatement",
         "rosie/ast/common/rosie-ast-common-forstatement",
@@ -207,6 +208,7 @@ const sidebars = {
         "rosie/ast/javascript/rosie-ast-javascript-functiondefinitionparameters",
         "rosie/ast/javascript/rosie-ast-javascript-functiondefinitionparameter",
         "rosie/ast/javascript/rosie-ast-javascript-import",
+        "rosie/ast/javascript/rosie-ast-javascript-importedname",
         "rosie/ast/javascript/rosie-ast-javascript-node-context",
         "rosie/ast/javascript/rosie-ast-javascript-variabledeclaration",
         "rosie/ast/javascript/rosie-ast-javascript-try-block",

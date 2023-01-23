@@ -23,3 +23,4 @@ There is the element in the context object.
 ## See Also
 
 - [PythonNodeContext](/docs/rosie/ast/python/rosie-ast-python-node-context) that inherits `Context` and it attached to each Python AST node.
+- [JavaScriptNodeContext](/docs/rosie/ast/javascript/rosie-ast-javascript-node-context) that inherits `Context` and it attached to each JavaScript or TypeScript AST node.
