@@ -27,4 +27,4 @@ def my_function(arg1 = default_value, arg2 = other_value):
 - `isAsync` (type `boolean`): if this is an async function
 - `name` (type [`AstString`](/docs/rosie/ast/common/rosie-ast-common-aststring)): name of the function
 - `returnType` (type [`AstString`](/docs/rosie/ast/common/rosie-ast-common-aststring)): return type of the function
-- `parameters` (type [`FunctionDefinitionParameters`](/docs/rosie/ast/javascript/rosie-ast-javascript-functiondefinitionparameters)): list of parameters for the function
+- `parameters` (type [`FunctionDefinitionParameters`](/docs/rosie/ast/common/rosie-ast-common-functiondefinitionparameters)): list of parameters for the function

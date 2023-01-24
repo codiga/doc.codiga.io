@@ -1,21 +1,21 @@
 ---
-id: rosie-ast-javascript-functiondefinitionparameter
-title: Function Definition Parameter AST JavaScript Object
+id: rosie-ast-common-functiondefinitionparameter
+title: Function Definition Parameter AST Generic Object
 sidebar_label: Function Definition Parameter
-description: The FunctionDefinitionParameter object in the JavaScript AST
+description: The FunctionDefinitionParameter object
 keywords:
   - rosie
   - ast
   - function definition parameter
 ---
 
-The `FunctionDefinitionParameter` object matches a JavaScript function parameter
+The `FunctionDefinitionParameter` object matches a function parameter
 
 The `astType` value for this node is `functiondefinitionparameter`.
 
 ## Code Pattern
 
-This object captures the following code block:
+This object captures the following code block (for example in JavaScript):
 
 ```javascript
 def my_function(arg1 = default_value, arg2 = other_value):
