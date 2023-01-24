@@ -13,15 +13,12 @@ These are the types specific to TypeScript. For types that are common with JavaS
 
 ## AST Type mapping
 
-An AST TypeScript specifies the type of object being processed.
-There is the mapping between the object type and the link to the documentation.
+:::info
 
-| AST Rule Type       | JavaScript Object                                                                          |
-| ------------------- | ------------------------------------------------------------------------------------------ |
-| Class Definition    | [ClassDefinition](/docs/rosie/ast/javascript/rosie-ast-javascript-classdefinition)         |
-| Function Call       | [FunctionCall](/docs/rosie/ast/javascript/rosie-ast-javascript-functioncall)               |
-| Function Definition | [FunctionDefinition](/docs/rosie/ast/javascript/rosie-ast-javascript-functiondefinition)   |
-| HTML Element        | [HTML Element](/docs/rosie/ast/javascript/rosie-ast-javascript-htmlelement)                |
-| If Condition        | [IfCondition](/docs/rosie/ast/common/rosie-ast-common-ifstatement)                         |
-| For Loop            | [ForStatement](/docs/rosie/ast/common/rosie-ast-common-forstatement)                       |
-| VariableDeclaration | [VariableDeclaration](/docs/rosie/ast/javascript/rosie-ast-javascript-variabledeclaration) |
+The following objects are for TypeScript **ONLY**. TypeScript also includes JavaScript objects, [which are documented in the JavaScript section](/docs/rosie/ast/javascript/).
+
+:::
+
+| AST Rule Type | TypeScript Object                                                      |
+| ------------- | ---------------------------------------------------------------------- |
+| Interface     | [Interface](/docs/rosie/ast/typescript/rosie-ast-typescript-interface) |
