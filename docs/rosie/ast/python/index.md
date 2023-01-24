@@ -18,3 +18,6 @@ keywords:
 | Function Definition | [FunctionDefinition](/docs/rosie/ast/python/rosie-ast-python-functiondefinition)                                             |
 | If Condition        | [IfCondition](/docs/rosie/ast/python/rosie-ast-python-ifcondition)                                                           |
 | For Loop            | [ForStatement](/docs/rosie/ast/python/rosie-ast-python-forstmt)                                                              |
+| Try BLock           | [TryBlock](/docs/rosie/ast/python/rosie-ast-python-tryblock)                                                                 |
+| Assignment          | [Assignment](/docs/rosie/ast/python/rosie-ast-python-assignment)                                                             |
+| Class Definition    | [ClassDefinition](/docs/rosie/ast/python/rosie-ast-python-classdefinition)                                                   |

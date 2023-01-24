@@ -23,7 +23,6 @@ my_variable = my_value
 
 ## Attributes
 
-- `astType`: constant string value (`"assignment"`)
 - `left` (any type that inherits [`AstElement`](/docs/rosie/ast/common/rosie-ast-common-astelement))
 - `right` (any type that inherits [`AstElement`](/docs/rosie/ast/common/rosie-ast-common-astelement))
 
