@@ -39,4 +39,4 @@ if(node.packages) {
 
 ## Attributes
 
-- `packages` (array of `ImportStatementPackage`): list of imported packages
+- `packages` (array of [`ImportStatementPackage`](/docs/rosie/ast/python/rosie-ast-python-importstatementpackage)): list of imported packages

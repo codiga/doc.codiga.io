@@ -1,15 +1,15 @@
 ---
 id: rosie-ast-python-importstatementpackage
-title: ImportStatement AST Python Object
-sidebar_label: ImportStatement
-description: The ImportStatement object in the Python AST
+title: ImportStatementPackage AST Python Object
+sidebar_label: ImportStatementPackage
+description: The ImportStatementPackage object in the Python AST
 keywords:
   - rosie
   - ast
   - function call
 ---
 
-The `ImportStatement` object matches a Python import.
+The `ImportStatementPackage` object matches a Python import.
 
 The `astType` value for this node is `importpackage`.
 
