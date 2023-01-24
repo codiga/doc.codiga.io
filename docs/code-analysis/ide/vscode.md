@@ -193,7 +193,7 @@ This section is a slightly technical insight into the plugin's internals.
 The plugin incorporates an internal cache of all the rules from the rulesets that are specified in the `rulesets` property in `codiga.yml`,
 along with a periodic update mechanism. This caching makes it possible to provide better plugin performance.
 
-The periodic update is executed in every 3 seconds for each open project, and updates the cache if either the `codiga.yml` file
+The periodic update is executed in every 10 seconds for each open project, and updates the cache if either the `codiga.yml` file
 has changed, or the configured rulesets (or underlying rules) have changed on Codiga Hub.
 
 If you modify something at either location, and you cannot see the change immediately in your project, you'll just have to wait a few seconds for
