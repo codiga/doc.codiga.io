@@ -187,6 +187,8 @@ const sidebars = {
         "rosie/ast/python/rosie-ast-python-classdefinition",
         "rosie/ast/python/rosie-ast-python-comparison",
         "rosie/ast/python/rosie-ast-python-decorator",
+        "rosie/ast/python/rosie-ast-python-except",
+        "rosie/ast/python/rosie-ast-python-finally",
         "rosie/ast/python/rosie-ast-python-forstmt",
         "rosie/ast/python/rosie-ast-python-functioncall",
         "rosie/ast/python/rosie-ast-python-functioncallargument",

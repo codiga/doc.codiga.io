@@ -29,9 +29,9 @@ finally:
 
 ## Attributes
 
-- `exceptClauses` (array or `ExceptClause`): a list of exception in the `except` clause
-- `finallyClause` (type `FinallyClause`): the finally clause
-- `arguments` (type `FunctionCallArguments`): the list of arguments
+- `content` (type [`AstElement`](/docs/rosie/ast/common/rosie-ast-common-astelement)): the content of the try block (e.g. the statements in the block)
+- `exceptClauses` (array or [`ExceptClause`](/docs/rosie/ast/python/rosie-ast-python-except/)): a list of exception in the `except` clause
+- `finallyClause` (type [`FinallyClause`](/docs/rosie/ast/python/rosie-ast-python-finally/)): the finally clause
 
 ## Examples of rules
 
