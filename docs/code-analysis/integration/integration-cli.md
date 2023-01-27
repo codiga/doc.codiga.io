@@ -56,7 +56,7 @@ The outcome of these two `--help` commands will be the same.
 
 :::tip
 
-In our `pre-push` [git hook documentation](/docs/code-analysis/git-hooks), we recommend using the following
+In our `pre-push` [git hook documentation](/docs/code-analysis/integration/git-hooks), we recommend using the following
 `npx` form as it's simpler to share amongst teams.
 
 :::
@@ -85,6 +85,70 @@ Remember to run this command in your project's root directory. If we detect a `c
 
 :::
 
+### Analyze and report issues for a file or directory
+
+#### Single File
+
+To analyze a single file named `file.js` you can could run the following commands. The first command would analyze `file.js` for violations with the rules found in `foo-ruleset` and the second command would include the rules from `bar-ruleset` too.
+
+```bash
+codiga analyze file.js --ruleset foo-ruleset
+```
+
+```bash
+codiga analyze file.js --ruleset foo-ruleset --ruleset bar-ruleset
+```
+
+:::info
+
+When analyzing a single file, a valid ruleset **must** be set using the `--ruleset` [option](/docs/code-analysis/integration/cli/#options).
+
+:::
+
+#### Directory
+
+To analyze a directory and all the files within, you could run any of the following commands to target the directory `foo`.
+
+```bash
+codiga analyze foo
+```
+
+```bash
+codiga analyze ./foo
+```
+
+```bash
+codiga analyze /Users/cool-name/foo
+```
+
+When analyzing a directory it isn't necessary to specify a ruleset using `--ruleset`, **if** you have a `codiga.yml` file in the targeted directory. If there isn't a `codiga.yml` and you haven't specified rulesets in the command, the analyze will exit.
+
+:::tip
+
+You can find rulesets to use on the [Codiga Hub](https://app.codiga.io/hub/rulesets) or you can use a [command introduced above](/docs/code-analysis/integration/cli/#create-or-add-rulesets-to-a-codigayml), `codiga ruleset-add`, to create a `codiga.yml` quickly.
+
+:::
+
+#### Options
+
+- `-r/--ruleset`
+  - Specify the rulesets you want your analysis done with
+    - **Required:** when analyzing a single file or when there isn't a `codiga.yml` in the root targeted directory
+    - **Default:** `codiga.yml`
+    - **Notes:** if set, will override a `codiga.yml`
+- `-f/--format`
+  - Specify the format you want your analysis reported in
+    - **Options:** `text`, `json`, `csv`
+    - **Default:** `text`
+- `-o/--output`
+  - Specify where you want your analysis reported to
+    - **Default:** `stdout`
+    - **Examples:** `results.csv`, `violations.json`, `analysis.text`
+    - **Notes:** If there are no violations, no file will be created.
+- `--follow-symlinks`
+  - Specify if you want to follow and analyze symbolic links
+    - **Default:** false
+
 ### Analysis and report issues between two commits
 
 To check for violations between two commits manually, you can use the following command.
@@ -97,13 +161,13 @@ In the example above, `123` would be your remote SHA and `456` would be your loc
 
 :::tip
 
-We've dedicated a whole page, [Git Hooks](/docs/code-analysis/git-hooks), for you to read more on how to setup our Git `pre-push` hook. Once set up, the hook can get your SHA values automatically and run the command above for you on each `git push`.
+We've dedicated a whole page, [Git Hooks](/docs/code-analysis/integration/git-hooks), for you to read more on how to setup our Git `pre-push` hook. Once set up, the hook can get your SHA values automatically and run the command above for you on each `git push`.
 
 :::
 
 :::info
 
-To run the command, `codiga git-push-hook`, you will need to have a valid Codiga API token set. If you do not have a valid API token set, our CLI will prompt you to enter one. We detail how to set a Codiga API token in the [Adding a Codiga API token](/docs/code-analysis/cli/#adding-a-codiga-api-token) section below.
+To run the command, `codiga git-push-hook`, you will need to have a valid Codiga API token set. If you do not have a valid API token set, our CLI will prompt you to enter one. We detail how to set a Codiga API token in the [Adding a Codiga API token](/docs/code-analysis/integration/cli/#adding-a-codiga-api-token) section below.
 
 :::
 
@@ -156,6 +220,10 @@ codiga token-add --help
 codiga token-check --help
 # token delete
 codiga token-delete --help
+# adding rulesets
+codiga ruleset-add --help
+# analyzing file or directory
+codiga analyze --help
 ```
 
 ### Version
@@ -170,7 +238,7 @@ codiga --version
 
 - [GitHub project](https://github.com/codiga/codiga-cli)
 - [NPM package](https://www.npmjs.com/package/@codiga/cli)
-- [Git pre-push hook](/docs/code-analysis/git-hooks/)
+- [Git pre-push hook](/docs/code-analysis/integration/git-hooks/)
 
 ## Support
 

@@ -155,7 +155,7 @@ on Codiga servers to avoid any load on your local machine.
 
 - [GitHub project](https://github.com/codiga/codiga-cli)
 - [NPM package](https://www.npmjs.com/package/@codiga/cli)
-- [Codiga CLI tool](/docs/code-analysis/cli)
+- [Codiga CLI tool](/docs/code-analysis/integration/cli)
 
 ## Support
 
