@@ -124,6 +124,14 @@ const sidebars = {
       link: { type: "generated-index" },
       items: ["code-analysis/troubleshooting/too-many-lines-of-code"],
     },
+    {
+      type: "category",
+      label: "Language Server Protocol",
+      link: { type: "generated-index" },
+      items: [
+        "code-analysis/language-server-protocol/rosie-language-server",
+      ],
+    },
   ],
   custom_rules: [
     {
