@@ -94,6 +94,7 @@ const sidebars = {
         "code-analysis/ide/vscode",
         "code-analysis/ide/jetbrains",
         "code-analysis/ide/visualstudio",
+        "code-analysis/ide/sublimetext",
       ],
     },
     {
