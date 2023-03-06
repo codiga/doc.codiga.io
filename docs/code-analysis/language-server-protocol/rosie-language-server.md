@@ -30,6 +30,33 @@ The language server is implemented in NodeJS + TypeScript, thus you must have No
 Therefore, please make sure to inform users in the integration's documentation that they must have NodeJS installed
 (if not already provided by the client application) in order to be able to use the new integration.
 
+## Advantages
+
+The great advantage of having a language server, and the reason why we at Codiga switched to one, is this way
+we can have a single, central implementation of diagnostics, quick fixes, caching, etc. integrated with Rosie.
+
+This makes it possible to integrate Rosie with text editors and IDEs quickly, without having to re-implement anything.
+
+## Integration architecture
+
+There are multiple ways a language server can be implemented, as for what relationship the language server is in with the client application.
+
+One way is that the language server sources, or the configuration to download and install those sources, are stored as part of the client application plugin.
+This is the case with for instance VS Code and Sublime Text.
+
+![Rosie Language Server within plugin](/img/rosie/language-server-protocol/rosie-language-server-within-plugin.png)
+
+Another way, when no plugin, but only configuration, is needed for integration, the language server may be installed in a
+project or workspace, not as a global resources for the whole text editor. This is the case for instance with Jupyter Lab.
+
+![Rosie Language Server outside plugin](/img/rosie/language-server-protocol/rosie-language-server-outside-plugin.png)
+
+### Communication with the outside world
+
+The chart below demonstrates how the Rosie Language Server communicates with the client application and Codiga's remote services.
+
+![Rosie Language Server's communication](/img/rosie/language-server-protocol/rosie-language-server-communication.png)
+
 ## Client Configuration
 
 There are two configuration options that one has to take into account when integrating with the Rosie Language Server:
@@ -51,10 +78,9 @@ same API token.
 
 Of course, if a client application doesn't provide a way to apply/validate these restrictions, they can be omitted when specifying the configuration.
 
-Example from VS Code extension:
+Example from VS Code extension's [package.json](https://github.com/codiga/vscode-plugin/blob/main/package.json#L58):
 
 ```json
-# package.json
 "contributes": {
     "configuration": [
         {
@@ -90,7 +116,7 @@ called `fingerprint`, for the server, like for example:
 fingerprint=<generated value>
 ```
 
-Example from VS Code extension:
+Example from VS Code extension's [extension.ts](https://github.com/codiga/vscode-plugin/blob/main/client/src/extension.ts#L300):
 
 ```typescript
 const serverOptions: ServerOptions = {
@@ -99,7 +125,7 @@ const serverOptions: ServerOptions = {
   };
 ```
 
-The VS Code implementation of the fingerprint generation can be found at [codiga/vscode-plugin: configurationUtils.ts](https://github.com/codiga/vscode-plugin/blob/main/src/utils/configurationUtils.ts). 
+The VS Code implementation of the fingerprint generation can be found at [codiga/vscode-plugin: configurationCache.ts](https://github.com/codiga/vscode-plugin/blob/main/server/src/utils/configurationCache.ts). 
 
 
 ## Configure the Language Client
@@ -109,7 +135,7 @@ The VS Code implementation of the fingerprint generation can be found at [codiga
 When integrating with a client application, make sure to enable languages/file types/mime types that are supported by Rosie,
 so that they actually get analyzed by the language server. Please note that this might not be necessary in all client implementations. 
 
-Example from the Codiga VS Code extension:
+Example from the Codiga VS Code extension's [extension.ts](https://github.com/codiga/vscode-plugin/blob/main/client/src/extension.ts#L306):
 
 ```typescript
 const clientOptions: LanguageClientOptions = {
@@ -134,13 +160,24 @@ See the related [DocumentFilter](https://microsoft.github.io/language-server-pro
 Depending on the modes (`--node-ipc`, `--stdio`, etc.) the client application supports, you will have to use either one
 of them passed in as a command line argument for the server.
 
-Example from the Codiga VS Code extension:
+The vscode-languageserver-node uses the [`TransportKind`](https://github.com/microsoft/vscode-languageserver-node/blob/main/client/src/node/main.ts#L28) enum
+to specify this mode (see example below). In other text editor, where, for instance, a command line command must be specified to execute the compiled server,
+these modes have to passed in as string command line arguments, as `--node-ipc`, `--stdio`, etc.
+
+Example from the Codiga VS Code extension's [extension.ts](https://github.com/codiga/vscode-plugin/blob/main/client/src/extension.ts#L300):
 
 ```typescript
 const serverOptions: ServerOptions = {
     run: { module: ..., transport: TransportKind.ipc, args: ... },
     ...
   };
+```
+
+Example from Sublime Text plugin (`rosie_language_server.sublime-settings`):
+
+```json
+//This invokes the compiled server.js with the local NodeJS installation with --stdio passed in as argument
+"command": ["${node_bin}", "${server_path}", "--stdio"],
 ```
 
 ## Launch the Language Server
@@ -152,11 +189,11 @@ Since the language server cannot simply be installed as an npm package for now, 
 `/server/package.json`  and `/server/package-lock.json`, as well into your integration project. (Make sure to respect the VS Code extension's licencing terms)
 
 **Note**: some LSP related Sublime Text plugins either store the compiled sources in the plugin repository ([sublimelsp/LSP-eslint](https://github.com/sublimelsp/LSP-eslint/tree/master/language-server)),
-or they have scripts that clone the LSP repository, install dependencies, and compile the sources ([sublimelsp/LSP-graphql](https://github.com/sublimelsp/LSP-graphql/tree/master/language-server)). 
+or they only a package.json to install the language server package, and its dependencies ([sublimelsp/LSP-graphql](https://github.com/sublimelsp/LSP-graphql/tree/master/language-server)). 
 
 After all this is done, you must point your language client to launch `server.js` found in the aforementioned `out` directory.
 
-Example from the Codiga VS Code extension:
+Example from the Codiga VS Code extension's [extension.ts](https://github.com/codiga/vscode-plugin/blob/main/client/src/extension.ts#L293):
 
 ```typescript
 //'context' is type of vscode.ExtensionContext
@@ -170,6 +207,18 @@ const clientOptions: LanguageClientOptions = { ... }
 client = new LanguageClient('codigaLanguageServer', 'Codiga Language Server', serverOptions, clientOptions);
 client.start();
 ```
+
+### Launch the server once
+
+If launching a server is not handled automatically by the text editor/IDE you are integrating with (like in VS Code, where it is launched
+from `extension.ts`, the extension's entry point),
+make sure the Rosie Language Server is launched only once, regardless of the number of open files, projects or workspaces.
+
+### Stopping the server
+
+At the moment, there is no logic in the language server itself that requires explicit disposal or shut-down
+when the server is being shut down. Regardless, if the text editor/IDE you are integrating with, or the plugin being implemented,
+themselves require logic to be handled during shut-down, make sure to implement that.
 
 ## Troubleshooting
 
