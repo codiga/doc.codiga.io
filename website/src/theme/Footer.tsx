@@ -63,10 +63,10 @@ const FOOTER_CODIGA_MENU = [
     name: "Pricing",
     path: "https://www.codiga.io/pricing/",
   },
-  {
-    name: "Book a Demo",
-    path: "https://www.codiga.io/pricing/#contact",
-  },
+  // {
+  //   name: "Book a Demo",
+  //   path: "https://www.codiga.io/pricing/#contact",
+  // },
 ];
 
 const FOOTER_CODE_ANALYSIS_MENU = [
