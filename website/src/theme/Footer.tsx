@@ -286,32 +286,6 @@ export default function Footer() {
           flexDirection={{ base: "column", md: "row" }}
           justifyContent={{ base: "center", md: "space-between" }}
           alignItems="center"
-          gridGap={10}
-        >
-          <Flex
-            flexDirection={{ base: "column", md: "row" }}
-            alignItems="center"
-            gridGap={2}
-          >
-            <Image src={SOC2Image} alt="soc-2 icon" boxSize={10} />
-            <Text fontSize="xs" textAlign="center" m={0}>
-              We are SOC-2 Compliance Certified
-            </Text>
-          </Flex>
-
-          <Image
-            src={G2Image}
-            alt="G2 high performer medal"
-            width="52px"
-            height="67px"
-          />
-        </Flex>
-
-        <Flex
-          w="full"
-          flexDirection={{ base: "column", md: "row" }}
-          justifyContent={{ base: "center", md: "space-between" }}
-          alignItems="center"
           gridGap={4}
         >
           <Flex gridGap={4}>
