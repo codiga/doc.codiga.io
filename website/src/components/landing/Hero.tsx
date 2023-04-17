@@ -23,15 +23,6 @@ const Hero = () => {
           Welcome to our documentation guide. Here you can find everything
           related to Codiga documentation.
         </Text>
-
-        <Link
-          as={DocusaurusLink}
-          size="md"
-          variant="primary"
-          href="docs/rosie/rosie-introduction/"
-        >
-          Get Started
-        </Link>
       </Container>
     </Box>
   );
