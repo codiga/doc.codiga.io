@@ -1,3 +1,5 @@
+[Datadog acquired Codiga](https://www.codiga.io/blog/codiga-joins-datadog/). This repository is no longer active.
+
 <h1 align="center">
   <img src="https://github.com/codiga/.github/blob/main/assets/banner_hero.png" width="80%" />
 </h1>
